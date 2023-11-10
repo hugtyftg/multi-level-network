@@ -1,0 +1,6252 @@
+{
+  "compressionRatio": 0.7783505154639175,
+  "groupList": [
+    {
+      "groupIndex": 0,
+      "isHyperNode": true,
+      "size": 152,
+      "children": [
+        {
+          "index": 0,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.180.219.65",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 2,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.180.219.64",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 4,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.180.109.193",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 5,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.180.109.192",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 7,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "101.233.182.63",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 9,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "101.233.182.62",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 10,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.36",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 13,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.35",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 14,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.86",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 15,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.32",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 16,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.24",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 17,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.91",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 19,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.83",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 20,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.81",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 21,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.45.174",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 22,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.25",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 23,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.83",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 24,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.81",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 25,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.145",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 26,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.82",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 27,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.147",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 28,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.27",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 29,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.89",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 31,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.28",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 32,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.92",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 34,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.31",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 36,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.23",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 38,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.20",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 39,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.1",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 40,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.94",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 42,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.2",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 43,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.153",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 44,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.248",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 45,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.51",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 46,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.155",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 47,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.245",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 48,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.149",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 49,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.151",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 51,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.19",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 52,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.16",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 53,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.6",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 54,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.8",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 55,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.15",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 56,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.5",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 57,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.43.0",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 58,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.10",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 59,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.13",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 60,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.159",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 61,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.10",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 62,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.8",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 63,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.7",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 64,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.11",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 65,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.9",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 66,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.85",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 67,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.17",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 68,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.86",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 69,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.6.17",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 70,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.158",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 71,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.87",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 72,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.14",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 73,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.6.18",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 74,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.48",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 75,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.122",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 76,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.172",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 77,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.23",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 78,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.127",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 79,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.17",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 80,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.105",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 81,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.43.4",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 82,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.57",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 83,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.120",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 84,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.124",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 85,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.26",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 86,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.27",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 88,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.19",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 89,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.28",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 91,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.24",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 93,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.107",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 94,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.31",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 96,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.40",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 98,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.101",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 99,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.224",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 100,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.178",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 101,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.226",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 103,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.177",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 104,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.109",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 106,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.111",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 107,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.187",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 108,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.30",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 109,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.211",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 110,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.180",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 111,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.209",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 112,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.182",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 113,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.4",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 115,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.3",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 116,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.47",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 117,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.6",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 119,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.5",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 120,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.43",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 121,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.2",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 123,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.44",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 126,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.1",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 127,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.157",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 128,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.0",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 129,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.158",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 130,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.21",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 131,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.20",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 132,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.53",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 133,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.23",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 134,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.1.154",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 135,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.22",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 136,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.58",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 137,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.55",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 138,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.59",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 139,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.68",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 140,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.71",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 141,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.51",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 142,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.96",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 143,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.6.159",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 144,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.41",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 145,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.43",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 146,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.60",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 147,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.42",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 148,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.45.121",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 149,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.61",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 150,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.35",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 151,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.45.124",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 152,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.33",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 153,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.43",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 154,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.45.123",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 155,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.55",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 156,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.31",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 157,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.54",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 158,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.76",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 160,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.78",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 161,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.6.154",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 163,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.216",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 165,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.219",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 166,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.215",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 167,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.37",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 168,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.212",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 169,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.51",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 170,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.50",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 171,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.53",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 172,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.52",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 173,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.56",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 174,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.27",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 175,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.57",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 176,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.49",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 177,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.220",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 178,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.48.28",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 179,
+          "groupIndex": 0,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.233.182.48",
+          "is_alarming": false,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 1,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 87,
+          "groupIndex": 1,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.236",
+          "is_alarming": true,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 2,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 356,
+          "groupIndex": 2,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "路由器",
+          "role": "CORE",
+          "mgmt_ip": "125.221.200.62",
+          "is_alarming": true,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 3,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 11,
+          "groupIndex": 3,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.84",
+          "is_alarming": true,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 4,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 50,
+          "groupIndex": 4,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.219.157",
+          "is_alarming": true,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 5,
+      "isHyperNode": true,
+      "size": 70,
+      "children": [
+        {
+          "index": 180,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.180.5.60",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 181,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.180.5.61",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 182,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.180.5.63",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 183,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.117",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 184,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.223",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 185,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.89",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 186,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.114",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 187,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.87",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 188,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.39",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 189,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.119",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 190,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.85",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 191,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.37",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 192,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.226",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 193,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.83",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 194,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.230",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 195,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.112",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 196,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.80",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 197,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.28",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 198,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.24",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 199,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.26",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 200,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.50",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 201,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.211",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 202,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.79",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 203,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.77",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 204,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.217",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 205,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.75",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 206,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.16",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 207,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.208",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 208,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.72",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 209,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.19",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 210,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.221",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 211,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.64",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 212,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.20",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 213,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.219",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 214,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.22",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 215,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.41",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 216,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.198",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 217,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.105",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 218,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.66",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 219,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.71",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 220,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.193",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 221,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.103",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 222,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.69",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 223,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.3",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 224,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.194",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 225,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.101",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 226,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.96",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 227,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.7",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 228,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.215",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 229,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.99",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 230,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.5",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 231,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.8",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 232,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.47",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 233,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.10",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 234,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.45",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 235,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.123",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 236,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.207",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 237,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.121",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 238,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.15",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 239,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.202",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 240,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.124",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 241,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.205",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 242,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.196",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 243,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.201",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 244,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.54",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 245,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.180.5.52",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 263,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "L2GW",
+          "role": "VIRTUAL",
+          "mgmt_ip": "125.139.189.60",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 264,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "L2GW",
+          "role": "VIRTUAL",
+          "mgmt_ip": "125.139.189.61",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 265,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "L2GW",
+          "role": "VIRTUAL",
+          "mgmt_ip": "125.139.189.124",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 266,
+          "groupIndex": 5,
+          "az": "可用区1",
+          "pod_name": "pod20",
+          "type": "L2GW",
+          "role": "VIRTUAL",
+          "mgmt_ip": "125.139.189.125",
+          "is_alarming": false,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": true
+    },
+    {
+      "groupIndex": 6,
+      "isHyperNode": true,
+      "size": 13,
+      "children": [
+        {
+          "index": 246,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "路由器",
+          "role": "CORE",
+          "mgmt_ip": "125.217.48.205",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 247,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "路由器",
+          "role": "CORE",
+          "mgmt_ip": "125.217.48.204",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 249,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.180.9.45",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 250,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.180.9.41",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 251,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.180.9.40",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 253,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.180.9.43",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 254,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.180.9.42",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 255,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.180.9.44",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 256,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.180.9.46",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 257,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.180.9.47",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 258,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.217.45.9",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 259,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.217.48.253",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 260,
+          "groupIndex": 6,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.217.48.254",
+          "is_alarming": false,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 7,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 272,
+          "groupIndex": 7,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.183.189.222",
+          "is_alarming": true,
+          "degree": 37
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 8,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 369,
+          "groupIndex": 8,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.231",
+          "is_alarming": true,
+          "degree": 4
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 9,
+      "isHyperNode": true,
+      "size": 33,
+      "children": [
+        {
+          "index": 280,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.109",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 281,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.110",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 282,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.103",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 283,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.235",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 284,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.245.118",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 285,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.106",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 288,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.105",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 290,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.238",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 292,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.55",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 294,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.95",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 295,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.93",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 299,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.101",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 301,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.227",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 302,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.99",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 303,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.231",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 306,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.97",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 311,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.241",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 313,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.29",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 315,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.85",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 321,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.90",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 323,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.108",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 325,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.89",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 329,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.26",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 330,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.86",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 331,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.180",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 333,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.104",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 338,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.125",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 339,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.245.226",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 340,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.10.126",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 341,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.245.224",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 345,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.103",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 346,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.101",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 347,
+          "groupIndex": 9,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.245.231",
+          "is_alarming": false,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 10,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 293,
+          "groupIndex": 10,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.56",
+          "is_alarming": true,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 11,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 450,
+          "groupIndex": 11,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.98",
+          "is_alarming": true,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 12,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 389,
+          "groupIndex": 12,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.223.176.17",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 390,
+          "groupIndex": 12,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.223.176.19",
+          "is_alarming": false,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 13,
+      "isHyperNode": true,
+      "size": 30,
+      "children": [
+        {
+          "index": 391,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.195",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 392,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.115",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 393,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.199",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 396,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.84",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 398,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.118",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 400,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.120",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 402,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.82",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 404,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.122",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 407,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.25",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 408,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.28",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 412,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.33",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 414,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.70",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 415,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.102",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 416,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.39",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 417,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.78",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 419,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.110",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 420,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.107",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 421,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.124",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 423,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.77",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 424,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.22",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 425,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.74",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 433,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.95",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 434,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.98",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 436,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.109",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 437,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.14",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 441,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.102",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 443,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.110",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 447,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.192",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 448,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.107",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 454,
+          "groupIndex": 13,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.104",
+          "is_alarming": false,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 14,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 469,
+          "groupIndex": 14,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.65",
+          "is_alarming": true,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 15,
+      "isHyperNode": true,
+      "size": 7,
+      "children": [
+        {
+          "index": 468,
+          "groupIndex": 15,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.10",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 470,
+          "groupIndex": 15,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.8",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 472,
+          "groupIndex": 15,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.6",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 475,
+          "groupIndex": 15,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.5",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 486,
+          "groupIndex": 15,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.23",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 488,
+          "groupIndex": 15,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.20",
+          "is_alarming": false,
+          "degree": 0
+        },
+        {
+          "index": 492,
+          "groupIndex": 15,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.0",
+          "is_alarming": false,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 16,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 481,
+          "groupIndex": 16,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.2",
+          "is_alarming": true,
+          "degree": 0
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 17,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 1,
+          "groupIndex": 17,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.137.6.249",
+          "is_alarming": false,
+          "degree": 21
+        },
+        {
+          "index": 3,
+          "groupIndex": 17,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.137.6.248",
+          "is_alarming": false,
+          "degree": 21
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 18,
+      "isHyperNode": true,
+      "size": 20,
+      "children": [
+        {
+          "index": 12,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.166",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 118,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.125",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 102,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.105",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 18,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.163",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 159,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.233",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 162,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.235",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 97,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.230",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 92,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.227",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 90,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.238",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 95,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.228",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 122,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.225",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 41,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.177",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 114,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.126",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 33,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.178",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 35,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.161",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 37,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.182",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 30,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.181",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 105,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.11.106",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 125,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.121",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 124,
+          "groupIndex": 18,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.137.10.122",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 19,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 6,
+          "groupIndex": 19,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.217.48.213",
+          "is_alarming": false,
+          "degree": 3
+        },
+        {
+          "index": 8,
+          "groupIndex": 19,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.217.48.214",
+          "is_alarming": false,
+          "degree": 3
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 20,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 267,
+          "groupIndex": 20,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.138.10.115",
+          "is_alarming": false,
+          "degree": 7
+        },
+        {
+          "index": 271,
+          "groupIndex": 20,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.138.10.113",
+          "is_alarming": false,
+          "degree": 6
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 21,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 270,
+          "groupIndex": 21,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.221.200.42",
+          "is_alarming": false,
+          "degree": 19
+        },
+        {
+          "index": 269,
+          "groupIndex": 21,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.221.200.41",
+          "is_alarming": false,
+          "degree": 17
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 22,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 261,
+          "groupIndex": 22,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.217.45.175",
+          "is_alarming": false,
+          "degree": 3
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 23,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 262,
+          "groupIndex": 23,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.217.45.170",
+          "is_alarming": false,
+          "degree": 3
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 24,
+      "isHyperNode": true,
+      "size": 4,
+      "children": [
+        {
+          "index": 277,
+          "groupIndex": 24,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.221.200.28",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 278,
+          "groupIndex": 24,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.221.200.29",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 276,
+          "groupIndex": 24,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.221.201.28",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 275,
+          "groupIndex": 24,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "防火墙",
+          "role": "SPINE",
+          "mgmt_ip": "125.221.201.30",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 25,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 252,
+          "groupIndex": 25,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "125.217.48.185",
+          "is_alarming": false,
+          "degree": 6
+        },
+        {
+          "index": 248,
+          "groupIndex": 25,
+          "az": "可用区1",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "125.217.48.186",
+          "is_alarming": false,
+          "degree": 6
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 26,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 366,
+          "groupIndex": 26,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "125.221.200.30",
+          "is_alarming": false,
+          "degree": 11
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 27,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 364,
+          "groupIndex": 27,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "125.221.200.31",
+          "is_alarming": false,
+          "degree": 10
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 28,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 355,
+          "groupIndex": 28,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "路由器",
+          "role": "CORE",
+          "mgmt_ip": "125.221.200.63",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 29,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 440,
+          "groupIndex": 29,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.245.16",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 30,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 164,
+          "groupIndex": 30,
+          "az": "可用区1",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.217.47.225",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 31,
+      "isHyperNode": true,
+      "size": 5,
+      "children": [
+        {
+          "index": 353,
+          "groupIndex": 31,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.51",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 314,
+          "groupIndex": 31,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.75",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 310,
+          "groupIndex": 31,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.24",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 350,
+          "groupIndex": 31,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.48",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 335,
+          "groupIndex": 31,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.138.11.161",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 32,
+      "isHyperNode": true,
+      "size": 15,
+      "children": [
+        {
+          "index": 312,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.99",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 328,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.201.233",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 342,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.200.222",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 352,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.212",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 348,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.206",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 332,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.200",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 326,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.194",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 319,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.203",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 327,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.197",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 296,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.224",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 336,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.252.6",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 343,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.211.211",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 320,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.201.238",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 324,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.201.235",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 309,
+          "groupIndex": 32,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.201.230",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 33,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 279,
+          "groupIndex": 33,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.200.216",
+          "is_alarming": false,
+          "degree": 1
+        },
+        {
+          "index": 354,
+          "groupIndex": 33,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.221.200.219",
+          "is_alarming": false,
+          "degree": 1
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 34,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 274,
+          "groupIndex": 34,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.183.191.251",
+          "is_alarming": false,
+          "degree": 24
+        },
+        {
+          "index": 273,
+          "groupIndex": 34,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.183.191.250",
+          "is_alarming": false,
+          "degree": 24
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 35,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 268,
+          "groupIndex": 35,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.183.189.223",
+          "is_alarming": false,
+          "degree": 40
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 36,
+      "isHyperNode": true,
+      "size": 20,
+      "children": [
+        {
+          "index": 297,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.185.170",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 308,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.185.174",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 317,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.178",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 316,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.176",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 305,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.219",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 289,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.209",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 291,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.215",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 307,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.217",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 286,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.212",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 349,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.231",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 351,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.229",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 287,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.227",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 344,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.239",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 337,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.255",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 334,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.235",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 318,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.253",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 322,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.250",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 300,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.247",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 304,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.160",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 298,
+          "groupIndex": 36,
+          "az": "可用区2",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.183.189.244",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 37,
+      "isHyperNode": true,
+      "size": 14,
+      "children": [
+        {
+          "index": 373,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.216",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 363,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.220",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 370,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.222",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 371,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.228",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 358,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.226",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 357,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.227",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 360,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.225",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 367,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.230",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 372,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.229",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 359,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.224",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 362,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.212",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 377,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.219",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 368,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.223",
+          "is_alarming": false,
+          "degree": 4
+        },
+        {
+          "index": 365,
+          "groupIndex": 37,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.221",
+          "is_alarming": false,
+          "degree": 4
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 38,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 375,
+          "groupIndex": 38,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.218",
+          "is_alarming": false,
+          "degree": 3
+        },
+        {
+          "index": 376,
+          "groupIndex": 38,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.217",
+          "is_alarming": false,
+          "degree": 3
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 39,
+      "isHyperNode": true,
+      "size": 5,
+      "children": [
+        {
+          "index": 378,
+          "groupIndex": 39,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.214",
+          "is_alarming": false,
+          "degree": 3
+        },
+        {
+          "index": 380,
+          "groupIndex": 39,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.215",
+          "is_alarming": false,
+          "degree": 3
+        },
+        {
+          "index": 381,
+          "groupIndex": 39,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.209",
+          "is_alarming": false,
+          "degree": 3
+        },
+        {
+          "index": 361,
+          "groupIndex": 39,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.213",
+          "is_alarming": false,
+          "degree": 3
+        },
+        {
+          "index": 379,
+          "groupIndex": 39,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.210",
+          "is_alarming": false,
+          "degree": 3
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 40,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 382,
+          "groupIndex": 40,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.211",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 374,
+          "groupIndex": 40,
+          "az": "可用区2",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.183.191.208",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 41,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 383,
+          "groupIndex": 41,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "101.250.209.70",
+          "is_alarming": false,
+          "degree": 24
+        },
+        {
+          "index": 386,
+          "groupIndex": 41,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "101.250.209.71",
+          "is_alarming": false,
+          "degree": 24
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 42,
+      "isHyperNode": true,
+      "size": 16,
+      "children": [
+        {
+          "index": 394,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.117",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 399,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.114",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 395,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.119",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 397,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.113",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 403,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.104",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 427,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.180",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 430,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.182",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 432,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.189",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 429,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.185",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 435,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.186",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 409,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.190",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 410,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.122",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 418,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.121",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 451,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.177",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 446,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.161",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 455,
+          "groupIndex": 42,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "101.250.209.179",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 43,
+      "isHyperNode": true,
+      "size": 8,
+      "children": [
+        {
+          "index": 463,
+          "groupIndex": 43,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "101.250.209.65",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 465,
+          "groupIndex": 43,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "101.250.209.75",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 464,
+          "groupIndex": 43,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "101.250.209.74",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 457,
+          "groupIndex": 43,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "101.250.209.73",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 456,
+          "groupIndex": 43,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "101.250.209.72",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 462,
+          "groupIndex": 43,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "101.250.209.64",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 460,
+          "groupIndex": 43,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "101.250.209.76",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 458,
+          "groupIndex": 43,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "101.250.209.77",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 44,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 387,
+          "groupIndex": 44,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.223.177.234",
+          "is_alarming": false,
+          "degree": 11
+        },
+        {
+          "index": 388,
+          "groupIndex": 44,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.223.177.233",
+          "is_alarming": false,
+          "degree": 11
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 45,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 384,
+          "groupIndex": 45,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.223.176.250",
+          "is_alarming": false,
+          "degree": 10
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 46,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 385,
+          "groupIndex": 46,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "125.223.176.251",
+          "is_alarming": false,
+          "degree": 9
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 47,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 461,
+          "groupIndex": 47,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "125.223.176.241",
+          "is_alarming": false,
+          "degree": 3
+        },
+        {
+          "index": 459,
+          "groupIndex": 47,
+          "az": "可用区3",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "125.223.176.240",
+          "is_alarming": false,
+          "degree": 3
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 48,
+      "isHyperNode": true,
+      "size": 9,
+      "children": [
+        {
+          "index": 431,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.239",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 444,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.210",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 453,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.216",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 422,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.219",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 445,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.159.47",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 452,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.159.38",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 439,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.159.43",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 438,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.159.40",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 428,
+          "groupIndex": 48,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.223",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 49,
+      "isHyperNode": true,
+      "size": 7,
+      "children": [
+        {
+          "index": 411,
+          "groupIndex": 49,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.105",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 413,
+          "groupIndex": 49,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.100",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 406,
+          "groupIndex": 49,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.8",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 449,
+          "groupIndex": 49,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.208",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 426,
+          "groupIndex": 49,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.20",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 401,
+          "groupIndex": 49,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.4",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 442,
+          "groupIndex": 49,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.177.97",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 50,
+      "isHyperNode": false,
+      "size": 1,
+      "children": [
+        {
+          "index": 405,
+          "groupIndex": 50,
+          "az": "可用区3",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "125.223.176.81",
+          "is_alarming": false,
+          "degree": 1
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 51,
+      "isHyperNode": true,
+      "size": 2,
+      "children": [
+        {
+          "index": 466,
+          "groupIndex": 51,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.206.163.87",
+          "is_alarming": false,
+          "degree": 35
+        },
+        {
+          "index": 467,
+          "groupIndex": 51,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "SPINE",
+          "mgmt_ip": "124.206.163.86",
+          "is_alarming": false,
+          "degree": 35
+        }
+      ],
+      "isPerfectPod": false
+    },
+    {
+      "groupIndex": 52,
+      "isHyperNode": true,
+      "size": 16,
+      "children": [
+        {
+          "index": 500,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.59",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 509,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.15",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 502,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.54",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 496,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.56",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 497,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.9",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 506,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.11",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 510,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.12",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 504,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.10",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 508,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.14",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 498,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.58",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 499,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.8",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 501,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.60",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 505,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.57",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 507,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.13",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 503,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.55",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 495,
+          "groupIndex": 52,
+          "az": "可用区7",
+          "pod_name": "cnt",
+          "type": "交换机",
+          "role": "CORE",
+          "mgmt_ip": "124.206.24.61",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": true
+    },
+    {
+      "groupIndex": 53,
+      "isHyperNode": true,
+      "size": 18,
+      "children": [
+        {
+          "index": 494,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.54",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 477,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.94",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 493,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.77",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 473,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.70",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 474,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.47",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 490,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.78",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 491,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.50",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 476,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.49",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 484,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.57",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 489,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.68",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 485,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.73",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 480,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.60",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 482,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.52",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 483,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.74",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 487,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.59",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 479,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.93",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 478,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.62",
+          "is_alarming": false,
+          "degree": 2
+        },
+        {
+          "index": 471,
+          "groupIndex": 53,
+          "az": "可用区7",
+          "pod_name": "obs",
+          "type": "交换机",
+          "role": "LEAF",
+          "mgmt_ip": "124.206.163.66",
+          "is_alarming": false,
+          "degree": 2
+        }
+      ],
+      "isPerfectPod": false
+    }
+  ],
+  "groupLinks": [
+    {
+      "source": 17,
+      "target": 18
+    },
+    {
+      "source": 17,
+      "target": 1
+    },
+    {
+      "source": 19,
+      "target": 25
+    },
+    {
+      "source": 19,
+      "target": 30
+    },
+    {
+      "source": 20,
+      "target": 31
+    },
+    {
+      "source": 20,
+      "target": 29
+    },
+    {
+      "source": 20,
+      "target": 26
+    },
+    {
+      "source": 21,
+      "target": 32
+    },
+    {
+      "source": 21,
+      "target": 33
+    },
+    {
+      "source": 21,
+      "target": 26
+    },
+    {
+      "source": 21,
+      "target": 27
+    },
+    {
+      "source": 22,
+      "target": 25
+    },
+    {
+      "source": 22,
+      "target": 23
+    },
+    {
+      "source": 23,
+      "target": 25
+    },
+    {
+      "source": 24,
+      "target": 26
+    },
+    {
+      "source": 24,
+      "target": 27
+    },
+    {
+      "source": 25,
+      "target": 27
+    },
+    {
+      "source": 25,
+      "target": 26
+    },
+    {
+      "source": 26,
+      "target": 2
+    },
+    {
+      "source": 26,
+      "target": 27
+    },
+    {
+      "source": 27,
+      "target": 28
+    },
+    {
+      "source": 28,
+      "target": 2
+    },
+    {
+      "source": 35,
+      "target": 39
+    },
+    {
+      "source": 35,
+      "target": 37
+    },
+    {
+      "source": 35,
+      "target": 8
+    },
+    {
+      "source": 35,
+      "target": 36
+    },
+    {
+      "source": 34,
+      "target": 37
+    },
+    {
+      "source": 34,
+      "target": 39
+    },
+    {
+      "source": 34,
+      "target": 40
+    },
+    {
+      "source": 34,
+      "target": 38
+    },
+    {
+      "source": 34,
+      "target": 8
+    },
+    {
+      "source": 36,
+      "target": 7
+    },
+    {
+      "source": 37,
+      "target": 7
+    },
+    {
+      "source": 38,
+      "target": 7
+    },
+    {
+      "source": 41,
+      "target": 42
+    },
+    {
+      "source": 41,
+      "target": 43
+    },
+    {
+      "source": 45,
+      "target": 49
+    },
+    {
+      "source": 45,
+      "target": 11
+    },
+    {
+      "source": 45,
+      "target": 47
+    },
+    {
+      "source": 46,
+      "target": 49
+    },
+    {
+      "source": 46,
+      "target": 11
+    },
+    {
+      "source": 46,
+      "target": 50
+    },
+    {
+      "source": 44,
+      "target": 48
+    },
+    {
+      "source": 44,
+      "target": 47
+    },
+    {
+      "source": 51,
+      "target": 52
+    },
+    {
+      "source": 51,
+      "target": 53
+    },
+    {
+      "source": 51,
+      "target": 14
+    },
+    {
+      "source": 7,
+      "target": 8
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+import React, { useEffect, useRef, useState } from 'react'
+import MultiLevelPartitionGraph from '../../graph/MultiLevelPartitionGraph';
+import { StyleCfg } from '../../interface/style';
+const graphCfg: StyleCfg = {
+  dataName: '10000_processed.json',
+  width: 1620,
+  height: 764,
+  // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
+  divBoxSelector: '.partition',
+  emphasisName: 'cnt',
+  blankFillDegree: 12,
+  blankFillStrength: 1,
+  nodeStyle: {
+    normal: {
+      radius: 8,
+      opacity: 1,
+      strokeWidth: 1,
+      stroke: 'none',
+      fill: 'none'
+    },
+    selected: {
+      radius:8,
+      opacity: 1,
+      strokeWidth: 5,
+      stroke: '#2B41FF',  
+      fill: 'none',
+    }
+  },
+  nodeLabelStyle: {
+    stroke: 'black',
+    strokeWidth: 1,
+    fontSize: '8px',
+    textAnchor: 'middle',
+    show: 'auto',
+  },
+  edgeStyle: {
+    normal: {
+      opacity: 0.4,
+      strokeWidth: 1,
+      strokeColor: 'gray',
+      strokeDash: 'solid',
+    },
+    selected: {
+      opacity: 1,
+      strokeWidth: 2,
+      strokeColor: '#3980FE',
+      strokeDash: 'solid',
+    }
+  },
+  maskStyle: {
+    normal: {
+      color: (d: any) => {
+        if (d.data.hierarchy === 'az') {
+          return '#DCDCDC';
+        } else if (d.data.hierarchy === 'pod') {
+          if (d.data.name === 'cnt') {
+            return '#dff6fd';
+          } else {
+            return '#DCDCDC';
+          }
+        } else {
+          throw new Error("当前层级不是level2或者level3");
+        }
+      },
+      strokeColor: (d: any) => {
+        if (d.data.hierarchy === 'az') {
+          return 'white';
+        } else if (d.data.hierarchy === 'pod') {
+          return 'white'
+        } else {
+          throw new Error("当前层级不是level2或者level3");
+        }
+      },
+      strokeWidth: (d: any) => {
+        if (d.data.hierarchy === 'az') {
+          return 10;
+        } else if (d.data.hierarchy === 'pod') {
+          return 2;
+        } else {
+          throw new Error("当前层级不是level2或者level3");
+        }
+      },
+      opacity: 1
+    },
+    selected: {
+      color: '#CEDEFF',
+      strokeColor: 'white',
+    }
+  },
+  maskLabelStyle: {
+    fill: (d: any) => {
+      if (d.data.hierarchy === 'az') {
+        return '#000';
+      } else {
+        return '#555';
+      }
+    }
+  }
+}
+export default function Partition() {
+  const [data, setData] = useState({});
+  const [graph, setGraph] = useState({});
+  const partitionRef = useRef(null);
+  // 初始加载数据
+  useEffect(() => {
+    fetch('/data/10000_processed.json')
+    .then(res => res.json())
+    .then(d => {
+      setData(d);
+    })
+  }, [])
+  useEffect(() => {
+    if (Object.keys(data).length && Object.keys(graph).length === 0) {
+      setGraph(new MultiLevelPartitionGraph({...graphCfg, data}))
+    }
+  }, [data, graph])
+  return (
+    <div className='partition' ref={partitionRef} style={{
+      width: '100%',
+      height: '100%',
+    }}></div>
+  )
+}
