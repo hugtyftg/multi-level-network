@@ -1,6 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect } from 'react'
 import MultiLevelPartitionGraph from '../../graph/MultiLevelPartitionGraph';
 import { StyleCfg } from '../../interface/style';
+import { useStore } from '../../store/graphStore';
+import { autorun, reaction } from 'mobx';
+import { observer } from 'mobx-react-lite';
 const graphCfg: StyleCfg = {
   dataName: '10000_processed.json',
   width: 1620,
@@ -73,9 +76,9 @@ const graphCfg: StyleCfg = {
       },
       strokeWidth: (d: any) => {
         if (d.data.hierarchy === 'az') {
-          return 10;
+          return 3;
         } else if (d.data.hierarchy === 'pod') {
-          return 2;
+          return 3;
         } else {
           throw new Error("当前层级不是level2或者level3");
         }
@@ -97,27 +100,43 @@ const graphCfg: StyleCfg = {
     }
   }
 }
-export default function Partition() {
-  const [data, setData] = useState({});
-  const [graph, setGraph] = useState({});
-  const partitionRef = useRef(null);
-  // 初始加载数据
-  useEffect(() => {
-    fetch('/data/10000_processed.json')
+function Partition() {
+  // 引入store
+  const store = useStore();  
+  // 初始化时自动运行，以及涉及到的observer值改变的时候也运行
+  const dispose1 = autorun(() => {
+    // 当curDatesetName改变的时候，更新数据
+    fetch(`/data/${store.curDatasetName}`)
     .then(res => res.json())
-    .then(d => {
-      setData(d);
+    .then(newGraphData => {
+      store.updateGraphData(newGraphData);
     })
-  }, [])
-  useEffect(() => {
-    if (Object.keys(data).length && Object.keys(graph).length === 0) {
-      setGraph(new MultiLevelPartitionGraph({...graphCfg, data}))
+  })
+  const dispose2 = reaction(() => store.graphData,
+  (graphData) => {
+    if (!store.isCurGraphDataEmpty) {
+      if (store.isCurGraphInstanceEmpty) { // 如果当前没有graph，直接生成
+        store.updateGraphInstance(new MultiLevelPartitionGraph({...graphCfg, data: graphData}));
+      } else { // 如果已经有graph，先清空画布，然后重置graph instance，再绘制
+        console.log('destory');
+        (store.curGraphInstance as MultiLevelPartitionGraph).destory();
+        store.resetGraphInstance();
+        store.updateGraphInstance(new MultiLevelPartitionGraph({...graphCfg, data: graphData}));
+      }
     }
-  }, [data, graph])
+  })
+  // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数
+  useEffect(() => {
+    return () => {
+      dispose1();
+      dispose2();
+    }
+  })
   return (
-    <div className='partition' ref={partitionRef} style={{
+    <div className='partition' style={{
       width: '100%',
       height: '100%',
     }}></div>
   )
 }
+export default observer(Partition);

@@ -2,12 +2,6 @@ import React, { Fragment } from 'react'
 import { ContentBox, SideBar, Title } from '../components';
 import { theme, Layout } from 'antd';
 import { PagePropsType } from '../type';
-const dataNameList = ['500', '1500', '2500', '6000', '10000', '20000'].map((v: string) => {
-  return {
-    name: `${v}_processed.json`,
-    id: `${v}_processed.json`
-  }
-});
 export default function View1() {
   const {
     token: { colorBgElevated: colorBgContainer },
@@ -31,7 +25,7 @@ export default function View1() {
       <Layout className='view'>
         <Title className='title' {...headerStyleObj}/>
         <Layout className='main-box'>
-          <SideBar {...sideBarStyleObj} dataNameList={dataNameList} />
+          <SideBar {...sideBarStyleObj} />
           <ContentBox {...contentBoxStyleObj}/>
         </Layout>
       </Layout>

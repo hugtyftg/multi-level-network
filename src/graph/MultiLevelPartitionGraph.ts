@@ -217,7 +217,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     }){
       this.container.selectAll(`path.pod[data-id=${relatedMask}]`)
         // 存在某些pod高亮改顺序之后，遮盖az的边界的问题
-        // .raise()
+        .raise()
         .attr('opacity', highlightAttr?.maskStyle?.opacity ?? this.cfgs.maskStyle.selected.opacity)
         .attr('fill', highlightAttr?.maskStyle?.color ?? this.cfgs.maskStyle.selected.color)
         .attr('stroke-width', highlightAttr?.maskStyle?.strokeWidth ?? this.cfgs.maskStyle.selected.strokeWidth)
@@ -660,7 +660,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     const searchedPartitionId = searchedPartition.data.id;
     // 2.高亮分区，如果用户传入了新的样式，就用新的样式高亮分区；如果没传入，就用初始传入的selected样式高亮分区
     this.container.selectAll(`path.pod[data-id=${searchedPartitionId}]`)
-      // .raise()
+      .raise()
       .attr('opacity', highlightAttr?.maskStyle?.opacity ?? this.cfgs.maskStyle.selected.opacity) // this.cfgs.maskStyle.selected.opacity和dii中的d.attr.selected.opacity是一样的逻辑，全局样式参数
       .attr('fill', highlightAttr?.maskStyle?.color ?? this.cfgs.maskStyle.selected.color)
       .attr('stroke-width', highlightAttr?.maskStyle?.strokeWidth ?? this.cfgs.maskStyle.selected.strokeWidth)
@@ -758,7 +758,12 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     .on('dblclick.zoom', null);
   }
   private removeNodesEdgesEventListener() {
-    this.nodesDOM.on('click', null);
-    this.edgesDOM.on('click', null);
+    // 如果销毁的时候，nodes和edges还没有render完毕，那么就不予处理
+    if (this.nodesDOM) {
+      this.nodesDOM.on('click', null);      
+    }
+    if (this.edgesDOM) {
+      this.edgesDOM.on('click', null);      
+    }
   }
 }
