@@ -13,15 +13,13 @@ export default function ContentBox(props: PagePropsType) {
             justifyContent: 'space-between',
             alignItems: 'stretch',
       }}>
-        <div className="line-chart-box" style={{
-          border: '1px solid red',
+        <div className="legend" style={{
           flex: 1,
         }}>
-          
+          legend
         </div>
         <div className="partition-chart-box" style={{
-          border: '1px solid blue',
-          flex: 3,
+          flex: 19,
         }}>
           <Partition/>
         </div>

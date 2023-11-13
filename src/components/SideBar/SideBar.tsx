@@ -1,6 +1,6 @@
 import Sider from 'antd/es/layout/Sider';
 import { Content } from 'antd/es/layout/layout';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { PagePropsType } from '../../type';
 import './SideBar.less';
 import { Button, Input, Select, Space } from 'antd';
@@ -8,14 +8,25 @@ import { GlobalOutlined, ContainerOutlined, CloudServerOutlined } from '@ant-des
 import { useStore } from '../../store/graphStore';
 import { observer } from 'mobx-react-lite';
 import MultiLevelPartitionGraph from '../../graph/MultiLevelPartitionGraph';
+import { autorun } from 'mobx';
+import RoleDistribution from '../RoleDistribution/RoleDistribution';
+import AlarmDistribution from '../AlarmDistribution/AlarmDistribution';
 
 function SideBar(props: PagePropsType) {
-  const {padding, margin, background} = props;
   const store = useStore();
+  const dispose = autorun(() => {
+    // 当curDatesetName改变的时候，更新数据
+    fetch(`/data/${store.curDatasetName}`)
+    .then(res => res.json())
+    .then(newGraphData => {
+      store.updateGraphData(newGraphData);
+    })
+  })
   const options: any[] = store.allDatasetNames.map((data: any) => ({
     value: data.name,
     label: data.name,
   }))
+  const {padding, margin, background} = props;
   const inputIpRef: any = useRef(null);
   const inputPartition1Ref: any = useRef(null);
   const inputPartition2Ref: any = useRef(null);
@@ -56,7 +67,12 @@ function SideBar(props: PagePropsType) {
       },
     });
   }
-
+  // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数
+  useEffect(() => {
+    return () => {
+      dispose();
+    }
+  })
   return <Sider className='side-bar' style={{
       margin: '10px 0px 10px 10px',
     }}>
@@ -84,6 +100,12 @@ function SideBar(props: PagePropsType) {
             <Input addonBefore={<CloudServerOutlined />} placeholder="device ip" ref={inputIpRef}/>
             <Button type="primary" onClick={onSearchIp} >Search</Button>
           </Space.Compact>
+        </div>
+        <div className="distribution" style={{
+          margin: '160px 0',
+        }}>
+          <AlarmDistribution/>
+          <RoleDistribution/>
         </div>
       </Content>
     </Sider>

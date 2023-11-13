@@ -10,6 +10,7 @@
 }
 .select-dataset {
   width: 100%;
+  margin: 0px 0px 40px 0px;
 }
 .select-dataset p {
   width: 100%;
@@ -18,14 +19,16 @@
   text-align: center;
   margin: 10px 0;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: bold;
 }
 .select-dataset .ant-select {
-  height: 40px;
+  height: 50px;
   width: 100%;
 }
-.select-dataset,
 .search-partition,
 .search-ip {
-  margin: 40px 0;
+  margin: 80px 0;
+}
+.distribution {
+  margin: 80px 0;
 }

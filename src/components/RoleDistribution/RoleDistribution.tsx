@@ -1,13 +1,13 @@
+import { observer } from 'mobx-react-lite'
 import React, { useEffect } from 'react'
-import MultiLevelPartitionGraph from '../../graph/MultiLevelPartitionGraph';
-import { StyleCfg } from '../../interface/style';
 import { useStore } from '../../store/graphStore';
 import { reaction } from 'mobx';
-import { observer } from 'mobx-react-lite';
+import RoleDistributionGraph from '../../graph/RoleDistributionGraph';
+import { StyleCfg } from '../../interface/style';
 const graphCfg: StyleCfg = {
   dataName: '10000_processed.json',
-  width: 1876,
-  height: 1081,
+  width: 1620,
+  height: 764,
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
   divBoxSelector: '.partition',
   emphasisName: 'cnt',
@@ -100,34 +100,51 @@ const graphCfg: StyleCfg = {
     }
   }
 }
-function Partition() {
-  // 引入store
-  const store = useStore();  
-  // autorun在初始化时自动运行，以及涉及到的observer值改变的时候也运行effect函数
-  // reaction在初始化时不运行，只有data函数中访问过的observer变更的时候才调用effect函数
+function RoleDistribution() {
+  const store = useStore();
   const dispose = reaction(() => store.graphData,
   (graphData) => {
     if (!store.isCurGraphDataEmpty) {
-      if (store.isCurGraphInstanceEmpty) { // 如果当前没有graph，直接生成
-        store.updateGraphInstance(new MultiLevelPartitionGraph({...graphCfg, dataName: store.datasetName, data: graphData}));
-      } else { // 如果已经有graph，先清空画布，然后重置graph instance，再绘制
-        (store.curGraphInstance as MultiLevelPartitionGraph).destory();
-        store.resetGraphInstance();
-        store.updateGraphInstance(new MultiLevelPartitionGraph({...graphCfg, dataName: store.datasetName, data: graphData}));
+      // 如果当前已经加载过图实例，需要先清空再重新绘制
+      if (!store.isCurRoleDistriGraphInstanceEmpty) {
+        (store.curRoleDistriGraphInstance as RoleDistributionGraph).destory();
+        store.resetRoleDistriGraphInstance();
       }
+      store.updateRoleDistriGraphInstance(new RoleDistributionGraph({
+        ...graphCfg,
+        data: graphData,
+        dataName: store.datasetName,
+        width: 300,
+        height: 250,
+        divBoxSelector: '.role-distribution',
+      }))
     }
   })
-  // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数
   useEffect(() => {
     return () => {
       dispose();
     }
   })
   return (
-    <div className='partition' style={{
+    <div className='role-distribution' style={{
       width: '100%',
-      height: '100%',
-    }}></div>
+      height: '300px',
+      marginTop: '25px'
+    }}>
+      <p style={{
+        textAlign: 'center',
+        fontSize: '18px',
+        fontWeight: 'bold',
+        color: '#000',
+        margin: '5px 0',
+        lineHeight: '30px',
+        height: '30px',
+        width: '100%',
+        backgroundColor: '#fff',
+        borderRadius: '5px',
+        boxShadow: '0px 0px 5px gray'
+      }}>Device Role Distribution</p>
+    </div>
   )
 }
-export default observer(Partition);
+export default observer(RoleDistribution);
