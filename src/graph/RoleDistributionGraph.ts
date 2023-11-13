@@ -1,4 +1,4 @@
-import { arc, pie, scaleOrdinal, schemeDark2, select } from "d3";
+import { arc, easePoly, pie, scaleOrdinal, schemeDark2, select } from "d3";
 import BaseGraph from ".";
 import { group, groupData } from "../interface/partition";
 import { StyleCfg } from "../interface/style";
@@ -115,6 +115,8 @@ this.container
   .data(data_ready)
   .join('text')
     .text((d: any) => d.data[0])
+    // .transition()
+    // .duration(500)
     .attr('transform', function(d: any, i: number) {
         const pos = outerArcGenerator.centroid(d);
         const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
@@ -125,7 +127,7 @@ this.container
         const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
         return (midangle < (Math.PI) || midangle > (2 * Math.PI - 0.1) ? 'start' : 'end')
     })
-    .attr('font-size', 10)
+    .attr('font-size', 11)
     .attr('font-weight', 800)
   }
   // 销毁

@@ -2,6 +2,7 @@ import Layout, { Content } from 'antd/es/layout/layout';
 import React from 'react';
 import { PagePropsType } from '../../type';
 import Partition from '../Partition/Partition';
+import Legend from '../Legend/Legend';
 export default function ContentBox(props: PagePropsType) {
   const {padding, margin, minHeight, background} = props;
   return <Layout className='content-box' style={{ 
@@ -16,7 +17,7 @@ export default function ContentBox(props: PagePropsType) {
         <div className="legend" style={{
           flex: 1,
         }}>
-          legend
+          <Legend/>
         </div>
         <div className="partition-chart-box" style={{
           flex: 19,

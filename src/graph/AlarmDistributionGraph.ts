@@ -45,13 +45,13 @@ class AlarmDistributionGraph extends BaseGraph {
   }
   private calStatistics(): any {
     let statistics: any = {
-      'alarming': 0,
+      'alarm': 0,
       'normal': 0
     };
     for (let i = 0;  i < this.groupList.length;  i++) {
       const curGroup: group = this.groupList[i];
       if (!curGroup.isHyperNode && curGroup.children[0].is_alarming) {
-        statistics.alarming++;
+        statistics.alarm++;
       } else {
         statistics.normal++;
       }
@@ -66,7 +66,7 @@ const radius = Math.min(this._width, this._height) / 2 - 25;
 const color = scaleOrdinal()
   // .domain(Object.keys(this.statistics))
   // .range(schemeDark2);
-  .domain(['normal', 'alarming'])
+  .domain(['normal', 'alarm'])
   .range(['#FA5151', '#6ED798'])
 
 // Compute the position of each group on the pie:
@@ -129,7 +129,7 @@ this.container
         const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
         return (midangle < (Math.PI) || midangle > (2 * Math.PI - 0.1) ? 'start' : 'end')
     })
-    .attr('font-size', 10)
+    .attr('font-size', 14)
     .attr('font-weight', 800)
   }
   // 销毁
