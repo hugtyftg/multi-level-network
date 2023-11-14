@@ -3,7 +3,6 @@
   padding: 0;
 }
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,10 +14,8 @@ code {
   width: 2304px;
   height: 1270px;
   margin: 0 auto;
-  background-color: pink;
 }
-.app,
-.view {
+.app {
   width: 100%;
   height: 100%;
 }

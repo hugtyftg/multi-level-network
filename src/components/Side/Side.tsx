@@ -1,8 +1,5 @@
-import Sider from 'antd/es/layout/Sider';
-import { Content } from 'antd/es/layout/layout';
-import React, { useEffect, useRef } from 'react';
-import { PagePropsType } from '../../type';
-import './SideBar.less';
+import React, { Fragment, useEffect, useRef } from 'react';
+import './Side.less'
 import { Button, Input, Select, Space } from 'antd';
 import { GlobalOutlined, ContainerOutlined, CloudServerOutlined } from '@ant-design/icons'
 import { useStore } from '../../store/graphStore';
@@ -12,11 +9,12 @@ import { autorun } from 'mobx';
 import RoleDistribution from '../RoleDistribution/RoleDistribution';
 import AlarmDistribution from '../AlarmDistribution/AlarmDistribution';
 
-function SideBar(props: PagePropsType) {
+function Side() {
   const store = useStore();
   const dispose = autorun(() => {
     // 当curDatesetName改变的时候，更新数据
-    fetch(`/data/${store.curDatasetName}`)
+    // fetch(`/data/${store.curDatasetName}`)
+    fetch(`${import.meta.env.BASE_URL}data/${store.curDatasetName}`)
     .then(res => res.json())
     .then(newGraphData => {
       store.updateGraphData(newGraphData);
@@ -26,7 +24,6 @@ function SideBar(props: PagePropsType) {
     value: data.name,
     label: data.name,
   }))
-  const {padding, margin, background} = props;
   const inputIpRef: any = useRef(null);
   const inputPartition1Ref: any = useRef(null);
   const inputPartition2Ref: any = useRef(null);
@@ -73,41 +70,40 @@ function SideBar(props: PagePropsType) {
       dispose();
     }
   })
-  return <Sider className='side-bar' style={{
-      margin: '10px 0px 10px 10px',
-    }}>
-      <Content style={{padding, margin, background}}>
-        <div className="select-dataset">
-          <p>Please select dataset:</p>
-          <Select
-            defaultValue={options[0].value}
-            onChange={(value) => onSelectDataset(value)}
-            options={options}
-            menuItemSelectedIcon={<ContainerOutlined/>}
-          />
-        </div>
-        <div className="search-partition">
-          <Space.Compact size="large">
-            <Input addonBefore={<GlobalOutlined />} placeholder="az" style={{
-              width: '150%'
-            }} ref={inputPartition1Ref}/>
-            <Input placeholder="pod" ref={inputPartition2Ref}/>
-            <Button type="primary" onClick={onSearchPartition}>Search</Button>
-          </Space.Compact>
-        </div>
-        <div className="search-ip">
-          <Space.Compact size="large">
-            <Input addonBefore={<CloudServerOutlined />} placeholder="device ip" ref={inputIpRef}/>
-            <Button type="primary" onClick={onSearchIp} >Search</Button>
-          </Space.Compact>
-        </div>
-        <div className="distribution" style={{
-          margin: '160px 0',
+  return <div className="side" style={{
+          width: 350,
+          margin: '0 10px 0 0',
+          padding: 24,
+          backgroundColor: '#fff'
         }}>
-          <AlarmDistribution/>
-          <RoleDistribution/>
-        </div>
-      </Content>
-    </Sider>
+  <div className="select-dataset">
+    <p>Please select dataset:</p>
+    <Select
+      defaultValue={options[0].value}
+      onChange={(value) => onSelectDataset(value)}
+      options={options}
+      menuItemSelectedIcon={<ContainerOutlined/>}
+    />
+  </div>
+  <div className="search-partition">
+    <Space.Compact size="large">
+      <Input addonBefore={<GlobalOutlined />} placeholder="az" style={{
+        width: '150%'
+      }} ref={inputPartition1Ref}/>
+      <Input placeholder="pod" ref={inputPartition2Ref}/>
+      <Button type="primary" onClick={onSearchPartition}>Search</Button>
+    </Space.Compact>
+  </div>
+  <div className="search-ip">
+    <Space.Compact size="large">
+      <Input addonBefore={<CloudServerOutlined />} placeholder="device ip" ref={inputIpRef}/>
+      <Button type="primary" onClick={onSearchIp} >Search</Button>
+    </Space.Compact>
+  </div>
+  <div className="distribution">
+    <AlarmDistribution/>
+    <RoleDistribution/>
+  </div>
+</div>
 }
-export default observer(SideBar);
+export default observer(Side);

@@ -4,7 +4,7 @@ import MultiLevelPartitionGraph from '../graph/MultiLevelPartitionGraph';
 const datasetRangeList = ['10000', '20000', '6000', '2500', '1500', '500'];
 class Store {
   // 画布分割图实例
-  graphInstance: MultiLevelPartitionGraph | {} = {};
+  graphInstance: MultiLevelPartitionGraph | any = {};
   // roleDistribution图实例
   roleDistriGraphInstance: any = {};
   // alarming distribution graph instance

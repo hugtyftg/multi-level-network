@@ -1,8 +1,8 @@
-import Title from "./Title/Title";
-import SideBar from "./SideBar/SideBar";
-import ContentBox from "./ContentBox/ContentBox";
+import Content from "./Content/Content";
+import Header from "./Header/Header";
+import Side from "./Side/Side";
 export {
-  Title,
-  SideBar,
-  ContentBox,
+  Content,
+  Header,
+  Side
 }

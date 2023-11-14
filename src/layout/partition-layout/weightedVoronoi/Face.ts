@@ -36,11 +36,11 @@ export class Face {
       this.faceDualPoint = plane3d.getDualPointMappedToPlane();
     }
     return this.faceDualPoint;
-  };
+  }
   // 是否可以从下面看到该点（判断是否是下凸包面）
   isVisibleFromBelow() {
     return this.normalVector.z < -1.4259414393190911e-9;
-  };
+  }
   createEdges() {
     this.edgesList = [];
     this.edgesList[0] = new HEdge(this.verts[0], this.verts[1], this);
@@ -52,7 +52,7 @@ export class Face {
     this.edgesList[1].prev = this.edgesList[0];
     this.edgesList[2].next = this.edgesList[0];
     this.edgesList[2].prev = this.edgesList[1];
-  };
+  }
   // vertex的方向
   orient(orient: any) {
     if (!(dot(this.normalVector, orient) < dot(this.normalVector, this.verts[0]))) {
@@ -62,7 +62,7 @@ export class Face {
       this.normalVector.negate();
       this.createEdges();
     }
-  };
+  }
   // 点vertex0和vertex1的连边
   getEdge (vertex0: any, vertex1: any) {
     for (let i = 0; i < 3; i++) {
@@ -71,7 +71,7 @@ export class Face {
       }
     }
     return null;
-  };
+  }
   // 将点vertex0和vertex1与面face相连
   link (face?: any, vertex0?: any, vertex1?: any) {
     if (face instanceof Face) {
@@ -91,11 +91,11 @@ export class Face {
       twin.twin = linkingEdge;
       linkingEdge.twin = twin;
     }
-  };
+  }
   // 通过点积计算交点
   conflict (v: any) {
     return dot(this.normalVector, v) > dot(this.normalVector, this.verts[0]) + epsilon;
-  };
+  }
   // 计算平行边
   getHorizon  () {
     let twinExist: boolean, twinHorizon: boolean;
@@ -109,12 +109,12 @@ export class Face {
       }
     }
     return null;
-  };
+  }
   // 清除交点
   removeConflict () {
     this.isEmpty = true;
     this.conflicts.removeAll();
-  };
+  }
 }
 
 

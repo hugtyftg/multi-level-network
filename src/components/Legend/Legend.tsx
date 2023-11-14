@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { getAssetsImgUrl } from '../../utils/fileAccessor';
 const iconNameList = ['CORE', 'SPINE', 'LEAF', 'SERVER', 'VIRTUAL', 'hyperNode']
 export default function Legend() {
   return (
@@ -20,7 +21,8 @@ export default function Legend() {
           fontSize: 16,
           fontWeight: 'bold'
         }}>
-          <img src={`/icon/normal-${name}.svg`} alt={name} style={{
+          {/* `../../assets/icon/normal-${name}.svg` */}
+          <img src={getAssetsImgUrl(`normal-${name}`)} alt={name} style={{
             width: 30,
             height: 30,
             marginRight: 10

@@ -1,9 +1,9 @@
 import React from 'react';
-import View1 from './views/view1';
+import View from './views/view';
 const App: React.FC = () => {
   return (
     <div className="app">
-      <View1/>
+      <View/>
     </div>
   );
 };

@@ -26,7 +26,7 @@ export class ConvexHull {
       this.vertexList[i] = new Vertex(sitesCoordinates[i].x, sitesCoordinates[i].y, sitesCoordinates[i].z, null, sitesCoordinates[i], false);
     }
     this.vertexList = this.vertexList.concat(boundSitesCoordinates);
-  };
+  }
   permutate() {
     let pointSize = this.vertexList.length;
     for (let i = pointSize - 1; i > 0; i--) {
@@ -39,7 +39,7 @@ export class ConvexHull {
       this.vertexList.splice(randomIndex, 1, currentItem);
       this.vertexList.splice(i, 1, tempVertex);
     }
-  };
+  }
   prep() {
     if (this.vertexList.length <= 3) {
       throw new WeightedVoronoiError('少于四个节点');
@@ -160,7 +160,7 @@ export class ConvexHull {
     let conflictNode = new ConflictListNode(face, vert);
     face.conflicts.add(conflictNode);
     vert.conflicts.add(conflictNode);
-  };
+  }
   // 清空交点
   removeConflict(face: any) {
     face.removeConflict();
@@ -174,11 +174,11 @@ export class ConvexHull {
     let lastFace = this.facetsList.splice(this.facetsList.length - 1, 1);
     lastFace[0].index = index;
     this.facetsList.splice(index, 1, lastFace[0]);
-  };
+  }
   addFacet(face: any) {
     face.index = this.facetsList.length;
     this.facetsList.push(face);
-  };
+  }
   compute() {
     this.prep();
     while (this.cur < this.vertexList.length) {
@@ -231,7 +231,7 @@ export class ConvexHull {
       }
     }
     return this.facetsList;
-  };
+  }
   clear() {
     this.vertexList = [];
     this.facetsList = [];
@@ -239,7 +239,7 @@ export class ConvexHull {
     this.horizonal = [];
     this.evident = [];
     this.cur = 0;
-  };
+  }
   
 }
 

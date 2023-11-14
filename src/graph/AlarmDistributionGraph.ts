@@ -44,7 +44,7 @@ class AlarmDistributionGraph extends BaseGraph {
       .attr("transform", `translate(${this._width/2},${this._height/2})`);
   }
   private calStatistics(): any {
-    let statistics: any = {
+    const statistics: any = {
       'alarm': 0,
       'normal': 0
     };

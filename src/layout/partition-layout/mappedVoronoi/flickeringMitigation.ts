@@ -26,13 +26,13 @@ export class FlickeringMitigation {
     this.allAvailableArea = NaN;
   
     return this;
-  };
+  }
   clear() {
     this.lastErrorOfArea = NaN;
     this.lastGrowth = NaN;
     this.growthRatioChange = [];
     return this;
-  };
+  }
   length(newLength?: any) {
     if (!newLength) { 
       return this.growthRatioChangeLength; 
@@ -45,7 +45,7 @@ export class FlickeringMitigation {
       console.warn("FlickeringMitigation.length() 只接受正整数 "+newLength);
     }
     return this;
-  };
+  }
   totalArea(newAllAbailbaleArea?: any) {
     if (!newAllAbailbaleArea) { 
       return this.allAvailableArea; 
@@ -57,7 +57,7 @@ export class FlickeringMitigation {
       console.warn("FlickeringMitigation.totalArea() 只接受正数 "+newAllAbailbaleArea);
     }
     return this;
-  };
+  }
   add(areaError: any) {
     let secondTolastErrorOfArea: any, fromSecToLastGrowth: any;
   
@@ -75,7 +75,7 @@ export class FlickeringMitigation {
       this.growthRatioChange.pop();
     }
     return this;
-  };
+  }
   ratio() {
     let weightedChangeNum = 0;
     let newRatio: number;
@@ -91,7 +91,7 @@ export class FlickeringMitigation {
     newRatio = weightedChangeNum / this.growthChangeWeightsSum;
   
     return newRatio;
-  };
+  }
 }
 
 let DEFAULT_LENGTH = 10;

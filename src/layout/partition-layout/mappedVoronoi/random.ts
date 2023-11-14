@@ -31,7 +31,7 @@ export default function random () {
       yCoordinate = minYCoordinate + deltaY * voronoiMapSimulation.prng()();
     }
     return [xCoordinate, yCoordinate];
-  };
+  }
 
   function updateInternals() {
     minXCoordinate = clippingExtent[0][0];
@@ -40,7 +40,7 @@ export default function random () {
     maxYCoordinate = clippingExtent[1][1];
     deltaX = maxXCoordinate - minXCoordinate;
     deltaY = maxYCoordinate - minYCoordinate;
-  };
+  }
 
   return randomGenerator;
-};
+}

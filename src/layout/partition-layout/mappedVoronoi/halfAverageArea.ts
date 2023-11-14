@@ -25,7 +25,7 @@ export default function halfAverageAreaGenerator () {
       updateInternals();
     }
     return halfAverageAreaValue;
-  };
+  }
 
   function updateInternals() {
     siteNum = dataList.length;
@@ -34,4 +34,4 @@ export default function halfAverageAreaGenerator () {
   }
 
   return halfAverageAreaGenerator;
-};
+}

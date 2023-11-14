@@ -31,7 +31,7 @@ export default function pie () {
       clippingPolygonCentroidPos[0] + Math.cos(startAngle + i * angleBetweenData) * curHalfIncircleRadius + (voronoiMapSimulation.prng()() - 0.5) * 1E-3,
       clippingPolygonCentroidPos[1] + Math.sin(startAngle + i * angleBetweenData) * curHalfIncircleRadius + (voronoiMapSimulation.prng()() - 0.5) * 1E-3
     ];
-  };
+  }
 
   pieGenerator.startAngle = (newStartAngle: any) => {
     if (!newStartAngle) {
@@ -46,7 +46,7 @@ export default function pie () {
     curHalfIncircleRadius = computeMinDistFromEdges(clippingPolygonCentroidPos, clippingPolygon) / 2;
     dataListLength = dataList.length;
     angleBetweenData = 2 * Math.PI / dataListLength;
-  };
+  }
 
   function computeMinDistFromEdges(vertex: any, clippingPolygon: any) {
     let minDistanceFromEdges = Infinity,

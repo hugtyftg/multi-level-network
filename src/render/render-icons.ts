@@ -1,5 +1,6 @@
 import { select } from "d3";
 import { StyleCfg } from "../interface/style";
+import { getAssetsImgUrl } from "../utils/fileAccessor";
 const renderIcons = (container: any, cfgs: StyleCfg, iconTypeList: string[]) => {
   // 设置节点的icon defs元素，方便节点直接使用
   let iconDefs: any; // 节点icon声明元素
@@ -19,7 +20,8 @@ const renderIcons = (container: any, cfgs: StyleCfg, iconTypeList: string[]) => 
       .attr('width', 1)
       .attr('height', 1);
     iconPattern.append('image')
-      .attr('href', `/icon/${iconType}.svg`) // 图标svg
+      // .attr('href', `../../assets/icon/${iconType}.svg`) // 图标svg
+      .attr('href', getAssetsImgUrl(iconType))
       .attr('preserveAspectRatio', 'none') // 放缩比，填充整个circle
       .attr('width', cfgs.nodeStyle.normal.radius as number * 1.4)
       .attr('height', cfgs.nodeStyle.normal.radius as number * 1.4)

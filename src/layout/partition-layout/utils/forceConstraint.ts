@@ -6,7 +6,7 @@
  * @param borderPadding 默认粒子群和circle constraint bound的padding
  * @returns 获取约束位置的ticker
  */
-function forceConstraintAccessor(constraintCircleCx: number, constraintCircleCy: number, constraintRadius: number, borderPadding: number): Function {
+function forceConstraintAccessor(constraintCircleCx: number, constraintCircleCy: number, constraintRadius: number, borderPadding: number): any{
   const radius = constraintRadius;
   const circleCx = constraintCircleCx;
   const circleCy = constraintCircleCy;

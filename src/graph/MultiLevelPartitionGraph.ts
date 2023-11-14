@@ -91,7 +91,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       // 计算层级化数据的权重
       this.weightedHierarchicalData = hierarchy(hierarchicalData)
         // 均衡较小的权重、给强调中心化显示的区域增加权重
-        .sum(d => d.hasOwnProperty('num') ? 
+        .sum(d => Object.hasOwnProperty.call(d, 'num') ? 
           (d.num < 3 || d.name === this.cfgs.emphasisName) ?
              d.num + 1: d.num : 0
         )
