@@ -9,7 +9,7 @@
         {
           "index": 0,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -20,7 +20,7 @@
         {
           "index": 2,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -31,7 +31,7 @@
         {
           "index": 4,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -42,7 +42,7 @@
         {
           "index": 5,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -53,7 +53,7 @@
         {
           "index": 7,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -64,7 +64,7 @@
         {
           "index": 9,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -75,7 +75,7 @@
         {
           "index": 10,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -86,7 +86,7 @@
         {
           "index": 13,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -97,7 +97,7 @@
         {
           "index": 14,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -108,7 +108,7 @@
         {
           "index": 15,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -119,7 +119,7 @@
         {
           "index": 16,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -130,7 +130,7 @@
         {
           "index": 17,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -141,7 +141,7 @@
         {
           "index": 19,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -152,7 +152,7 @@
         {
           "index": 20,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -163,7 +163,7 @@
         {
           "index": 21,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -174,7 +174,7 @@
         {
           "index": 22,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -185,7 +185,7 @@
         {
           "index": 23,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -196,7 +196,7 @@
         {
           "index": 24,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -207,7 +207,7 @@
         {
           "index": 25,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -218,7 +218,7 @@
         {
           "index": 26,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -229,7 +229,7 @@
         {
           "index": 27,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -240,7 +240,7 @@
         {
           "index": 28,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -251,7 +251,7 @@
         {
           "index": 29,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -262,7 +262,7 @@
         {
           "index": 31,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -273,7 +273,7 @@
         {
           "index": 32,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -284,7 +284,7 @@
         {
           "index": 34,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -295,7 +295,7 @@
         {
           "index": 36,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -306,7 +306,7 @@
         {
           "index": 38,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -317,7 +317,7 @@
         {
           "index": 39,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -328,7 +328,7 @@
         {
           "index": 40,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -339,7 +339,7 @@
         {
           "index": 42,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -350,7 +350,7 @@
         {
           "index": 43,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -361,7 +361,7 @@
         {
           "index": 44,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -372,7 +372,7 @@
         {
           "index": 45,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -383,7 +383,7 @@
         {
           "index": 46,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -394,7 +394,7 @@
         {
           "index": 47,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -405,7 +405,7 @@
         {
           "index": 48,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -416,7 +416,7 @@
         {
           "index": 49,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -427,7 +427,7 @@
         {
           "index": 51,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -438,7 +438,7 @@
         {
           "index": 52,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -449,7 +449,7 @@
         {
           "index": 53,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -460,7 +460,7 @@
         {
           "index": 54,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -471,7 +471,7 @@
         {
           "index": 55,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -482,7 +482,7 @@
         {
           "index": 56,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -493,7 +493,7 @@
         {
           "index": 57,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -504,7 +504,7 @@
         {
           "index": 58,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -515,7 +515,7 @@
         {
           "index": 59,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -526,7 +526,7 @@
         {
           "index": 60,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -537,7 +537,7 @@
         {
           "index": 61,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -548,7 +548,7 @@
         {
           "index": 62,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -559,7 +559,7 @@
         {
           "index": 63,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -570,7 +570,7 @@
         {
           "index": 64,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -581,7 +581,7 @@
         {
           "index": 65,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -592,7 +592,7 @@
         {
           "index": 66,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -603,7 +603,7 @@
         {
           "index": 67,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -614,7 +614,7 @@
         {
           "index": 68,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -625,7 +625,7 @@
         {
           "index": 69,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -636,7 +636,7 @@
         {
           "index": 70,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -647,7 +647,7 @@
         {
           "index": 71,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -658,7 +658,7 @@
         {
           "index": 72,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -669,7 +669,7 @@
         {
           "index": 73,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -680,7 +680,7 @@
         {
           "index": 74,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -691,7 +691,7 @@
         {
           "index": 75,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -702,7 +702,7 @@
         {
           "index": 76,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -713,7 +713,7 @@
         {
           "index": 77,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -724,7 +724,7 @@
         {
           "index": 78,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -735,7 +735,7 @@
         {
           "index": 79,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -746,7 +746,7 @@
         {
           "index": 80,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -757,7 +757,7 @@
         {
           "index": 81,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -768,7 +768,7 @@
         {
           "index": 82,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -779,7 +779,7 @@
         {
           "index": 83,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -790,7 +790,7 @@
         {
           "index": 84,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -801,7 +801,7 @@
         {
           "index": 85,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -812,7 +812,7 @@
         {
           "index": 86,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -823,7 +823,7 @@
         {
           "index": 88,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -834,7 +834,7 @@
         {
           "index": 89,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -845,7 +845,7 @@
         {
           "index": 91,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -856,7 +856,7 @@
         {
           "index": 93,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -867,7 +867,7 @@
         {
           "index": 94,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -878,7 +878,7 @@
         {
           "index": 96,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -889,7 +889,7 @@
         {
           "index": 98,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -900,7 +900,7 @@
         {
           "index": 99,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -911,7 +911,7 @@
         {
           "index": 100,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -922,7 +922,7 @@
         {
           "index": 101,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -933,7 +933,7 @@
         {
           "index": 103,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -944,7 +944,7 @@
         {
           "index": 104,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -955,7 +955,7 @@
         {
           "index": 106,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -966,7 +966,7 @@
         {
           "index": 107,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -977,7 +977,7 @@
         {
           "index": 108,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -988,7 +988,7 @@
         {
           "index": 109,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -999,7 +999,7 @@
         {
           "index": 110,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1010,7 +1010,7 @@
         {
           "index": 111,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1021,7 +1021,7 @@
         {
           "index": 112,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1032,7 +1032,7 @@
         {
           "index": 113,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1043,7 +1043,7 @@
         {
           "index": 115,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1054,7 +1054,7 @@
         {
           "index": 116,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1065,7 +1065,7 @@
         {
           "index": 117,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1076,7 +1076,7 @@
         {
           "index": 119,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1087,7 +1087,7 @@
         {
           "index": 120,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1098,7 +1098,7 @@
         {
           "index": 121,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1109,7 +1109,7 @@
         {
           "index": 123,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1120,7 +1120,7 @@
         {
           "index": 126,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1131,7 +1131,7 @@
         {
           "index": 127,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1142,7 +1142,7 @@
         {
           "index": 128,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1153,7 +1153,7 @@
         {
           "index": 129,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1164,7 +1164,7 @@
         {
           "index": 130,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1175,7 +1175,7 @@
         {
           "index": 131,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1186,7 +1186,7 @@
         {
           "index": 132,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1197,7 +1197,7 @@
         {
           "index": 133,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1208,7 +1208,7 @@
         {
           "index": 134,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1219,7 +1219,7 @@
         {
           "index": 135,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1230,7 +1230,7 @@
         {
           "index": 136,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1241,7 +1241,7 @@
         {
           "index": 137,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1252,7 +1252,7 @@
         {
           "index": 138,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1263,7 +1263,7 @@
         {
           "index": 139,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1274,7 +1274,7 @@
         {
           "index": 140,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1285,7 +1285,7 @@
         {
           "index": 141,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1296,7 +1296,7 @@
         {
           "index": 142,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1307,7 +1307,7 @@
         {
           "index": 143,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1318,7 +1318,7 @@
         {
           "index": 144,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1329,7 +1329,7 @@
         {
           "index": 145,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1340,7 +1340,7 @@
         {
           "index": 146,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1351,7 +1351,7 @@
         {
           "index": 147,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1362,7 +1362,7 @@
         {
           "index": 148,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1373,7 +1373,7 @@
         {
           "index": 149,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1384,7 +1384,7 @@
         {
           "index": 150,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1395,7 +1395,7 @@
         {
           "index": 151,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1406,7 +1406,7 @@
         {
           "index": 152,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1417,7 +1417,7 @@
         {
           "index": 153,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1428,7 +1428,7 @@
         {
           "index": 154,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1439,7 +1439,7 @@
         {
           "index": 155,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1450,7 +1450,7 @@
         {
           "index": 156,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1461,7 +1461,7 @@
         {
           "index": 157,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1472,7 +1472,7 @@
         {
           "index": 158,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1483,7 +1483,7 @@
         {
           "index": 160,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1494,7 +1494,7 @@
         {
           "index": 161,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1505,7 +1505,7 @@
         {
           "index": 163,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1516,7 +1516,7 @@
         {
           "index": 165,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1527,7 +1527,7 @@
         {
           "index": 166,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1538,7 +1538,7 @@
         {
           "index": 167,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1549,7 +1549,7 @@
         {
           "index": 168,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1560,7 +1560,7 @@
         {
           "index": 169,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1571,7 +1571,7 @@
         {
           "index": 170,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1582,7 +1582,7 @@
         {
           "index": 171,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1593,7 +1593,7 @@
         {
           "index": 172,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1604,7 +1604,7 @@
         {
           "index": 173,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1615,7 +1615,7 @@
         {
           "index": 174,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1626,7 +1626,7 @@
         {
           "index": 175,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1637,7 +1637,7 @@
         {
           "index": 176,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1648,7 +1648,7 @@
         {
           "index": 177,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1659,7 +1659,7 @@
         {
           "index": 178,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1670,7 +1670,7 @@
         {
           "index": 179,
           "groupIndex": 0,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1689,7 +1689,7 @@
         {
           "index": 87,
           "groupIndex": 1,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1708,7 +1708,7 @@
         {
           "index": 356,
           "groupIndex": 2,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "路由器",
           "role": "CORE",
@@ -1727,7 +1727,7 @@
         {
           "index": 11,
           "groupIndex": 3,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1746,7 +1746,7 @@
         {
           "index": 50,
           "groupIndex": 4,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -1765,7 +1765,7 @@
         {
           "index": 180,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "SPINE",
@@ -1776,7 +1776,7 @@
         {
           "index": 181,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "SPINE",
@@ -1787,7 +1787,7 @@
         {
           "index": 182,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "SPINE",
@@ -1798,7 +1798,7 @@
         {
           "index": 183,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1809,7 +1809,7 @@
         {
           "index": 184,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1820,7 +1820,7 @@
         {
           "index": 185,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1831,7 +1831,7 @@
         {
           "index": 186,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1842,7 +1842,7 @@
         {
           "index": 187,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1853,7 +1853,7 @@
         {
           "index": 188,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1864,7 +1864,7 @@
         {
           "index": 189,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1875,7 +1875,7 @@
         {
           "index": 190,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1886,7 +1886,7 @@
         {
           "index": 191,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1897,7 +1897,7 @@
         {
           "index": 192,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1908,7 +1908,7 @@
         {
           "index": 193,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1919,7 +1919,7 @@
         {
           "index": 194,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1930,7 +1930,7 @@
         {
           "index": 195,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1941,7 +1941,7 @@
         {
           "index": 196,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1952,7 +1952,7 @@
         {
           "index": 197,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1963,7 +1963,7 @@
         {
           "index": 198,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1974,7 +1974,7 @@
         {
           "index": 199,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1985,7 +1985,7 @@
         {
           "index": 200,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -1996,7 +1996,7 @@
         {
           "index": 201,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2007,7 +2007,7 @@
         {
           "index": 202,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2018,7 +2018,7 @@
         {
           "index": 203,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2029,7 +2029,7 @@
         {
           "index": 204,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2040,7 +2040,7 @@
         {
           "index": 205,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2051,7 +2051,7 @@
         {
           "index": 206,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2062,7 +2062,7 @@
         {
           "index": 207,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2073,7 +2073,7 @@
         {
           "index": 208,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2084,7 +2084,7 @@
         {
           "index": 209,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2095,7 +2095,7 @@
         {
           "index": 210,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2106,7 +2106,7 @@
         {
           "index": 211,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2117,7 +2117,7 @@
         {
           "index": 212,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2128,7 +2128,7 @@
         {
           "index": 213,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2139,7 +2139,7 @@
         {
           "index": 214,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2150,7 +2150,7 @@
         {
           "index": 215,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2161,7 +2161,7 @@
         {
           "index": 216,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2172,7 +2172,7 @@
         {
           "index": 217,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2183,7 +2183,7 @@
         {
           "index": 218,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2194,7 +2194,7 @@
         {
           "index": 219,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2205,7 +2205,7 @@
         {
           "index": 220,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2216,7 +2216,7 @@
         {
           "index": 221,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2227,7 +2227,7 @@
         {
           "index": 222,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2238,7 +2238,7 @@
         {
           "index": 223,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2249,7 +2249,7 @@
         {
           "index": 224,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2260,7 +2260,7 @@
         {
           "index": 225,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2271,7 +2271,7 @@
         {
           "index": 226,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2282,7 +2282,7 @@
         {
           "index": 227,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2293,7 +2293,7 @@
         {
           "index": 228,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2304,7 +2304,7 @@
         {
           "index": 229,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2315,7 +2315,7 @@
         {
           "index": 230,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2326,7 +2326,7 @@
         {
           "index": 231,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2337,7 +2337,7 @@
         {
           "index": 232,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2348,7 +2348,7 @@
         {
           "index": 233,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2359,7 +2359,7 @@
         {
           "index": 234,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2370,7 +2370,7 @@
         {
           "index": 235,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2381,7 +2381,7 @@
         {
           "index": 236,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2392,7 +2392,7 @@
         {
           "index": 237,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2403,7 +2403,7 @@
         {
           "index": 238,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2414,7 +2414,7 @@
         {
           "index": 239,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2425,7 +2425,7 @@
         {
           "index": 240,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2436,7 +2436,7 @@
         {
           "index": 241,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2447,7 +2447,7 @@
         {
           "index": 242,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2458,7 +2458,7 @@
         {
           "index": 243,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2469,7 +2469,7 @@
         {
           "index": 244,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2480,7 +2480,7 @@
         {
           "index": 245,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "交换机",
           "role": "LEAF",
@@ -2491,7 +2491,7 @@
         {
           "index": 263,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "L2GW",
           "role": "VIRTUAL",
@@ -2502,7 +2502,7 @@
         {
           "index": 264,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "L2GW",
           "role": "VIRTUAL",
@@ -2513,7 +2513,7 @@
         {
           "index": 265,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "L2GW",
           "role": "VIRTUAL",
@@ -2524,7 +2524,7 @@
         {
           "index": 266,
           "groupIndex": 5,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "pod20",
           "type": "L2GW",
           "role": "VIRTUAL",
@@ -2543,7 +2543,7 @@
         {
           "index": 246,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "路由器",
           "role": "CORE",
@@ -2554,7 +2554,7 @@
         {
           "index": 247,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "路由器",
           "role": "CORE",
@@ -2565,7 +2565,7 @@
         {
           "index": 249,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2576,7 +2576,7 @@
         {
           "index": 250,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2587,7 +2587,7 @@
         {
           "index": 251,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2598,7 +2598,7 @@
         {
           "index": 253,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2609,7 +2609,7 @@
         {
           "index": 254,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2620,7 +2620,7 @@
         {
           "index": 255,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2631,7 +2631,7 @@
         {
           "index": 256,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2642,7 +2642,7 @@
         {
           "index": 257,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2653,7 +2653,7 @@
         {
           "index": 258,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "SPINE",
@@ -2664,7 +2664,7 @@
         {
           "index": 259,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -2675,7 +2675,7 @@
         {
           "index": 260,
           "groupIndex": 6,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -2694,7 +2694,7 @@
         {
           "index": 272,
           "groupIndex": 7,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -2713,7 +2713,7 @@
         {
           "index": 369,
           "groupIndex": 8,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -2732,7 +2732,7 @@
         {
           "index": 280,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2743,7 +2743,7 @@
         {
           "index": 281,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2754,7 +2754,7 @@
         {
           "index": 282,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2765,7 +2765,7 @@
         {
           "index": 283,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2776,7 +2776,7 @@
         {
           "index": 284,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2787,7 +2787,7 @@
         {
           "index": 285,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2798,7 +2798,7 @@
         {
           "index": 288,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2809,7 +2809,7 @@
         {
           "index": 290,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2820,7 +2820,7 @@
         {
           "index": 292,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2831,7 +2831,7 @@
         {
           "index": 294,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2842,7 +2842,7 @@
         {
           "index": 295,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2853,7 +2853,7 @@
         {
           "index": 299,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2864,7 +2864,7 @@
         {
           "index": 301,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2875,7 +2875,7 @@
         {
           "index": 302,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2886,7 +2886,7 @@
         {
           "index": 303,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2897,7 +2897,7 @@
         {
           "index": 306,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2908,7 +2908,7 @@
         {
           "index": 311,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2919,7 +2919,7 @@
         {
           "index": 313,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2930,7 +2930,7 @@
         {
           "index": 315,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2941,7 +2941,7 @@
         {
           "index": 321,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2952,7 +2952,7 @@
         {
           "index": 323,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2963,7 +2963,7 @@
         {
           "index": 325,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2974,7 +2974,7 @@
         {
           "index": 329,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2985,7 +2985,7 @@
         {
           "index": 330,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -2996,7 +2996,7 @@
         {
           "index": 331,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3007,7 +3007,7 @@
         {
           "index": 333,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3018,7 +3018,7 @@
         {
           "index": 338,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3029,7 +3029,7 @@
         {
           "index": 339,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3040,7 +3040,7 @@
         {
           "index": 340,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3051,7 +3051,7 @@
         {
           "index": 341,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3062,7 +3062,7 @@
         {
           "index": 345,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3073,7 +3073,7 @@
         {
           "index": 346,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3084,7 +3084,7 @@
         {
           "index": 347,
           "groupIndex": 9,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3103,7 +3103,7 @@
         {
           "index": 293,
           "groupIndex": 10,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3122,7 +3122,7 @@
         {
           "index": 450,
           "groupIndex": 11,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3141,7 +3141,7 @@
         {
           "index": 389,
           "groupIndex": 12,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -3152,7 +3152,7 @@
         {
           "index": 390,
           "groupIndex": 12,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -3171,7 +3171,7 @@
         {
           "index": 391,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3182,7 +3182,7 @@
         {
           "index": 392,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3193,7 +3193,7 @@
         {
           "index": 393,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3204,7 +3204,7 @@
         {
           "index": 396,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3215,7 +3215,7 @@
         {
           "index": 398,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3226,7 +3226,7 @@
         {
           "index": 400,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3237,7 +3237,7 @@
         {
           "index": 402,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3248,7 +3248,7 @@
         {
           "index": 404,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3259,7 +3259,7 @@
         {
           "index": 407,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3270,7 +3270,7 @@
         {
           "index": 408,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3281,7 +3281,7 @@
         {
           "index": 412,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3292,7 +3292,7 @@
         {
           "index": 414,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3303,7 +3303,7 @@
         {
           "index": 415,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3314,7 +3314,7 @@
         {
           "index": 416,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3325,7 +3325,7 @@
         {
           "index": 417,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3336,7 +3336,7 @@
         {
           "index": 419,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3347,7 +3347,7 @@
         {
           "index": 420,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3358,7 +3358,7 @@
         {
           "index": 421,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3369,7 +3369,7 @@
         {
           "index": 423,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3380,7 +3380,7 @@
         {
           "index": 424,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3391,7 +3391,7 @@
         {
           "index": 425,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3402,7 +3402,7 @@
         {
           "index": 433,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3413,7 +3413,7 @@
         {
           "index": 434,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3424,7 +3424,7 @@
         {
           "index": 436,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3435,7 +3435,7 @@
         {
           "index": 437,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3446,7 +3446,7 @@
         {
           "index": 441,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3457,7 +3457,7 @@
         {
           "index": 443,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3468,7 +3468,7 @@
         {
           "index": 447,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3479,7 +3479,7 @@
         {
           "index": 448,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3490,7 +3490,7 @@
         {
           "index": 454,
           "groupIndex": 13,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3509,7 +3509,7 @@
         {
           "index": 469,
           "groupIndex": 14,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3528,7 +3528,7 @@
         {
           "index": 468,
           "groupIndex": 15,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3539,7 +3539,7 @@
         {
           "index": 470,
           "groupIndex": 15,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3550,7 +3550,7 @@
         {
           "index": 472,
           "groupIndex": 15,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3561,7 +3561,7 @@
         {
           "index": 475,
           "groupIndex": 15,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3572,7 +3572,7 @@
         {
           "index": 486,
           "groupIndex": 15,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3583,7 +3583,7 @@
         {
           "index": 488,
           "groupIndex": 15,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3594,7 +3594,7 @@
         {
           "index": 492,
           "groupIndex": 15,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3613,7 +3613,7 @@
         {
           "index": 481,
           "groupIndex": 16,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3632,7 +3632,7 @@
         {
           "index": 1,
           "groupIndex": 17,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -3643,7 +3643,7 @@
         {
           "index": 3,
           "groupIndex": 17,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -3662,7 +3662,7 @@
         {
           "index": 12,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3673,7 +3673,7 @@
         {
           "index": 118,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3684,7 +3684,7 @@
         {
           "index": 102,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3695,7 +3695,7 @@
         {
           "index": 18,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3706,7 +3706,7 @@
         {
           "index": 159,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3717,7 +3717,7 @@
         {
           "index": 162,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3728,7 +3728,7 @@
         {
           "index": 97,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3739,7 +3739,7 @@
         {
           "index": 92,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3750,7 +3750,7 @@
         {
           "index": 90,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3761,7 +3761,7 @@
         {
           "index": 95,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3772,7 +3772,7 @@
         {
           "index": 122,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3783,7 +3783,7 @@
         {
           "index": 41,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3794,7 +3794,7 @@
         {
           "index": 114,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3805,7 +3805,7 @@
         {
           "index": 33,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3816,7 +3816,7 @@
         {
           "index": 35,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3827,7 +3827,7 @@
         {
           "index": 37,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3838,7 +3838,7 @@
         {
           "index": 30,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3849,7 +3849,7 @@
         {
           "index": 105,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3860,7 +3860,7 @@
         {
           "index": 125,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3871,7 +3871,7 @@
         {
           "index": 124,
           "groupIndex": 18,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -3890,7 +3890,7 @@
         {
           "index": 6,
           "groupIndex": 19,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -3901,7 +3901,7 @@
         {
           "index": 8,
           "groupIndex": 19,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -3920,7 +3920,7 @@
         {
           "index": 267,
           "groupIndex": 20,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -3931,7 +3931,7 @@
         {
           "index": 271,
           "groupIndex": 20,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -3950,7 +3950,7 @@
         {
           "index": 270,
           "groupIndex": 21,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -3961,7 +3961,7 @@
         {
           "index": 269,
           "groupIndex": 21,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -3980,7 +3980,7 @@
         {
           "index": 261,
           "groupIndex": 22,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -3999,7 +3999,7 @@
         {
           "index": 262,
           "groupIndex": 23,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -4018,7 +4018,7 @@
         {
           "index": 277,
           "groupIndex": 24,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -4029,7 +4029,7 @@
         {
           "index": 278,
           "groupIndex": 24,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -4040,7 +4040,7 @@
         {
           "index": 276,
           "groupIndex": 24,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -4051,7 +4051,7 @@
         {
           "index": 275,
           "groupIndex": 24,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "防火墙",
           "role": "SPINE",
@@ -4070,7 +4070,7 @@
         {
           "index": 252,
           "groupIndex": 25,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4081,7 +4081,7 @@
         {
           "index": 248,
           "groupIndex": 25,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4100,7 +4100,7 @@
         {
           "index": 366,
           "groupIndex": 26,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4119,7 +4119,7 @@
         {
           "index": 364,
           "groupIndex": 27,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4138,7 +4138,7 @@
         {
           "index": 355,
           "groupIndex": 28,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "路由器",
           "role": "CORE",
@@ -4157,7 +4157,7 @@
         {
           "index": 440,
           "groupIndex": 29,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4176,7 +4176,7 @@
         {
           "index": 164,
           "groupIndex": 30,
-          "az": "可用区1",
+          "az": "AZ1",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4195,7 +4195,7 @@
         {
           "index": 353,
           "groupIndex": 31,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4206,7 +4206,7 @@
         {
           "index": 314,
           "groupIndex": 31,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4217,7 +4217,7 @@
         {
           "index": 310,
           "groupIndex": 31,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4228,7 +4228,7 @@
         {
           "index": 350,
           "groupIndex": 31,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4239,7 +4239,7 @@
         {
           "index": 335,
           "groupIndex": 31,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4258,7 +4258,7 @@
         {
           "index": 312,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4269,7 +4269,7 @@
         {
           "index": 328,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4280,7 +4280,7 @@
         {
           "index": 342,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4291,7 +4291,7 @@
         {
           "index": 352,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4302,7 +4302,7 @@
         {
           "index": 348,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4313,7 +4313,7 @@
         {
           "index": 332,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4324,7 +4324,7 @@
         {
           "index": 326,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4335,7 +4335,7 @@
         {
           "index": 319,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4346,7 +4346,7 @@
         {
           "index": 327,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4357,7 +4357,7 @@
         {
           "index": 296,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4368,7 +4368,7 @@
         {
           "index": 336,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4379,7 +4379,7 @@
         {
           "index": 343,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4390,7 +4390,7 @@
         {
           "index": 320,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4401,7 +4401,7 @@
         {
           "index": 324,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4412,7 +4412,7 @@
         {
           "index": 309,
           "groupIndex": 32,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4431,7 +4431,7 @@
         {
           "index": 279,
           "groupIndex": 33,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4442,7 +4442,7 @@
         {
           "index": 354,
           "groupIndex": 33,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4461,7 +4461,7 @@
         {
           "index": 274,
           "groupIndex": 34,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -4472,7 +4472,7 @@
         {
           "index": 273,
           "groupIndex": 34,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -4491,7 +4491,7 @@
         {
           "index": 268,
           "groupIndex": 35,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -4510,7 +4510,7 @@
         {
           "index": 297,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4521,7 +4521,7 @@
         {
           "index": 308,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4532,7 +4532,7 @@
         {
           "index": 317,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4543,7 +4543,7 @@
         {
           "index": 316,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4554,7 +4554,7 @@
         {
           "index": 305,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4565,7 +4565,7 @@
         {
           "index": 289,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4576,7 +4576,7 @@
         {
           "index": 291,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4587,7 +4587,7 @@
         {
           "index": 307,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4598,7 +4598,7 @@
         {
           "index": 286,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4609,7 +4609,7 @@
         {
           "index": 349,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4620,7 +4620,7 @@
         {
           "index": 351,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4631,7 +4631,7 @@
         {
           "index": 287,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4642,7 +4642,7 @@
         {
           "index": 344,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4653,7 +4653,7 @@
         {
           "index": 337,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4664,7 +4664,7 @@
         {
           "index": 334,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4675,7 +4675,7 @@
         {
           "index": 318,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4686,7 +4686,7 @@
         {
           "index": 322,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4697,7 +4697,7 @@
         {
           "index": 300,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4708,7 +4708,7 @@
         {
           "index": 304,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4719,7 +4719,7 @@
         {
           "index": 298,
           "groupIndex": 36,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -4738,7 +4738,7 @@
         {
           "index": 373,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4749,7 +4749,7 @@
         {
           "index": 363,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4760,7 +4760,7 @@
         {
           "index": 370,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4771,7 +4771,7 @@
         {
           "index": 371,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4782,7 +4782,7 @@
         {
           "index": 358,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4793,7 +4793,7 @@
         {
           "index": 357,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4804,7 +4804,7 @@
         {
           "index": 360,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4815,7 +4815,7 @@
         {
           "index": 367,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4826,7 +4826,7 @@
         {
           "index": 372,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4837,7 +4837,7 @@
         {
           "index": 359,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4848,7 +4848,7 @@
         {
           "index": 362,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4859,7 +4859,7 @@
         {
           "index": 377,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4870,7 +4870,7 @@
         {
           "index": 368,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4881,7 +4881,7 @@
         {
           "index": 365,
           "groupIndex": 37,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4900,7 +4900,7 @@
         {
           "index": 375,
           "groupIndex": 38,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4911,7 +4911,7 @@
         {
           "index": 376,
           "groupIndex": 38,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4930,7 +4930,7 @@
         {
           "index": 378,
           "groupIndex": 39,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4941,7 +4941,7 @@
         {
           "index": 380,
           "groupIndex": 39,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4952,7 +4952,7 @@
         {
           "index": 381,
           "groupIndex": 39,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4963,7 +4963,7 @@
         {
           "index": 361,
           "groupIndex": 39,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4974,7 +4974,7 @@
         {
           "index": 379,
           "groupIndex": 39,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -4993,7 +4993,7 @@
         {
           "index": 382,
           "groupIndex": 40,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5004,7 +5004,7 @@
         {
           "index": 374,
           "groupIndex": 40,
-          "az": "可用区2",
+          "az": "AZ2",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5023,7 +5023,7 @@
         {
           "index": 383,
           "groupIndex": 41,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -5034,7 +5034,7 @@
         {
           "index": 386,
           "groupIndex": 41,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -5053,7 +5053,7 @@
         {
           "index": 394,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5064,7 +5064,7 @@
         {
           "index": 399,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5075,7 +5075,7 @@
         {
           "index": 395,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5086,7 +5086,7 @@
         {
           "index": 397,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5097,7 +5097,7 @@
         {
           "index": 403,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5108,7 +5108,7 @@
         {
           "index": 427,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5119,7 +5119,7 @@
         {
           "index": 430,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5130,7 +5130,7 @@
         {
           "index": 432,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5141,7 +5141,7 @@
         {
           "index": 429,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5152,7 +5152,7 @@
         {
           "index": 435,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5163,7 +5163,7 @@
         {
           "index": 409,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5174,7 +5174,7 @@
         {
           "index": 410,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5185,7 +5185,7 @@
         {
           "index": 418,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5196,7 +5196,7 @@
         {
           "index": 451,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5207,7 +5207,7 @@
         {
           "index": 446,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5218,7 +5218,7 @@
         {
           "index": 455,
           "groupIndex": 42,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5237,7 +5237,7 @@
         {
           "index": 463,
           "groupIndex": 43,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5248,7 +5248,7 @@
         {
           "index": 465,
           "groupIndex": 43,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5259,7 +5259,7 @@
         {
           "index": 464,
           "groupIndex": 43,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5270,7 +5270,7 @@
         {
           "index": 457,
           "groupIndex": 43,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5281,7 +5281,7 @@
         {
           "index": 456,
           "groupIndex": 43,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5292,7 +5292,7 @@
         {
           "index": 462,
           "groupIndex": 43,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5303,7 +5303,7 @@
         {
           "index": 460,
           "groupIndex": 43,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5314,7 +5314,7 @@
         {
           "index": 458,
           "groupIndex": 43,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5333,7 +5333,7 @@
         {
           "index": 387,
           "groupIndex": 44,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -5344,7 +5344,7 @@
         {
           "index": 388,
           "groupIndex": 44,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -5363,7 +5363,7 @@
         {
           "index": 384,
           "groupIndex": 45,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -5382,7 +5382,7 @@
         {
           "index": 385,
           "groupIndex": 46,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -5401,7 +5401,7 @@
         {
           "index": 461,
           "groupIndex": 47,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5412,7 +5412,7 @@
         {
           "index": 459,
           "groupIndex": 47,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5431,7 +5431,7 @@
         {
           "index": 431,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5442,7 +5442,7 @@
         {
           "index": 444,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5453,7 +5453,7 @@
         {
           "index": 453,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5464,7 +5464,7 @@
         {
           "index": 422,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5475,7 +5475,7 @@
         {
           "index": 445,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5486,7 +5486,7 @@
         {
           "index": 452,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5497,7 +5497,7 @@
         {
           "index": 439,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5508,7 +5508,7 @@
         {
           "index": 438,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5519,7 +5519,7 @@
         {
           "index": 428,
           "groupIndex": 48,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5538,7 +5538,7 @@
         {
           "index": 411,
           "groupIndex": 49,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5549,7 +5549,7 @@
         {
           "index": 413,
           "groupIndex": 49,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5560,7 +5560,7 @@
         {
           "index": 406,
           "groupIndex": 49,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5571,7 +5571,7 @@
         {
           "index": 449,
           "groupIndex": 49,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5582,7 +5582,7 @@
         {
           "index": 426,
           "groupIndex": 49,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5593,7 +5593,7 @@
         {
           "index": 401,
           "groupIndex": 49,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5604,7 +5604,7 @@
         {
           "index": 442,
           "groupIndex": 49,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5623,7 +5623,7 @@
         {
           "index": 405,
           "groupIndex": 50,
-          "az": "可用区3",
+          "az": "AZ3",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5642,7 +5642,7 @@
         {
           "index": 466,
           "groupIndex": 51,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -5653,7 +5653,7 @@
         {
           "index": 467,
           "groupIndex": 51,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "SPINE",
@@ -5672,7 +5672,7 @@
         {
           "index": 500,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5683,7 +5683,7 @@
         {
           "index": 509,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5694,7 +5694,7 @@
         {
           "index": 502,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5705,7 +5705,7 @@
         {
           "index": 496,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5716,7 +5716,7 @@
         {
           "index": 497,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5727,7 +5727,7 @@
         {
           "index": 506,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5738,7 +5738,7 @@
         {
           "index": 510,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5749,7 +5749,7 @@
         {
           "index": 504,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5760,7 +5760,7 @@
         {
           "index": 508,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5771,7 +5771,7 @@
         {
           "index": 498,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5782,7 +5782,7 @@
         {
           "index": 499,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5793,7 +5793,7 @@
         {
           "index": 501,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5804,7 +5804,7 @@
         {
           "index": 505,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5815,7 +5815,7 @@
         {
           "index": 507,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5826,7 +5826,7 @@
         {
           "index": 503,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5837,7 +5837,7 @@
         {
           "index": 495,
           "groupIndex": 52,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "cnt",
           "type": "交换机",
           "role": "CORE",
@@ -5856,7 +5856,7 @@
         {
           "index": 494,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5867,7 +5867,7 @@
         {
           "index": 477,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5878,7 +5878,7 @@
         {
           "index": 493,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5889,7 +5889,7 @@
         {
           "index": 473,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5900,7 +5900,7 @@
         {
           "index": 474,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5911,7 +5911,7 @@
         {
           "index": 490,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5922,7 +5922,7 @@
         {
           "index": 491,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5933,7 +5933,7 @@
         {
           "index": 476,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5944,7 +5944,7 @@
         {
           "index": 484,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5955,7 +5955,7 @@
         {
           "index": 489,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5966,7 +5966,7 @@
         {
           "index": 485,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5977,7 +5977,7 @@
         {
           "index": 480,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5988,7 +5988,7 @@
         {
           "index": 482,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -5999,7 +5999,7 @@
         {
           "index": 483,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -6010,7 +6010,7 @@
         {
           "index": 487,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -6021,7 +6021,7 @@
         {
           "index": 479,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -6032,7 +6032,7 @@
         {
           "index": 478,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
@@ -6043,7 +6043,7 @@
         {
           "index": 471,
           "groupIndex": 53,
-          "az": "可用区7",
+          "az": "AZ7",
           "pod_name": "obs",
           "type": "交换机",
           "role": "LEAF",
