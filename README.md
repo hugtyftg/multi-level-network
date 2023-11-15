@@ -1,27 +1,20 @@
-# React + TypeScript + Vite
+# Introduction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Have you ever met any problem in visualizing sea of multi-level network data like cloud service device network or complex category data even biology network which is structured hierarchically.
 
-Currently, two official plugins are available:
+Good news! Maybe you can try this intelligent partition layout to **cut up the finite display zone hierarchically and weightedly.** Then, **lay the specific nodes within their corresponding polygon boundary firmly and strictly**. Finally, here comes an transparent and interactive graph!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Online site
 
-## Expanding the ESLint configuration
+Welcome to visit http://120.46.138.101/ to experience this fantasy page 😄
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Overview
 
-- Configure the top-level `parserOptions` property like this:
+![截屏2023-11-15 22.47.05](README.assets/%E6%88%AA%E5%B1%8F2023-11-15%2022.47.05.png)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+# Main Usage and Interactions
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Relation Analysis**: Click the node you are interested in, then the global related nodes, edges and their corresponding area are highlighted.
+2. **Eye-catching Interactions**: Zooming, pinning and dragging (Of course, **nodes is undoubtly limited in the polygons regardless of initial layout or dragging stage!** )
+3. **Prominent Concerning Area**: Special and vital level are place in the center of its father level maximally in order to show the overall relationships
+4. **Feture Distribution**: These charts helps us grasp the fundamental distribution of data characteristics.
