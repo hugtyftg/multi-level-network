@@ -1,7 +1,7 @@
-import { arc, easePoly, pie, scaleOrdinal, schemeDark2, select } from "d3";
+import { arc, pie, scaleOrdinal, schemeDark2, select } from "d3";
 import BaseGraph from ".";
 import { group, groupData } from "../interface/partition";
-import { StyleCfg } from "../interface/style";
+import { StyleCfg } from "@/interface/style";
 
 class RoleDistributionGraph extends BaseGraph {
   // svg画布宽高

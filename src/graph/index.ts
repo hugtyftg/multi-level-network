@@ -1,5 +1,5 @@
-import { DEFAULT_STYLE_CFG } from "../config/DEFAULT";
-import { StyleCfg } from "../interface/style";
+import { DEFAULT_STYLE_CFG } from "@/config/DEFAULT";
+import { StyleCfg } from "@/interface/style";
 class BaseGraph {
   // 图的相关样式参数配置
   protected cfgs: StyleCfg = DEFAULT_STYLE_CFG;

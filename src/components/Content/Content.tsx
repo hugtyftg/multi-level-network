@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import Legend from '../Legend/Legend'
-import Partition from '../Partition/Partition'
+import Legend from '@/components/Legend/Legend'
+import Partition from '@/components/Partition/Partition'
 
 export default function Content() {
   return <div className="content" style={{

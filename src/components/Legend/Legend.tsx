@@ -1,5 +1,5 @@
 import React from 'react';
-import { getAssetsImgUrl } from '../../utils/fileAccessor';
+import { getAssetsImgUrl } from '@/utils/fileAccessor';
 const iconNameList = ['CORE', 'SPINE', 'LEAF', 'SERVER', 'VIRTUAL', 'hyperNode']
 export default function Legend() {
   return (
