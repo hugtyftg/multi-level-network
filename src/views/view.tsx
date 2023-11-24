@@ -1,5 +1,5 @@
 import React from 'react'
-import { Side, Content, Header } from '../components'
+import { Side, Content, Header } from '@/components'
 
 export default function View() {
   return (

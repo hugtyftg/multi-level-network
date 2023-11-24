@@ -1,5 +1,5 @@
 import React from 'react';
-import View from './views/view';
+import View from '@/views/view';
 const App: React.FC = () => {
   return (
     <div className="app">

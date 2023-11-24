@@ -1,18 +1,18 @@
-import { group, groupData } from '../interface/partition';
+import { group, groupData } from '@/interface/partition';
 import {select, selectAll} from "d3-selection";
 import * as d3Scale from "d3-scale";
 import * as d3Drag from "d3-drag";
 import { hierarchy, polygonArea, forceSimulation, forceX, forceY, forceCollide, zoom, easePoly } from 'd3';
 //因为layout、apps里面没写index，所以这里引入写法不太合规
-import { nestedVoronoi } from '../layout/partition-layout/nestedVoronoi';
-import { calculateShapeCanvas, formatPolygon, polygonIncircle,  centralizing, forceConstraintAccessor } from '../layout/partition-layout/utils';
-import { renderEdgesElWithoutTick } from '../render/render-edges';
-import { nodeLabelDisplayFn, renderNodesElWithoutTick } from '../render/render-nodes';
+import { nestedVoronoi } from '@/layout/partition-layout/nestedVoronoi';
+import { calculateShapeCanvas, formatPolygon, polygonIncircle,  centralizing, forceConstraintAccessor } from '@/layout/partition-layout/utils';
+import { renderEdgesElWithoutTick } from '@/render/render-edges';
+import { nodeLabelDisplayFn, renderNodesElWithoutTick } from '@/render/render-nodes';
 import BaseGraph from '.';
-import { EdgeStyle, MaskStyle, NodeStyle, StyleCfg } from '../interface/style';
-import renderVoronoiLabel from '../render/render-voronoi-labels';
-import renderVoronoiPath from '../render/render-voronoi-path';
-import { polygonForceConstraintAccessor } from '../layout/partition-layout/utils/polygonForceConstraint';
+import { EdgeStyle, MaskStyle, NodeStyle, StyleCfg } from '@/interface/style';
+import renderVoronoiLabel from '@/render/render-voronoi-labels';
+import renderVoronoiPath from '@/render/render-voronoi-path';
+import { polygonForceConstraintAccessor } from '@/layout/partition-layout/utils/polygonForceConstraint';
 import {v4 as uuid} from 'uuid';
 export default class MultiLevelPartitionGraph extends BaseGraph{
     // svg画布宽高

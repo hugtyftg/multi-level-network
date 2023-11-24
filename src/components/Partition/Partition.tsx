@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import MultiLevelPartitionGraph from '../../graph/MultiLevelPartitionGraph';
-import { StyleCfg } from '../../interface/style';
-import { useStore } from '../../store/graphStore';
+import MultiLevelPartitionGraph from '@/graph/MultiLevelPartitionGraph';
+import { StyleCfg } from '@/interface/style';
+import { useStore } from '@/store/graphStore';
 import { reaction } from 'mobx';
 import { observer } from 'mobx-react-lite';
 const graphCfg: StyleCfg = {
