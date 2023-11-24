@@ -1,9 +1,9 @@
 import { observer } from 'mobx-react-lite'
 import React, { useEffect } from 'react'
-import { useStore } from '../../store/graphStore';
+import { useStore } from '@/store/graphStore';
 import { reaction } from 'mobx';
-import RoleDistributionGraph from '../../graph/RoleDistributionGraph';
-import { StyleCfg } from '../../interface/style';
+import RoleDistributionGraph from '@/graph/RoleDistributionGraph';
+import { StyleCfg } from '@/interface/style';
 const graphCfg: StyleCfg = {
   dataName: '10000_processed.json',
   width: 1620,

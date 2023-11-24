@@ -1,4 +1,4 @@
-import { arc, pie, scaleOrdinal, schemeDark2, select } from "d3";
+import { arc, pie, scaleOrdinal, select } from "d3";
 import BaseGraph from ".";
 import { group, groupData } from "../interface/partition";
 import { StyleCfg } from "../interface/style";

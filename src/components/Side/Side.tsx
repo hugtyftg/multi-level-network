@@ -1,13 +1,13 @@
-import React, { Fragment, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Side.less'
 import { Button, Input, Select, Space } from 'antd';
 import { GlobalOutlined, ContainerOutlined, CloudServerOutlined } from '@ant-design/icons'
-import { useStore } from '../../store/graphStore';
+import { useStore } from '@/store/graphStore';
 import { observer } from 'mobx-react-lite';
-import MultiLevelPartitionGraph from '../../graph/MultiLevelPartitionGraph';
+import MultiLevelPartitionGraph from '@/graph/MultiLevelPartitionGraph';
 import { autorun } from 'mobx';
-import RoleDistribution from '../RoleDistribution/RoleDistribution';
-import AlarmDistribution from '../AlarmDistribution/AlarmDistribution';
+import RoleDistribution from '@/components/RoleDistribution/RoleDistribution';
+import AlarmDistribution from '@/components/AlarmDistribution/AlarmDistribution';
 
 function Side() {
   const store = useStore();
