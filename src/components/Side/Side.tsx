@@ -46,19 +46,19 @@ function Side() {
     (store.curGraphInstance as MultiLevelPartitionGraph)
     .searchPartition(partition1, partition2, true, true, {
       nodeStyle: {
-        stroke: 'black',
+        stroke: 'blue',
         opacity: 1,
-        strokeWidth: 5
+        strokeWidth: 3,
       },
       edgeStyle: {
-        strokeColor: 'red',
+        strokeColor: 'black',
         strokeWidth: 3,
         opacity: 1,
         strokeDash: 'solid'
       },
       maskStyle: {
-        opacity: 1,
-        color: 'pink',
+        opacity: 0.6,
+        color: '#80AED2',
         strokeWidth: 3,
         strokeColor: 'blue'
       },
