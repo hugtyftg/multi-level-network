@@ -38,7 +38,7 @@ const graphCfg: StyleCfg = {
   },
   edgeStyle: {
     normal: {
-      opacity: 0.4,
+      opacity: 0.2,
       strokeWidth: 1,
       strokeColor: 'gray',
       strokeDash: 'solid',
@@ -54,12 +54,12 @@ const graphCfg: StyleCfg = {
     normal: {
       color: (d: any) => {
         if (d.data.hierarchy === 'az') {
-          return '#DCDCDC';
+          return '#E3EDF3';
         } else if (d.data.hierarchy === 'pod') {
           if (d.data.name === 'cnt') {
-            return '#dff6fd';
+            return '#B3F0FA';
           } else {
-            return '#DCDCDC';
+            return '#E3EDF3';
           }
         } else {
           throw new Error("当前层级不是level2或者level3");
