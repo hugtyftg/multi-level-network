@@ -8,8 +8,6 @@ import MultiLevelPartitionGraph from '@/graph/MultiLevelPartitionGraph';
 import { autorun } from 'mobx';
 import RoleDistribution from '@/components/RoleDistribution/RoleDistribution';
 import AlarmDistribution from '@/components/AlarmDistribution/AlarmDistribution';
-import axios from 'axios';
-import {inflate} from 'pako';
 
 function Side() {
   const store = useStore();
