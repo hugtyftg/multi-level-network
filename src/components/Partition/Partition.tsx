@@ -5,24 +5,24 @@ import { useStore } from '@/store/graphStore';
 import { reaction } from 'mobx';
 import { observer } from 'mobx-react-lite';
 const graphCfg: StyleCfg = {
-  dataName: '10000_processed.json',
+  dataName: '',
   width: 1876,
   height: 1081,
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
   divBoxSelector: '.partition',
   emphasisName: 'cnt',
-  blankFillDegree: 12,
+  blankFillDegree: 14,
   blankFillStrength: 1,
   nodeStyle: {
     normal: {
-      radius: 8,
+      radius: 12,
       opacity: 1,
       strokeWidth: 1,
       stroke: 'none',
       fill: 'none'
     },
     selected: {
-      radius:8,
+      radius:12,
       opacity: 1,
       strokeWidth: 5,
       stroke: '#2B41FF',  
@@ -108,13 +108,36 @@ function Partition() {
   const dispose = reaction(() => store.graphData,
   (graphData) => {
     if (!store.isCurGraphDataEmpty) {
-      if (store.isCurGraphInstanceEmpty) { // 如果当前没有graph，直接生成
-        store.updateGraphInstance(new MultiLevelPartitionGraph({...graphCfg, dataName: store.datasetName, data: graphData}));
-      } else { // 如果已经有graph，先清空画布，然后重置graph instance，再绘制
+      // 如果当前没有graph，直接生成
+      if (!store.isCurGraphInstanceEmpty) { 
+        // 如果已经有graph，先清空画布，然后重置graph instance，再绘制
         (store.curGraphInstance as MultiLevelPartitionGraph).destory();
         store.resetGraphInstance();
-        store.updateGraphInstance(new MultiLevelPartitionGraph({...graphCfg, dataName: store.datasetName, data: graphData}));
       }
+      const blankFillDegree = store.datasetName === '20000_processed.json' ? 10 : 14;
+      const r = store.datasetName === '20000_processed.json' ? 8 : 12;
+      store.updateGraphInstance(new MultiLevelPartitionGraph({
+        ...graphCfg, 
+        dataName: store.datasetName,
+        data: graphData,
+        blankFillDegree,
+        nodeStyle: {
+          normal: {
+            radius: r,
+            opacity: 1,
+            strokeWidth: 1,
+            stroke: 'none',
+            fill: 'none'
+          },
+          selected: {
+            radius: r,
+            opacity: 1,
+            strokeWidth: 5,
+            stroke: '#2B41FF',  
+            fill: 'none',
+          }
+        }
+      }));
     }
   })
   // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数

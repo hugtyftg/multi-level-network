@@ -67,7 +67,7 @@ const color = scaleOrdinal()
   // .domain(Object.keys(this.statistics))
   // .range(schemeDark2);
   .domain(['normal', 'alarm'])
-  .range(['#FA5151', '#6ED798'])
+  .range(['red', '#0071FF'])
 
 // Compute the position of each group on the pie:
 const peiGenerator = pie()
