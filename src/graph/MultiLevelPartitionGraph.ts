@@ -99,10 +99,10 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
         .sort((a: any, b: any) => { return a - b});
       // 计算指定图形的画布顶点坐标
       let canvasPolygon: any = calculateShapeCanvas(0, 0, this._width, this._height, this.shape);
-      console.time('canvas partition');
+      // console.time('canvas partition');
       // 根据指定图形的画布和层级化数据，得到若干层级化的多边形
       this.partition(canvasPolygon, this.weightedHierarchicalData);
-      console.timeEnd('canvas partition');
+      // console.timeEnd('canvas partition');
       
       // 绘制画布
       this.drawShapeCanvas(canvasPolygon, [this._width / 2, this._height / 2]);
@@ -612,7 +612,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     }
     // tickend的时候更新连边位置，渲染点边，绑定事件
     const onTickEnd = () => {
-      console.timeEnd('force without tick');
+      // console.timeEnd('force without tick');
       let allEdgesData = getEdgesData(allNodesData, this._data.groupLinks);
       // 渲染点边
       this.edgesDOM = renderEdgesElWithoutTick(allEdgesData, this.bottomEdgeCell, this.cfgs);
@@ -621,7 +621,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       this.afterRenderBindEvent();
     }
     const positionStrength = 1;
-    console.time('force without tick');
+    // console.time('force without tick');
     let simulation = forceSimulation(allNodesData)
       // 删除弹簧作用力
       // .force('x', forceX().x((d: any) => d.maxIncircle[0]).strength(positionStrength))

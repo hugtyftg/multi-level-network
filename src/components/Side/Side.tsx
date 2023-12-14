@@ -17,7 +17,6 @@ function Side() {
     fetch(`${import.meta.env.BASE_URL}data/${store.curDatasetName}`)
     .then(res => res.json())
     .then(newGraphData => {
-      console.log(newGraphData);
       store.updateGraphData(newGraphData);
     })
   })
