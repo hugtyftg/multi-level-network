@@ -53,42 +53,44 @@ const graphCfg: StyleCfg = {
   maskStyle: {
     normal: {
       color: (d: any) => {
-        if (d.data.hierarchy === 'az') {
-          return '#E3EDF3';
-        } else if (d.data.hierarchy === 'pod') {
-          if (d.data.name === 'cnt') {
-            return '#B3F0FA';
+        if (d.data.hierarchy === "az") {
+          return "#F7F7F7";
+        } else if (d.data.hierarchy === "pod") {
+          if (d.data.name === "cnt") {
+            return "#B3F0FA";
           } else {
-            return '#E3EDF3';
+            return "#F7F7F7";
           }
         } else {
           throw new Error("当前层级不是level2或者level3");
         }
       },
       strokeColor: (d: any) => {
-        if (d.data.hierarchy === 'az') {
-          return 'white';
-        } else if (d.data.hierarchy === 'pod') {
-          return 'white'
+        if (d.data.hierarchy === "az") {
+          return "gray";
+        } else if (d.data.hierarchy === "pod") {
+          return "gray";
         } else {
           throw new Error("当前层级不是level2或者level3");
         }
       },
       strokeWidth: (d: any) => {
-        if (d.data.hierarchy === 'az') {
-          return 3;
-        } else if (d.data.hierarchy === 'pod') {
+        if (d.data.hierarchy === "az") {
+          return 10;
+        } else if (d.data.hierarchy === "pod") {
           return 3;
         } else {
           throw new Error("当前层级不是level2或者level3");
         }
       },
-      opacity: 1
+      opacity: 1,
     },
     selected: {
-      color: '#CEDEFF',
-      strokeColor: 'white',
-    }
+      color: "#CEDEFF",
+      strokeColor: "#fff",
+      strokeWidth: 5,
+      opacity: 1,
+    },
   },
   maskLabelStyle: {
     fill: (d: any) => {
@@ -97,7 +99,9 @@ const graphCfg: StyleCfg = {
       } else {
         return '#555';
       }
-    }
+    },
+    opacity: 0.8,
+    fontWeight: 800
   }
 }
 function Partition() {
