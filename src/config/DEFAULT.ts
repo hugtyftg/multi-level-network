@@ -60,42 +60,44 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
   maskStyle: {
     normal: {
       color: (d: any) => {
-        if (d.data.hierarchy === 'az') {
-          return '#DCDCDC';
-        } else if (d.data.hierarchy === 'pod') {
-          if (d.data.name === 'cnt') {
-            return '#dff6fd';
+        if (d.data.hierarchy === "az") {
+          return "#F7F7F7";
+        } else if (d.data.hierarchy === "pod") {
+          if (d.data.name === "cnt") {
+            return "#B3F0FA";
           } else {
-            return '#DCDCDC';
+            return "#F7F7F7";
           }
         } else {
           throw new Error("当前层级不是level2或者level3");
         }
       },
       strokeColor: (d: any) => {
-        if (d.data.hierarchy === 'az') {
-          return 'white';
-        } else if (d.data.hierarchy === 'pod') {
-          return 'white'
+        if (d.data.hierarchy === "az") {
+          return "gray";
+        } else if (d.data.hierarchy === "pod") {
+          return "gray";
         } else {
           throw new Error("当前层级不是level2或者level3");
         }
       },
       strokeWidth: (d: any) => {
-        if (d.data.hierarchy === 'az') {
+        if (d.data.hierarchy === "az") {
           return 10;
-        } else if (d.data.hierarchy === 'pod') {
-          return 2;
+        } else if (d.data.hierarchy === "pod") {
+          return 3;
         } else {
           throw new Error("当前层级不是level2或者level3");
         }
       },
-      opacity: 1
+      opacity: 1,
     },
     selected: {
-      color: '#dff6fd',
-      strokeColor: 'green',
-    }
+      color: "#CEDEFF",
+      strokeColor: "#fff",
+      strokeWidth: 5,
+      opacity: 1,
+    },
   },
   maskLabelStyle: {
     fill: (d: any) => {
@@ -104,7 +106,9 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
       } else {
         return '#555';
       }
-    }
+    },
+    opacity: 0.8,
+    fontWeight: 800
   }
 }
 export {
