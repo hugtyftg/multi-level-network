@@ -2,7 +2,7 @@ import { group, groupData } from '@/interface/partition';
 import {select, selectAll} from "d3-selection";
 import * as d3Scale from "d3-scale";
 import * as d3Drag from "d3-drag";
-import { hierarchy, polygonArea, forceSimulation, forceX, forceY, forceCollide, zoom, easePoly } from 'd3';
+import { hierarchy, polygonArea, forceSimulation, forceX, forceY, forceCollide, zoom, easePoly, zoomIdentity } from 'd3';
 //因为layout、apps里面没写index，所以这里引入写法不太合规
 import { nestedVoronoi } from '@/layout/partition-layout/nestedVoronoi';
 import { calculateShapeCanvas, formatPolygon, polygonIncircle,  centralizing, forceConstraintAccessor } from '@/layout/partition-layout/utils';
@@ -76,9 +76,16 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
           this.container.attr('transform', `translate(${translateX}, ${translateY})`);
           // TODO: 添加标签的自动隐藏和现实效果
         })
-      this.svg.call(zoomObj)
-      // 禁止双击自动放缩
-      .on('dblclick.zoom', null)
+      this.svg
+        .call(zoomObj)
+        // 指定初始缩放状态，注意，scale是按照面积放缩的，需要开根号
+        .call(zoomObj.transform, 
+          zoomIdentity
+          .scale(0.99)
+          .translate(this._width * (1-Math.sqrt(0.99)), this._height * (1-Math.sqrt(0.99)))
+        )
+        // 禁止双击自动放缩
+        .on('dblclick.zoom', null)
     }
     // 渲染完多边形、点边之后绑定的事件
     protected afterRenderBindEvent() {

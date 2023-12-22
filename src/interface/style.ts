@@ -34,8 +34,8 @@ interface MaskStyle {
 // 多边形标签样式
 interface MaskLabelStyle {
   fill: string | ((d: any) => string),
-  opacity: number,
-  fontWeight: number | string,
+  opacity?: number,
+  fontWeight?: number | string,
 }
 // 节点样式
 interface NodeStyle {

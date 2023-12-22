@@ -11,19 +11,19 @@ const graphCfg: StyleCfg = {
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
   divBoxSelector: '.partition',
   emphasisName: 'cnt',
-  blankFillDegree: 14,
+  blankFillDegree: 20,
   blankFillStrength: 1,
   svgPadding: 10,
   nodeStyle: {
     normal: {
-      radius: 12,
+      radius: 15,
       opacity: 1,
       strokeWidth: 1,
       stroke: 'none',
       fill: 'none'
     },
     selected: {
-      radius:12,
+      radius: 15,
       opacity: 1,
       strokeWidth: 5,
       stroke: '#2B41FF',  
@@ -89,8 +89,8 @@ const graphCfg: StyleCfg = {
     selected: {
       color: "#CEDEFF",
       strokeColor: "#fff",
-      strokeWidth: 5,
-      opacity: 1,
+      // strokeWidth: 5,
+      // opacity: 1,
     },
   },
   maskLabelStyle: {
@@ -119,29 +119,10 @@ function Partition() {
         (store.curGraphInstance as MultiLevelPartitionGraph).destory();
         store.resetGraphInstance();
       }
-      const blankFillDegree = store.datasetName === '20000_processed.json' ? 10 : 14;
-      const r = store.datasetName === '20000_processed.json' ? 8 : 12;
       store.updateGraphInstance(new MultiLevelPartitionGraph({
         ...graphCfg, 
         dataName: store.datasetName,
         data: graphData,
-        blankFillDegree,
-        nodeStyle: {
-          normal: {
-            radius: r,
-            opacity: 1,
-            strokeWidth: 1,
-            stroke: 'none',
-            fill: 'none'
-          },
-          selected: {
-            radius: r,
-            opacity: 1,
-            strokeWidth: 5,
-            stroke: '#2B41FF',  
-            fill: 'none',
-          }
-        }
       }));
     }
   })
