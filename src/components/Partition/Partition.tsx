@@ -13,6 +13,7 @@ const graphCfg: StyleCfg = {
   emphasisName: 'cnt',
   blankFillDegree: 14,
   blankFillStrength: 1,
+  svgPadding: 10,
   nodeStyle: {
     normal: {
       radius: 12,

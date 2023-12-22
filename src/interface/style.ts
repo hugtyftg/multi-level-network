@@ -8,6 +8,7 @@ interface StyleCfg {
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
   blankFillDegree: number,
   blankFillStrength: number,
+  svgPadding: number,
   nodeStyle: {
     normal: NodeStyle,
     selected: NodeStyle,
@@ -59,6 +60,7 @@ interface EdgeStyle {
   strokeColor?: string | any,
   strokeDash?: string | any,
 }
+
 export type {
   StyleCfg,
   NodeStyle,

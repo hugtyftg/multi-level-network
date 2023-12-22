@@ -35,8 +35,8 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       // 参数初始化
       this.setCfgs(props);
       this._data = this.cfgs.data;
-      this._width = this.cfgs.width;
-      this._height = this.cfgs.height;
+      this._width = this.cfgs.width - this.cfgs.svgPadding * 2;
+      this._height = this.cfgs.height - this.cfgs.svgPadding * 2;
       this.run();
     }
 
@@ -56,11 +56,13 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       // svg画布
       this.svg = this.divBox.append('svg')
         .attr('id', 'graph-svg')
-        .attr('width', this._width)
-        .attr('height', this._height);
+        .attr('width', this.cfgs.width )
+        .attr('height', this.cfgs.height)
       // 画布分割的graph g元素
       this.container = this.svg.append('g')
         .attr('id', 'graph-container')
+        .attr('transform', `translate(${this.cfgs.svgPadding * 2 + this._width}, ${this.cfgs.svgPadding * 2 + this._height})`);
+
     }
     // 渲染完多边形、点边之前绑定的事件画布的zoom事件
     protected beforeRenderBindEvent() {
@@ -69,8 +71,9 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
         .translateExtent([[-this._width*4, -this._height*4], [this._width * 5, this._height * 5]])
         .scaleExtent([0.3, 5])
         .on('zoom', (event: any) => {
-          this.container.attr("transform", event.transform);
-          // console.log(event.transform.k);
+          const translateX = event.transform.x + this._width + this.cfgs.svgPadding * 2;
+          const translateY = event.transform.y + this._height + this.cfgs.svgPadding * 2;
+          this.container.attr('transform', `translate(${translateX}, ${translateY})`);
           // TODO: 添加标签的自动隐藏和现实效果
         })
       this.svg.call(zoomObj)
@@ -105,7 +108,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       // console.timeEnd('canvas partition');
       
       // 绘制画布
-      this.drawShapeCanvas(canvasPolygon, [this._width / 2, this._height / 2]);
+      this.drawShapeCanvas(canvasPolygon);
       // 绘制voronoi多边形
       this.drawVoronoiDomain(this.weightedHierarchicalData);
       // 绘制Group和GroupLink
@@ -217,11 +220,11 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     }){
       this.container.selectAll(`path.pod[data-id=${relatedMask}]`)
         // 存在某些pod高亮改顺序之后，遮盖az的边界的问题
-        .raise()
+        // .raise()
         .attr('opacity', highlightAttr?.maskStyle?.opacity ?? this.cfgs.maskStyle.selected.opacity)
         .attr('fill', highlightAttr?.maskStyle?.color ?? this.cfgs.maskStyle.selected.color)
-        .attr('stroke-width', highlightAttr?.maskStyle?.strokeWidth ?? this.cfgs.maskStyle.selected.strokeWidth)
-        .attr('stroke', highlightAttr?.maskStyle?.strokeColor ?? this.cfgs.maskStyle.selected.strokeColor);
+        // .attr('stroke-width', highlightAttr?.maskStyle?.strokeWidth ?? this.cfgs.maskStyle.selected.strokeWidth)
+        // .attr('stroke', highlightAttr?.maskStyle?.strokeColor ?? this.cfgs.maskStyle.selected.strokeColor);
     }
     private resetMask(hierarchy: string) {
       selectAll(`path.${hierarchy}`)
@@ -351,11 +354,11 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       this.staggerRenderVoronoiLabel(fontScale, 400);
     /* ------------------------ 错峰渲染多边形和标签，用视觉效果优化减缓布局速度的影响 ----------------------- */
     }
-    private drawShapeCanvas(canvasPolygon: number[][], nestedVoronoiCenter: number[]) {
+    private drawShapeCanvas(canvasPolygon: number[][]) {
       // 绘制容器
       this.partitionLayoutCell = this.container.append('g')
         .attr('id', "nested-voronoi-container")
-        .attr('transform', `translate(${nestedVoronoiCenter})`);
+        .attr("transform", `translate(${[-this._width / 2, -this._height / 2]})`);
       // 绘制矩形region框
       this.partitionLayoutCell.append("path")
       .attr("id", "region")
@@ -660,11 +663,11 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     const searchedPartitionId = searchedPartition.data.id;
     // 2.高亮分区，如果用户传入了新的样式，就用新的样式高亮分区；如果没传入，就用初始传入的selected样式高亮分区
     this.container.selectAll(`path.pod[data-id=${searchedPartitionId}]`)
-      .raise()
+      // .raise()
       .attr('opacity', highlightAttr?.maskStyle?.opacity ?? this.cfgs.maskStyle.selected.opacity) // this.cfgs.maskStyle.selected.opacity和dii中的d.attr.selected.opacity是一样的逻辑，全局样式参数
       .attr('fill', highlightAttr?.maskStyle?.color ?? this.cfgs.maskStyle.selected.color)
-      .attr('stroke-width', highlightAttr?.maskStyle?.strokeWidth ?? this.cfgs.maskStyle.selected.strokeWidth)
-      .attr('stroke', highlightAttr?.maskStyle?.strokeColor ?? this.cfgs.maskStyle.selected.strokeColor);
+      // .attr('stroke-width', highlightAttr?.maskStyle?.strokeWidth ?? this.cfgs.maskStyle.selected.strokeWidth)
+      // .attr('stroke', highlightAttr?.maskStyle?.strokeColor ?? this.cfgs.maskStyle.selected.strokeColor);
     // 内部节点的groupIndex（dii中已经将其处理成id string了，所以应该改成string[]）
     const innerGroupIndexList: number[] = [];
     // 3.高亮内部节点（仅当用户传入的flag为true且nodes已经在tickend时绘制完毕之后）
