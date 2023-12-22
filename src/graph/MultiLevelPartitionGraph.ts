@@ -35,8 +35,8 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       // 参数初始化
       this.setCfgs(props);
       this._data = this.cfgs.data;
-      this._width = this.cfgs.width - this.cfgs.svgPadding * 2;
-      this._height = this.cfgs.height - this.cfgs.svgPadding * 2;
+      this._width = this.cfgs.width;
+      this._height = this.cfgs.height;
       this.run();
     }
 
@@ -56,13 +56,11 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       // svg画布
       this.svg = this.divBox.append('svg')
         .attr('id', 'graph-svg')
-        .attr('width', this.cfgs.width )
-        .attr('height', this.cfgs.height)
+        .attr('width', this._width)
+        .attr('height', this._height);
       // 画布分割的graph g元素
       this.container = this.svg.append('g')
         .attr('id', 'graph-container')
-        .attr('transform', `translate(${this.cfgs.svgPadding * 2 + this._width}, ${this.cfgs.svgPadding * 2 + this._height})`);
-
     }
     // 渲染完多边形、点边之前绑定的事件画布的zoom事件
     protected beforeRenderBindEvent() {
@@ -71,9 +69,8 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
         .translateExtent([[-this._width*4, -this._height*4], [this._width * 5, this._height * 5]])
         .scaleExtent([0.3, 5])
         .on('zoom', (event: any) => {
-          const translateX = event.transform.x + this._width + this.cfgs.svgPadding * 2;
-          const translateY = event.transform.y + this._height + this.cfgs.svgPadding * 2;
-          this.container.attr('transform', `translate(${translateX}, ${translateY})`);
+          this.container.attr("transform", event.transform);
+          // console.log(event.transform.k);
           // TODO: 添加标签的自动隐藏和现实效果
         })
       this.svg
@@ -115,7 +112,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       // console.timeEnd('canvas partition');
       
       // 绘制画布
-      this.drawShapeCanvas(canvasPolygon);
+      this.drawShapeCanvas(canvasPolygon, [this._width / 2, this._height / 2]);
       // 绘制voronoi多边形
       this.drawVoronoiDomain(this.weightedHierarchicalData);
       // 绘制Group和GroupLink
@@ -361,11 +358,11 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       this.staggerRenderVoronoiLabel(fontScale, 400);
     /* ------------------------ 错峰渲染多边形和标签，用视觉效果优化减缓布局速度的影响 ----------------------- */
     }
-    private drawShapeCanvas(canvasPolygon: number[][]) {
+    private drawShapeCanvas(canvasPolygon: number[][], nestedVoronoiCenter: number[]) {
       // 绘制容器
       this.partitionLayoutCell = this.container.append('g')
         .attr('id', "nested-voronoi-container")
-        .attr("transform", `translate(${[-this._width / 2, -this._height / 2]})`);
+        .attr('transform', `translate(${nestedVoronoiCenter})`);
       // 绘制矩形region框
       this.partitionLayoutCell.append("path")
       .attr("id", "region")
