@@ -8,6 +8,7 @@ interface StyleCfg {
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
   blankFillDegree: number,
   blankFillStrength: number,
+  svgPadding: number,
   nodeStyle: {
     normal: NodeStyle,
     selected: NodeStyle,
@@ -33,8 +34,8 @@ interface MaskStyle {
 // 多边形标签样式
 interface MaskLabelStyle {
   fill: string | ((d: any) => string),
-  opacity: number,
-  fontWeight: number | string,
+  opacity?: number,
+  fontWeight?: number | string,
 }
 // 节点样式
 interface NodeStyle {
@@ -59,6 +60,7 @@ interface EdgeStyle {
   strokeColor?: string | any,
   strokeDash?: string | any,
 }
+
 export type {
   StyleCfg,
   NodeStyle,

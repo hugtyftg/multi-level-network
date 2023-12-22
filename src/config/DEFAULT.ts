@@ -8,6 +8,7 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
   emphasisName: 'cnt',
   blankFillDegree: 16,
   blankFillStrength: 1,
+  svgPadding: 10,
   nodeStyle: {
     normal: {
       radius: 9,
@@ -94,8 +95,8 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
     },
     selected: {
       color: "#CEDEFF",
-      strokeColor: "#fff",
-      strokeWidth: 5,
+      // strokeColor: "#fff",
+      // strokeWidth: 5,
       opacity: 1,
     },
   },
