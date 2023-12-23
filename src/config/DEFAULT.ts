@@ -6,6 +6,7 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
   divBoxSelector: '#main',
   emphasisName: 'cnt',
+  scaleThreshold: 2,
   blankFillDegree: 16,
   blankFillStrength: 1,
   svgPadding: 10,

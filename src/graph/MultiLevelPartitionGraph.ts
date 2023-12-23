@@ -70,8 +70,14 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
         .scaleExtent([0.3, 5])
         .on('zoom', (event: any) => {
           this.container.attr("transform", event.transform);
-          // console.log(event.transform.k);
-          // TODO: 添加标签的自动隐藏和现实效果
+          // 标签的自动隐藏和现实效果
+          if (event.transform.k > this.cfgs.scaleThreshold && this.nodesDOM) {
+            this.nodesDOM?.selectAll('text')
+            .attr('display', 'block')
+          } else {
+            this.nodesDOM?.selectAll('text')
+            .attr('display', (d: any) => nodeLabelDisplayFn(d, this.cfgs))
+          }
         })
       this.svg
         .call(zoomObj)

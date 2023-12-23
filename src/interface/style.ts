@@ -5,6 +5,8 @@ interface StyleCfg {
   height: number,
   divBoxSelector: string,
   emphasisName: string,
+  // 节点标签超过阈值自动显示
+  scaleThreshold: number,
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
   blankFillDegree: number,
   blankFillStrength: number,
