@@ -52,6 +52,8 @@ const renderVoronoiLabel = (fontScale: (value: number) => number, container: any
     .attr('text-anchor', 'middle')
     .attr('dominant-baseline', 'middle')
     .attr('pointer-events', 'none')
+    .attr('font-weight', cfgs.maskLabelStyle.fontWeight)
+    .attr('opacity', cfgs.maskLabelStyle.opacity)
     /* 单行标签直接显示 */
     .html((d: any) => formatName(d))
 

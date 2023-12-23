@@ -11,7 +11,7 @@ const graphCfg: StyleCfg = {
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
   divBoxSelector: '.partition',
   emphasisName: 'cnt',
-  scaleThreshold: 2,
+  scaleThreshold: 1.5,
   blankFillDegree: 20,
   blankFillStrength: 1,
   svgPadding: 10,
@@ -102,7 +102,7 @@ const graphCfg: StyleCfg = {
         return '#555';
       }
     },
-    opacity: 0.8,
+    opacity: 0.7,
     fontWeight: 800
   }
 }

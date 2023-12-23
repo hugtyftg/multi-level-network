@@ -478,7 +478,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     private configFontsize(min: number, max: number):any {
       let fontScale = d3Scale.scaleLinear()
         .domain([min, max])
-        .range([12, 60])
+        .range([24, 60])
         .clamp(true);
       return fontScale;
     }
