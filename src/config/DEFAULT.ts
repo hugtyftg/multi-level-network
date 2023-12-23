@@ -9,7 +9,6 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
   scaleThreshold: 2,
   blankFillDegree: 16,
   blankFillStrength: 1,
-  svgPadding: 10,
   nodeStyle: {
     normal: {
       radius: 9,

@@ -14,7 +14,6 @@ const graphCfg: StyleCfg = {
   scaleThreshold: 1.5,
   blankFillDegree: 20,
   blankFillStrength: 1,
-  svgPadding: 10,
   nodeStyle: {
     normal: {
       radius: 15,
