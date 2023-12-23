@@ -7,16 +7,13 @@ export default function Legend() {
       display: 'flex',
       justifyContent: 'space-evenly',
       alignItems: 'center',
-      width: '40%',
-      height: 50,
+      width: 800,
     }}>
       {iconNameList.map(name => {
         return <div className="legend-icon" key={name} style={{
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          width: 130,
-          height: '100%',
           margin: '0 5px',
           fontSize: 16,
           fontWeight: 'bold'

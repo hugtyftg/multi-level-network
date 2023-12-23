@@ -2,6 +2,8 @@ import { makeAutoObservable } from 'mobx'
 import { createContext, useContext } from 'react';
 import MultiLevelPartitionGraph from '../graph/MultiLevelPartitionGraph';
 const datasetRangeList = ['6000', '10000', '20000', '2500', '1500', '500'];
+type ViewTypes = 'PARTITION' | 'HYPERNODE';
+
 class Store {
   // 画布分割图实例
   graphInstance: MultiLevelPartitionGraph | any = {};
@@ -12,6 +14,8 @@ class Store {
   // 全局共用的数据
   graphData: any = {};
   datasetName: string = `${datasetRangeList[0]}_processed.json`;
+  // 当前视图
+  viewName: ViewTypes  = 'PARTITION';
   constructor() {
     makeAutoObservable(this, {}, {autoBind: true});
   }
@@ -30,6 +34,9 @@ class Store {
   updateDatasetName(newDatasetName: string) {
     this.datasetName = newDatasetName;
   }
+  updateViewName(newViewName: ViewTypes) {
+    this.viewName = newViewName;
+  }
   resetGraphInstance() {
     this.graphInstance = {};
   }
@@ -45,6 +52,9 @@ class Store {
   resetGraphDatasetName() {
     this.datasetName = `${datasetRangeList[0]}_processed.json`;
   }
+  resetViewName() {
+    this.viewName = 'PARTITION';
+  }
   get curGraphInstance() {
     return this.graphInstance;
   }
@@ -59,6 +69,9 @@ class Store {
   }
   get curDatasetName() {
     return this.datasetName;
+  }
+  get curViewName() {
+    return this.viewName;
   }
   get isCurGraphInstanceEmpty() {
     return Object.keys(this.curGraphInstance).length === 0;
@@ -80,7 +93,6 @@ class Store {
       }
     });
   }
-
 }
 const store = new Store();
 const Context = createContext(store);

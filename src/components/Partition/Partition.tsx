@@ -136,6 +136,7 @@ function Partition() {
     <div className='partition' style={{
       width: '100%',
       height: '100%',
+      display: store.curViewName === 'PARTITION' ? 'block' : 'none'
     }}></div>
   )
 }

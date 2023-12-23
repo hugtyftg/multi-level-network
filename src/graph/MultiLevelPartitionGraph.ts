@@ -86,8 +86,12 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     }
     // 渲染完多边形、点边之后绑定的事件
     protected afterRenderBindEvent() {
-      // 点击节点的高亮事件
+      // 单击节点的高亮事件
       this.nodesDOM.on('click', this.onClickNode.bind(this, this.allNodesData));
+      this.nodesDOM.on('dblclick', () => {
+        console.log('double click');
+      
+      });
       // 点击画布的空白区域可以取消高亮效果
       select('g#voronoi-pod-cell').on('click', this.onClickCanvas.bind(this));
     }
@@ -750,7 +754,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       return false;
     }
   }
-  // 高亮节点的新函数和现在点击高亮的效果差不多。如果用户传入了新的样式obj，则按照那个样式obj；如果没有传入，就按照当前的点击高亮效果。
+
   // 销毁，清除指定svg的所有内容 #graph-svg，解除事件绑定
   public destory() {
     if (this.svg && !this.svg.empty()) {
