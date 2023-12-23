@@ -10,7 +10,7 @@ Welcome to visit http://120.46.138.101/ to experience this fantasy page 😄 . (
 
 # Overview
 
-![截屏2023-11-15 22.47.05](README.assets/%E6%88%AA%E5%B1%8F2023-11-15%2022.47.05.png)
+![image-20231223131822650](README.assets/image-20231223131822650.png)
 
 # Main Usage and Interactions
 
