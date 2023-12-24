@@ -127,9 +127,14 @@ function Partition() {
     }
   })
   // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数
+  // 在组件生命周期走到尽头、即将被销毁的时候，需要先销毁svg元素，然后重制graph当前显示的graph实例
   useEffect(() => {
     return () => {
       dispose();
+      if (!store.isCurGraphInstanceEmpty) {
+        (store.curGraphInstance as MultiLevelPartitionGraph).destory();
+        store.resetGraphInstance();
+      }
     }
   })
   return (
