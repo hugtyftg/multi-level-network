@@ -6,8 +6,8 @@ import { useStore } from '@/store/graphStore';
 import { observer } from 'mobx-react-lite';
 import MultiLevelPartitionGraph from '@/graph/MultiLevelPartitionGraph';
 import { autorun } from 'mobx';
-import RoleDistribution from '@/components/RoleDistribution/RoleDistribution';
-import AlarmDistribution from '@/components/AlarmDistribution/AlarmDistribution';
+import RoleDistribution from '@/components/Side/RoleDistribution/RoleDistribution';
+import AlarmDistribution from '@/components/Side/AlarmDistribution/AlarmDistribution';
 
 function Side() {
   const store = useStore();
