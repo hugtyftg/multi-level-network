@@ -8,6 +8,7 @@ import MultiLevelPartitionGraph from '@/graph/MultiLevelPartitionGraph';
 import { autorun } from 'mobx';
 import RoleDistribution from '@/components/Side/RoleDistribution/RoleDistribution';
 import AlarmDistribution from '@/components/Side/AlarmDistribution/AlarmDistribution';
+import SelectDataset from './SelectDataset/SelectDataset';
 
 function Side() {
   const store = useStore();
@@ -76,7 +77,7 @@ function Side() {
           padding: 24,
           backgroundColor: '#fff'
         }}>
-  <div className="select-dataset">
+  {/* <div className="select-dataset">
     <p>Please select dataset:</p>
     <Select
       defaultValue={options[0].value}
@@ -84,7 +85,8 @@ function Side() {
       options={options}
       menuItemSelectedIcon={<ContainerOutlined/>}
     />
-  </div>
+  </div> */}
+  <SelectDataset />
   <div className="search-partition">
     <Space.Compact size="large">
       <Input addonBefore={<GlobalOutlined />} placeholder="az" style={{
