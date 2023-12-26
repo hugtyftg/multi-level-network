@@ -1,7 +1,7 @@
 import React from 'react';
 import { getAssetsImgUrl } from '@/utils/fileAccessor';
 const iconNameList = ['CORE', 'SPINE', 'LEAF', 'SERVER', 'VIRTUAL', 'hyperNode']
-export default function Legend() {
+const Legend: React.FC = () => {
   return (
     <div className='legend' style={{
       display: 'flex',
@@ -30,3 +30,4 @@ export default function Legend() {
     </div>
   )
 }
+export default Legend;

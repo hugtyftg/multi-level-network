@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Header() {
+const Header: React.FC = () => {
   return <div className="header" style={{
     width: '100%',
     height: '64px',
@@ -12,3 +12,4 @@ export default function Header() {
     fontWeight: 'bold'
   }}>Multilevel Network Intelligent Partition Layout</div>
 }
+export default Header;
