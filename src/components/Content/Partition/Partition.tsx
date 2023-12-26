@@ -105,7 +105,7 @@ const graphCfg: StyleCfg = {
     fontWeight: 800
   }
 }
-function Partition() {
+const Partition: React.FC = () => {
   // 引入store
   const store = useStore();  
   // autorun在初始化时自动运行，以及涉及到的observer值改变的时候也运行effect函数

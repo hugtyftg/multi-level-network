@@ -9,7 +9,7 @@ import SelectDataset from './SelectDataset/SelectDataset';
 import SearchIp from './SearchIp/SearchIp';
 import SearchPartition from './SearchPartition/SearchPartition';
 
-function Side() {
+const Side: React.FC = () => {
   const store = useStore();
   const dispose = autorun(() => {
     // 当curDatesetName改变的时候，更新数据

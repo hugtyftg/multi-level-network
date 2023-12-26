@@ -100,7 +100,7 @@ const graphCfg: StyleCfg = {
     }
   }
 }
-function RoleDistribution() {
+const RoleDistribution:React.FC = () => {
   const store = useStore();
   const dispose = reaction(() => store.graphData,
   (graphData) => {
