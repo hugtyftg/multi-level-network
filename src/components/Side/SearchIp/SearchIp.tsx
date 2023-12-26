@@ -4,7 +4,7 @@ import { CloudServerOutlined } from '@ant-design/icons'
 import { Space, Input, Button } from 'antd'
 import React, { useRef } from 'react'
 
-export default function SearchIp() {
+const SearchIp: React.FC  = () => {
   const inputIpRef: any = useRef(null);
   const store = useStore();
   const onSearchIp = () => {
@@ -25,3 +25,4 @@ export default function SearchIp() {
   </div>
   )
 }
+export default SearchIp;
