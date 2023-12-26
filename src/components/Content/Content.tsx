@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
-import Legend from '@/components/Legend/Legend'
-import Partition from '@/components/Partition/Partition'
+import Legend from '@/components/Content/Legend/Legend'
+import Partition from '@/components/Content/Partition/Partition'
 import { useStore } from '@/store/graphStore'
-import ViewName from '../ViewName/ViewName';
+import ViewName from './ViewName/ViewName';
 
 export default function Content() {
   const store = useStore();

@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import './Side.less'
-import { Button, Input, Select, Space } from 'antd';
-import { GlobalOutlined, ContainerOutlined, CloudServerOutlined } from '@ant-design/icons'
+import { Button, Input, Space } from 'antd';
+import { GlobalOutlined } from '@ant-design/icons'
 import { useStore } from '@/store/graphStore';
 import { observer } from 'mobx-react-lite';
 import MultiLevelPartitionGraph from '@/graph/MultiLevelPartitionGraph';
 import { autorun } from 'mobx';
-import RoleDistribution from '@/components/RoleDistribution/RoleDistribution';
-import AlarmDistribution from '@/components/AlarmDistribution/AlarmDistribution';
+import RoleDistribution from '@/components/Side/RoleDistribution/RoleDistribution';
+import AlarmDistribution from '@/components/Side/AlarmDistribution/AlarmDistribution';
+import SelectDataset from './SelectDataset/SelectDataset';
+import SearchIp from './SearchIp/SearchIp';
 
 function Side() {
   const store = useStore();
@@ -20,26 +22,9 @@ function Side() {
       store.updateGraphData(newGraphData);
     })
   })
-  const options: any[] = store.allDatasetNames.map((data: any) => ({
-    value: data.name,
-    label: data.name,
-  }))
-  const inputIpRef: any = useRef(null);
+
   const inputPartition1Ref: any = useRef(null);
   const inputPartition2Ref: any = useRef(null);
-
-  const onSelectDataset = (value: any) => {
-    store.updateDatasetName(value);
-  }
-  const onSearchIp = () => {
-    // input框输入的字符串默认是''
-    const inputIp: string = inputIpRef.current.input.value;
-    const result: boolean = (store.curGraphInstance as MultiLevelPartitionGraph).searchIp(inputIp);
-    // 如果没有查找到，返回false
-    if (!result) {
-      alert('当前未查找到该ip对应的设备节点')
-    }
-  }
   const onSearchPartition = () => {
     const partition1: string = inputPartition1Ref.current.input.value;
     const partition2: string = inputPartition2Ref.current.input.value;
@@ -76,15 +61,7 @@ function Side() {
           padding: 24,
           backgroundColor: '#fff'
         }}>
-  <div className="select-dataset">
-    <p>Please select dataset:</p>
-    <Select
-      defaultValue={options[0].value}
-      onChange={(value) => onSelectDataset(value)}
-      options={options}
-      menuItemSelectedIcon={<ContainerOutlined/>}
-    />
-  </div>
+  <SelectDataset />
   <div className="search-partition">
     <Space.Compact size="large">
       <Input addonBefore={<GlobalOutlined />} placeholder="az" style={{
@@ -94,12 +71,7 @@ function Side() {
       <Button type="primary" onClick={onSearchPartition}>Search</Button>
     </Space.Compact>
   </div>
-  <div className="search-ip">
-    <Space.Compact size="large">
-      <Input addonBefore={<CloudServerOutlined />} placeholder="device ip" ref={inputIpRef}/>
-      <Button type="primary" onClick={onSearchIp} >Search</Button>
-    </Space.Compact>
-  </div>
+  <SearchIp />
   <div className="distribution">
     <AlarmDistribution/>
     <RoleDistribution/>
