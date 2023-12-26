@@ -1,9 +1,7 @@
 import { makeAutoObservable } from 'mobx'
 import { createContext, useContext } from 'react';
 import MultiLevelPartitionGraph from '../graph/MultiLevelPartitionGraph';
-const datasetRangeList = ['6000', '10000', '20000', '2500', '1500', '500'];
-type ViewTypes = 'PARTITION' | 'HYPERNODE';
-
+import { datasetRangeList, ViewTypes } from '@/config/DEFAULT';
 class Store {
   // 画布分割图实例
   graphInstance: MultiLevelPartitionGraph | any = {};

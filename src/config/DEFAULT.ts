@@ -1,4 +1,5 @@
 import { StyleCfg } from "../interface/style"
+// 图实例的默认配置参数
 const DEFAULT_STYLE_CFG: StyleCfg = {
   width: 1800,
   height: 950,
@@ -112,6 +113,15 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
     fontWeight: 800
   }
 }
+// 系统的默认标题名称
+const DefaultHeaderTitle = 'Multilevel Network Intelligent Partition Layout';
+// 数据列表
+const datasetRangeList = ['6000', '10000', '20000', '2500', '1500', '500'];
+// 视图类型
+type ViewTypes = 'PARTITION' | 'HYPERNODE';
 export {
-  DEFAULT_STYLE_CFG
+  DEFAULT_STYLE_CFG,
+  DefaultHeaderTitle,
+  datasetRangeList,
 }
+export type { ViewTypes };

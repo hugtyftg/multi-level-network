@@ -1,6 +1,8 @@
 import React from 'react'
-
-const Header: React.FC = () => {
+type HeaderType = {
+  title: string
+}
+const Header: React.FC<HeaderType> = ({title}: HeaderType) => {
   return <div className="header" style={{
     width: '100%',
     height: '64px',
@@ -10,6 +12,8 @@ const Header: React.FC = () => {
     lineHeight: '64px',
     fontSize: '30px',
     fontWeight: 'bold'
-  }}>Multilevel Network Intelligent Partition Layout</div>
+  }}>
+    {title}
+  </div>
 }
 export default Header;
