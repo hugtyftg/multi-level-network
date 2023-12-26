@@ -1,5 +1,6 @@
 import React from 'react'
 import { Side, Content, Header } from '@/components'
+import { DefaultHeaderTitle } from '@/config/DEFAULT'
 
 export default function View() {
   return (
@@ -10,7 +11,7 @@ export default function View() {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-      <Header/>
+      <Header title={DefaultHeaderTitle}/>
       <div className="main" style={{
         flex: 1,
         backgroundColor: '#f5f5f5',
