@@ -2,6 +2,7 @@ import { makeAutoObservable } from 'mobx'
 import { createContext, useContext } from 'react';
 import MultiLevelPartitionGraph from '../graph/MultiLevelPartitionGraph';
 import { datasetRangeList, ViewTypes } from '@/config/DEFAULT';
+import { group } from '@/interface/partition';
 class Store {
   // 画布分割图实例
   graphInstance: MultiLevelPartitionGraph | any = {};
@@ -14,6 +15,8 @@ class Store {
   datasetName: string = `${datasetRangeList[0]}_processed.json`;
   // 当前视图
   viewName: ViewTypes  = 'PARTITION';
+  // 当前展示的超点的数据
+  hyperNodeData: group | null = null;
   constructor() {
     makeAutoObservable(this, {}, {autoBind: true});
   }
