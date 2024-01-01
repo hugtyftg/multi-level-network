@@ -1,6 +1,4 @@
-import { StyleCfg } from "./style"
-
-// 原始数据格式
+/* 原始数据格式 */
 export interface originLink {
   src_ip : string | undefined,
   dst_ip : string | undefined,
@@ -21,9 +19,11 @@ export interface originData {
   nodes: Array<originNode>,
 }
 
-// 化简后的数据格式
+/* 化简后的数据格式 */
+// 每个设备
 export interface deviceNode {
   index: number,
+  groupIndex: number,
   az: string | undefined,
   pod_name: string | undefined,
   type: string | undefined,
@@ -32,31 +32,31 @@ export interface deviceNode {
   is_alarming: boolean,
   degree: number
 }
-
-export interface group{
+// 每个Group
+export interface group {
   groupIndex: number,
   isHyperNode: boolean,
   size: number,
   children: deviceNode[],
   isPerfectPod: boolean,
-  /* 多层级适配时会修改 */
-  az: string,
-  pod: string,
 }
-
+// group之间的每条link
 export interface groupLink {
   source: number,
   target: number,
 }
-
+// 化简后的数据
 export interface groupData {
   groupList: group[],
   groupLinks: groupLink[]
 }
-
+// 层级化的数据结构
 export interface hierarchicalStructure {
-  children: hierarchicalStructure[] | bottomLevelStructure[] | any, // 只有最底层才是bottomLevelStructure
+  // 只有最底层才是bottomLevelStructure
+  children: hierarchicalStructure[] | bottomLevelStructure[] | any,
+  // 当前层级
   hierarchy: string,
+  // 当前层级名称
   name: string
 }
 // 最底层的数据结构
