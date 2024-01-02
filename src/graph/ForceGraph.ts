@@ -1,6 +1,6 @@
 import { StyleCfg } from "@/interface/style";
 import BaseGraph from ".";
-import { drag, forceCenter, forceLink, forceManyBody, forceSimulation, select, zoom, zoomIdentity } from "d3";
+import { drag, forceCenter, forceCollide, forceLink, forceManyBody, forceSimulation, select, zoom, zoomIdentity } from "d3";
 import { deviceNode, group, originLink } from "@/interface/partition";
 
 export default class ForceGraph extends BaseGraph {
@@ -69,13 +69,18 @@ export default class ForceGraph extends BaseGraph {
   protected calculateAndDraw() {
     const nodes = this._data.children;
     const isIpInGroup = (ip: string, nodeInGroup: deviceNode[]): boolean => {
-      return nodeInGroup.findIndex((node: deviceNode) => {
+      let index = nodeInGroup.findIndex((node: deviceNode) => {
         return node.mgmt_ip === ip;
-      }) === -1 ? false : true;
+      })
+      if (index === -1) {
+        return false;
+      } else {
+        return true;
+      }
     }
     const links = [];
-    for (let i = 0; i < this.cfgs.originIpLinks!.length; i++) {
-      const originIpLink = this.cfgs.originIpLinks![i];
+    for (let i = 0; i < this._originIpLinks!.length; i++) {
+      const originIpLink = this._originIpLinks![i];
       let sourceIp: string = originIpLink.src_ip;
       let targetIp: string = originIpLink.dst_ip;
       let isSourceInGroup: boolean = isIpInGroup(sourceIp, nodes);
@@ -88,8 +93,6 @@ export default class ForceGraph extends BaseGraph {
         })
       }
     }
-    console.log(links);
-    
     this.nodesDOM = this.bottomNodeCell
       .append('g')
       .attr('class', 'nodesDOM')
@@ -123,9 +126,10 @@ export default class ForceGraph extends BaseGraph {
         .attr('transform', (d: any) => `translate(${d.x}, ${d.y})`)
     }
     const simulation = forceSimulation(nodes)
-    .force('link', forceLink(links).id((node: any) => node.mgmt_ip))
-    .force('charge', forceManyBody().strength(-3))
+    .force('link', forceLink(links).id((node: any) => node.mgmt_ip).distance(50))
+    .force('charge', forceManyBody().strength(-5))
     .force('center', forceCenter(this._width / 2, this._height / 2))
+    .force('collide', forceCollide(15))
     .on('tick', ticked);
     this.nodesDOM.call(drag()
       .on('start', (event) => {

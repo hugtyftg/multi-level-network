@@ -29,18 +29,18 @@ const Side: React.FC = () => {
     })
   })
   // TODO：模拟展开的力导引图是第一个超点里面的数据
-  const dispose3 = reaction(() => store.partitionGraphData, (partitionGraphData) => {
-    if (!store.isCurPartitionGraphDataEmpty) {
-      store.updateHyperNodeData((partitionGraphData as groupData).groupList[0]);
-      store.updateViewName('HYPERNODE');
-    }
-  })
+  // const dispose3 = reaction(() => store.partitionGraphData, (partitionGraphData) => {
+  //   if (!store.isCurPartitionGraphDataEmpty) {
+  //     store.updateHyperNodeData((partitionGraphData as groupData).groupList[16]);
+  //     store.updateViewName('HYPERNODE');
+  //   }
+  // })
   // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数
   useEffect(() => {
     return () => {
       dispose();
       dispose2();
-      dispose3();
+      // dispose3();
     }
   })
   return <div className="side" style={{

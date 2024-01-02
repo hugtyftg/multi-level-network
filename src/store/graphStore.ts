@@ -22,6 +22,7 @@ class Store {
   // 原始图的数据
   originGraphData: originData | object = {};
   constructor() {
+    // 通过 action.bound 绑定 this 的指向
     makeAutoObservable(this, {}, {autoBind: true});
   }
   updateGraphInstance(newGraphInstance: any) {
@@ -128,6 +129,6 @@ class Store {
 }
 const store = new Store();
 const Context = createContext(store);
-export const useStore = ()=> {
+export const useStore = () => {
   return useContext(Context);
 }

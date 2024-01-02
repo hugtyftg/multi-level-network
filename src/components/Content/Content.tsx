@@ -3,7 +3,10 @@ import Legend from '@/components/Content/Legend/Legend'
 import Partition from '@/components/Content/Partition/Partition';
 import ViewName from '@/components/Content/ViewName/ViewName';
 import HyperNode from '@/components/Content/HyperNode/HyperNode';
-export default function Content() {
+import { useStore } from '@/store/graphStore';
+import { observer } from 'mobx-react-lite';
+function Content() {
+  const {curViewName} = useStore();
   return (
     <div className="content" style={{
       flex: 1,
@@ -26,9 +29,9 @@ export default function Content() {
       <div className="content-bottom" style={{
         flex: 19,
       }}>
-        {/* <Partition/> */}
-        <HyperNode />
+        {curViewName === 'PARTITION' ? <Partition/> : <HyperNode/>}
       </div>
     </div>
   )
 }
+export default observer(Content);
