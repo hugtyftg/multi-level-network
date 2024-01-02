@@ -4,12 +4,13 @@ import { StyleCfg } from '@/interface/style';
 import { useStore } from '@/store/graphStore';
 import { reaction } from 'mobx';
 import { observer } from 'mobx-react-lite';
+import BaseGraph from '@/graph';
 const graphCfg: StyleCfg = {
   dataName: '',
   width: 1876,
   height: 1081,
   // 空白填充度和强度，可暴露出来让用户配置，blankFillDegree和blankFillStrength越大，填充部分越大
-  divBoxSelector: '.partition',
+  divBoxSelector: '.partition-view',
   emphasisName: 'cnt',
   scaleThreshold: 1.5,
   blankFillDegree: 20,
@@ -110,19 +111,20 @@ const Partition: React.FC = () => {
   const store = useStore();  
   // autorun在初始化时自动运行，以及涉及到的observer值改变的时候也运行effect函数
   // reaction在初始化时不运行，只有data函数中访问过的observer变更的时候才调用effect函数
-  const dispose = reaction(() => store.graphData,
-  (graphData) => {
-    if (!store.isCurGraphDataEmpty) {
+  const dispose = reaction(() => store.partitionGraphData,
+  (partitionGraphData) => {
+    // 如果当前加载完毕了分割相关的数据并且需要展示的视图是分割视图
+    if (!store.isCurPartitionGraphDataEmpty && store.curViewName === 'PARTITION') {
       // 如果当前没有graph，直接生成
       if (!store.isCurGraphInstanceEmpty) { 
         // 如果已经有graph，先清空画布，然后重置graph instance，再绘制
-        (store.curGraphInstance as MultiLevelPartitionGraph).destory();
+        (store.curGraphInstance as BaseGraph).destory();
         store.resetGraphInstance();
       }
       store.updateGraphInstance(new MultiLevelPartitionGraph({
         ...graphCfg, 
         dataName: store.datasetName,
-        data: graphData,
+        data: partitionGraphData,
       }));
     }
   })
@@ -132,13 +134,13 @@ const Partition: React.FC = () => {
     return () => {
       dispose();
       if (!store.isCurGraphInstanceEmpty) {
-        (store.curGraphInstance as MultiLevelPartitionGraph).destory();
+        (store.curGraphInstance as BaseGraph).destory();
         store.resetGraphInstance();
       }
     }
   })
   return (
-    <div className='partition' style={{
+    <div className='partition-view' style={{
       width: '100%',
       height: '100%',
       display: store.curViewName === 'PARTITION' ? 'block' : 'none'

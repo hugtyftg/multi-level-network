@@ -33,8 +33,7 @@ class BaseGraph {
   /* -----------------------------点击高亮--------------------------- */
   public clickedNodeGroupDatum: any;
   public clickedNodeGroupIndex: number = -1;
-  constructor(props: StyleCfg
-    ) {
+  constructor(props: StyleCfg) {
     this.setCfgs(props);
   }
   // 运行
@@ -45,7 +44,8 @@ class BaseGraph {
   }
   // 初始化画布
   protected initSvg() {}
+
   // 销毁
-  protected destory() {}
+  public destory() {}
 }
 export default BaseGraph;

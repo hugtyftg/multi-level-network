@@ -17,7 +17,7 @@ const Side: React.FC = () => {
     fetch(`${import.meta.env.BASE_URL}data/${store.curDatasetName}`)
     .then(res => res.json())
     .then(newGraphData => {
-      store.updateGraphData(newGraphData);
+      store.updatePartitionGraphData(newGraphData);
     })
   })
   // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数

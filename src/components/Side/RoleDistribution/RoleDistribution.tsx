@@ -4,6 +4,7 @@ import { useStore } from '@/store/graphStore';
 import { reaction } from 'mobx';
 import RoleDistributionGraph from '@/graph/RoleDistributionGraph';
 import { StyleCfg } from '@/interface/style';
+import BaseGraph from '@/graph';
 const graphCfg: StyleCfg = {
   dataName: '10000_processed.json',
   width: 1620,
@@ -102,9 +103,9 @@ const graphCfg: StyleCfg = {
 }
 const RoleDistribution:React.FC = () => {
   const store = useStore();
-  const dispose = reaction(() => store.graphData,
-  (graphData) => {
-    if (!store.isCurGraphDataEmpty) {
+  const dispose = reaction(() => store.partitionGraphData,
+  (partitionGraphData) => {
+    if (!store.isCurPartitionGraphDataEmpty) {
       // 如果当前已经加载过图实例，需要先清空再重新绘制
       if (!store.isCurRoleDistriGraphInstanceEmpty) {
         (store.curRoleDistriGraphInstance as RoleDistributionGraph).destory();
@@ -112,7 +113,7 @@ const RoleDistribution:React.FC = () => {
       }
       store.updateRoleDistriGraphInstance(new RoleDistributionGraph({
         ...graphCfg,
-        data: graphData,
+        data: partitionGraphData,
         dataName: store.datasetName,
         width: 300,
         height: 250,
@@ -120,9 +121,15 @@ const RoleDistribution:React.FC = () => {
       }))
     }
   })
+  // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数
+  // 在组件生命周期走到尽头、即将被销毁的时候，需要先销毁svg元素，然后重制graph当前显示的graph实例
   useEffect(() => {
     return () => {
       dispose();
+      if (!store.isCurRoleDistriGraphInstanceEmpty) {
+        (store.curRoleDistriGraphInstance as BaseGraph).destory();
+        store.resetRoleDistriGraphInstance();
+      }
     }
   })
   return (
