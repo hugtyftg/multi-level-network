@@ -111,10 +111,19 @@ const Partition: React.FC = () => {
   const store = useStore();  
   // autorun在初始化时自动运行，以及涉及到的observer值改变的时候也运行effect函数
   // reaction在初始化时不运行，只有data函数中访问过的observer变更的时候才调用effect函数
-  const dispose = reaction(() => store.partitionGraphData,
-  (partitionGraphData) => {
+  const dispose = reaction(() => ({
+    partitionGraphData: store.partitionGraphData,
+    viewName: store.viewName
+  }),
+  ({partitionGraphData}) => {
+    console.log('partition reaction');
+    console.log(store.isCurPartitionGraphDataEmpty ? 'empty':'not empty');
+    
     // 如果当前加载完毕了分割相关的数据并且需要展示的视图是分割视图
-    if (!store.isCurPartitionGraphDataEmpty && store.curViewName === 'PARTITION') {
+    if (!store.isCurPartitionGraphDataEmpty 
+      && store.curViewName === 'PARTITION'
+    ) {
+      console.log('partition render');
       // 如果当前没有graph，直接生成
       if (!store.isCurGraphInstanceEmpty) { 
         // 如果已经有graph，先清空画布，然后重置graph instance，再绘制
@@ -143,7 +152,7 @@ const Partition: React.FC = () => {
     <div className='partition-view' style={{
       width: '100%',
       height: '100%',
-      display: store.curViewName === 'PARTITION' ? 'block' : 'none'
+      // display: store.curViewName === 'PARTITION' ? 'block' : 'none'
     }}></div>
   )
 }

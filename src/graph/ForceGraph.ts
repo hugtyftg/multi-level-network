@@ -1,6 +1,6 @@
 import { StyleCfg } from "@/interface/style";
 import BaseGraph from ".";
-import { forceCenter, forceLink, forceManyBody, forceSimulation, select, zoom, zoomIdentity } from "d3";
+import { drag, forceCenter, forceCollide, forceLink, forceManyBody, forceSimulation, select, zoom, zoomIdentity } from "d3";
 import { deviceNode, group, originLink } from "@/interface/partition";
 
 export default class ForceGraph extends BaseGraph {
@@ -33,6 +33,7 @@ export default class ForceGraph extends BaseGraph {
     // svg画布
     this.svg = this.divBox.append('svg')
       .attr('id', 'graph-svg')
+      .style('border', '1px solid black')
       .attr('width', this._width)
       .attr('height', this._height);
     // 画布分割的graph g元素
@@ -40,7 +41,6 @@ export default class ForceGraph extends BaseGraph {
       .attr('id', 'graph-container');
     this.bottomCells = this.container.append('g')
     .attr('id',"bottom-cells")
-    .attr("transform", `translate(${[-this._width / 2, -this._height / 2]})`);
     // 底层的nodes和edges容器cell
     this.bottomEdgeCell = this.bottomCells.append('g').attr('id', 'bottom-edge-cell');
     this.bottomNodeCell = this.bottomCells.append('g').attr('id', 'bottom-node-cell');
@@ -69,25 +69,30 @@ export default class ForceGraph extends BaseGraph {
   protected calculateAndDraw() {
     const nodes = this._data.children;
     const isIpInGroup = (ip: string, nodeInGroup: deviceNode[]): boolean => {
-      return nodeInGroup.findIndex((node: deviceNode) => {
+      let index = nodeInGroup.findIndex((node: deviceNode) => {
         return node.mgmt_ip === ip;
-      }) === -1 ? false : true;
+      })
+      if (index === -1) {
+        return false;
+      } else {
+        return true;
+      }
     }
-    const links = this._originIpLinks.filter((originIpLink: originLink) => {
+    const links = [];
+    for (let i = 0; i < this._originIpLinks!.length; i++) {
+      const originIpLink = this._originIpLinks![i];
       let sourceIp: string = originIpLink.src_ip;
       let targetIp: string = originIpLink.dst_ip;
       let isSourceInGroup: boolean = isIpInGroup(sourceIp, nodes);
       let isTargetInGroup: boolean = isIpInGroup(targetIp, nodes);
       // 只有起始端点都属于这个group的连边才满足要求
       if (isSourceInGroup && isTargetInGroup) {
-        return true;
-      } else {
-        return false;
+        links.push({
+          source: originIpLink.src_ip,
+          target: originIpLink.dst_ip
+        })
       }
-    }).map((originIpLinnk: originLink) => ({
-      source: originIpLinnk.src_ip,
-      target: originIpLinnk.dst_ip
-    }))
+    }
     this.nodesDOM = this.bottomNodeCell
       .append('g')
       .attr('class', 'nodesDOM')
@@ -97,8 +102,11 @@ export default class ForceGraph extends BaseGraph {
         .attr('class', 'node');
     this.nodesDOM
       .append('circle')
-      .attr('radius', 5)
-      .attr('fill', 'blue');
+      .attr('r', 15)
+      .attr('fill', '#ccc')
+      .attr('stroke', '#000')
+      .attr('stroke-width', 1.5)
+      .attr('cursor', 'move');
     this.edgesDOM = this.bottomEdgeCell
       .append('g')
       .attr('class', 'edgesDOM')
@@ -118,12 +126,25 @@ export default class ForceGraph extends BaseGraph {
         .attr('transform', (d: any) => `translate(${d.x}, ${d.y})`)
     }
     const simulation = forceSimulation(nodes)
-    .force('link', forceLink(links).id((node: any) => node.mgmt_ip))
-    .force('charge', forceManyBody())
+    .force('link', forceLink(links).id((node: any) => node.mgmt_ip).distance(50))
+    .force('charge', forceManyBody().strength(-5))
     .force('center', forceCenter(this._width / 2, this._height / 2))
+    .force('collide', forceCollide(15))
     .on('tick', ticked);
-
-
+    this.nodesDOM.call(drag()
+      .on('start', (event) => {
+        if (!event.active) simulation.alphaTarget(0.01).restart();
+        event.subject.fx = event.subject.x;
+        event.subject.fy = event.subject.y;
+      }).on('drag', (event) => {
+        event.subject.fx = event.x;
+        event.subject.fy = event.y;
+      }).on('end', (event) => {
+        if (!event.active) simulation.alphaTarget(0);
+        event.subject.fx = null;
+        event.subject.fy = null;
+      })
+    )
     
   }
   // 销毁，清除指定svg的所有内容 #graph-svg，解除事件绑定
