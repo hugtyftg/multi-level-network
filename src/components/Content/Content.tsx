@@ -1,11 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Legend from '@/components/Content/Legend/Legend'
-import Partition from '@/components/Content/Partition/Partition'
-import { useStore } from '@/store/graphStore'
-import ViewName from './ViewName/ViewName';
-
+import Partition from '@/components/Content/Partition/Partition';
+import ViewName from '@/components/Content/ViewName/ViewName';
+import HyperNode from '@/components/Content/HyperNode/HyperNode';
 export default function Content() {
-  const store = useStore();
   return (
     <div className="content" style={{
       flex: 1,
@@ -28,7 +26,8 @@ export default function Content() {
       <div className="content-bottom" style={{
         flex: 19,
       }}>
-        <Partition/>
+        {/* <Partition/> */}
+        <HyperNode />
       </div>
     </div>
   )

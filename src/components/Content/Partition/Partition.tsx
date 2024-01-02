@@ -143,7 +143,7 @@ const Partition: React.FC = () => {
     <div className='partition-view' style={{
       width: '100%',
       height: '100%',
-      display: store.curViewName === 'PARTITION' ? 'block' : 'none'
+      // display: store.curViewName === 'PARTITION' ? 'block' : 'none'
     }}></div>
   )
 }

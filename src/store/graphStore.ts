@@ -2,23 +2,25 @@ import { makeAutoObservable } from 'mobx'
 import { createContext, useContext } from 'react';
 import MultiLevelPartitionGraph from '../graph/MultiLevelPartitionGraph';
 import { datasetRangeList, ViewTypes } from '@/config/DEFAULT';
-import { group } from '@/interface/partition';
+import { group, originData } from '@/interface/partition';
 import BaseGraph from '@/graph';
 class Store {
-  // 在右侧展示的图形的实例
+  // 在右侧展示的主图的实例
   graphInstance: MultiLevelPartitionGraph | BaseGraph | object = {};
+  // 右侧展示的主图的类型
+  viewName: ViewTypes  = 'PARTITION';
   // roleDistribution图实例
-  roleDistriGraphInstance: any = {};
-  // alarming distribution graph instance
-  alarmDistriGraphInstance: any = {};
+  roleDistriGraphInstance: object = {};
+  // alarming distribution图实例
+  alarmDistriGraphInstance: object = {};
   // 当前展示的分割图的数据
-  partitionGraphData: any = {};
+  partitionGraphData: object = {};
   // 当前分割图的数据集名称
   datasetName: string = `${datasetRangeList[0]}_processed.json`;
-  // 当前视图
-  viewName: ViewTypes  = 'PARTITION';
   // 当前展示的超点的数据
-  hyperNodeData: group | any = {};
+  hyperNodeData: group | object = {};
+  // 原始图的数据
+  originGraphData: originData | object = {};
   constructor() {
     makeAutoObservable(this, {}, {autoBind: true});
   }
@@ -43,6 +45,9 @@ class Store {
   updateHyperNodeData(newHyperNodeData: group) {
     this.hyperNodeData = newHyperNodeData;
   }
+  updateOriginGraphData(newOriginGraphData: originData) {
+    this.originGraphData = newOriginGraphData;
+  }
   resetGraphInstance() {
     this.graphInstance = {};
   }
@@ -62,7 +67,10 @@ class Store {
     this.viewName = 'PARTITION';
   }
   resetHyperNodeData() {
-    this.hyperNodeData = null;
+    this.hyperNodeData = {};
+  }
+  resetOriginGraphData() {
+    this.originGraphData = {};
   }
   get curGraphInstance() {
     return this.graphInstance;
@@ -85,6 +93,9 @@ class Store {
   get curHyperNodeData (){
     return this.hyperNodeData;
   }
+  get curOriginGraphData() {
+    return this.originGraphData;
+  }
   get isCurGraphInstanceEmpty() {
     return Object.keys(this.curGraphInstance).length === 0;
   }
@@ -99,6 +110,12 @@ class Store {
   }
   get isCurHyperNodeDataEmpty() {
     return Object.keys(this.curHyperNodeData).length === 0;
+  }
+  // 在mobx中所有的property会默认加上一个symbol表示它是被mobx监测观察的，
+  // 因此即使在这个对象为空的时候，仍然有这么一个symbol属性，不可以通过后两种方法判断这个对象是否传入了数据
+  get isCurOriginGraphDataEmpty() {
+    // console.log(Reflect.ownKeys(this.curOriginGraphData));
+    return Object.keys(this.curOriginGraphData).length === 0;
   }
   get allDatasetNames(): Array<{name: string, id: string}> {
     return datasetRangeList.map((v: string) => {

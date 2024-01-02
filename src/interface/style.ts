@@ -26,7 +26,7 @@ interface StyleCfg {
     normal: MaskStyle
     selected: MaskStyle
   },
-  maskLabelStyle: MaskLabelStyle
+  maskLabelStyle?: MaskLabelStyle
 }
 // 多边形样式
 interface MaskStyle {

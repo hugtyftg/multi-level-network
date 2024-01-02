@@ -1,22 +1,62 @@
 import BaseGraph from '@/graph';
 import ForceGraph from '@/graph/ForceGraph';
-import { group } from '@/interface/partition';
+import { originData } from '@/interface/partition';
 import { useStore } from '@/store/graphStore';
-import { autorun, reaction } from 'mobx';
-import React from 'react';
-const ViewName: React.FC = () => {
+import { reaction } from 'mobx';
+import React, { useEffect } from 'react';
+const HyperNode: React.FC = () => {
   const store = useStore();
-  const dispose =reaction(() => store.hyperNodeData, (hyperNodeData: group | null) => {
-    if (!store.isCurHyperNodeDataEmpty && store.curViewName === 'HYPERNODE') {
-      if (store.isCurGraphInstanceEmpty) {
+  const dispose = reaction(() => ({
+    hyperNodeData: store.hyperNodeData,
+    originGraphData: store.originGraphData,
+  }),
+  (observableObj) => {
+    if (!store.isCurHyperNodeDataEmpty 
+      && !store.isCurOriginGraphDataEmpty 
+      && store.curViewName === 'HYPERNODE'
+    ) {
+      if (!store.isCurGraphInstanceEmpty) {
         // 如果已经有graph，先清空画布，然后重置graph instance，再绘制
         (store.curGraphInstance as BaseGraph).destory();
         store.resetGraphInstance();
       }
-      // store.updateGraphInstance(new ForceGraph({
-      //   dataName: 'hyper',
-      //   data: 
-      // }));
+      let originIpLinks = (observableObj.originGraphData as originData).links;
+      store.updateGraphInstance(new ForceGraph({
+        dataName: 'hyper',
+        data: observableObj.hyperNodeData,
+        width: 1876,
+        height: 1081,
+        originIpLinks,
+        divBoxSelector: '.hyper-node-view',
+        nodeStyle: {
+          normal: {
+
+          },
+          selected: {
+
+          }
+        },
+        nodeLabelStyle: {
+
+        },
+        edgeStyle: {
+          normal: {
+
+          },
+          selected: {
+
+          }
+        }
+      }));
+    }
+  })
+  useEffect(() => {
+    return () => {
+      dispose();
+      if (!store.isCurGraphInstanceEmpty) {
+        (store.curGraphInstance as BaseGraph).destory();
+        store.resetGraphInstance();
+      }
     }
   })
   return (
@@ -26,4 +66,4 @@ const ViewName: React.FC = () => {
   );
 };
 
-export default ViewName;
+export default HyperNode;
