@@ -1,9 +1,9 @@
 /* 原始数据格式 */
 export interface originLink {
-  src_ip : string | undefined,
-  dst_ip : string | undefined,
-  src_port: string | undefined,
-  dst_port: string | undefined,
+  src_ip : string,
+  dst_ip : string,
+  src_port: string,
+  dst_port: string,
 }
 
 export interface originNode {

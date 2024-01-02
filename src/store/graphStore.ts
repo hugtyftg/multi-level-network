@@ -3,20 +3,22 @@ import { createContext, useContext } from 'react';
 import MultiLevelPartitionGraph from '../graph/MultiLevelPartitionGraph';
 import { datasetRangeList, ViewTypes } from '@/config/DEFAULT';
 import { group } from '@/interface/partition';
+import BaseGraph from '@/graph';
 class Store {
-  // 画布分割图实例
-  graphInstance: MultiLevelPartitionGraph | any = {};
+  // 在右侧展示的图形的实例
+  graphInstance: MultiLevelPartitionGraph | BaseGraph | object = {};
   // roleDistribution图实例
   roleDistriGraphInstance: any = {};
   // alarming distribution graph instance
   alarmDistriGraphInstance: any = {};
-  // 全局共用的数据
-  graphData: any = {};
+  // 当前展示的分割图的数据
+  partitionGraphData: any = {};
+  // 当前分割图的数据集名称
   datasetName: string = `${datasetRangeList[0]}_processed.json`;
   // 当前视图
   viewName: ViewTypes  = 'PARTITION';
   // 当前展示的超点的数据
-  hyperNodeData: group | null = null;
+  hyperNodeData: group | any = {};
   constructor() {
     makeAutoObservable(this, {}, {autoBind: true});
   }
@@ -29,14 +31,17 @@ class Store {
   updateAlarmDistriGraphInstance(newAlarmDistriGraphInstance: any) {
     this.alarmDistriGraphInstance = newAlarmDistriGraphInstance;
   }
-  updateGraphData(newGraphData: any) {
-    this.graphData = newGraphData;
+  updatePartitionGraphData(newPartitionGraphData: any) {
+    this.partitionGraphData = newPartitionGraphData;
   }
   updateDatasetName(newDatasetName: string) {
     this.datasetName = newDatasetName;
   }
   updateViewName(newViewName: ViewTypes) {
     this.viewName = newViewName;
+  }
+  updateHyperNodeData(newHyperNodeData: group) {
+    this.hyperNodeData = newHyperNodeData;
   }
   resetGraphInstance() {
     this.graphInstance = {};
@@ -47,14 +52,17 @@ class Store {
   resetAlarmDistriGraphInstance() {
     this.alarmDistriGraphInstance = {};
   }
-  resetGraphData() {
-    this.graphData = {};
+  resetPartitionGraphData() {
+    this.partitionGraphData = {};
   }
   resetGraphDatasetName() {
     this.datasetName = `${datasetRangeList[0]}_processed.json`;
   }
   resetViewName() {
     this.viewName = 'PARTITION';
+  }
+  resetHyperNodeData() {
+    this.hyperNodeData = null;
   }
   get curGraphInstance() {
     return this.graphInstance;
@@ -65,14 +73,17 @@ class Store {
   get curAlarmDistriGraphInstance() {
     return this.alarmDistriGraphInstance;
   }
-  get curGraphData() {
-    return this.graphData;
+  get curPartitionGraphData() {
+    return this.partitionGraphData;
   }
   get curDatasetName() {
     return this.datasetName;
   }
   get curViewName() {
     return this.viewName;
+  }
+  get curHyperNodeData (){
+    return this.hyperNodeData;
   }
   get isCurGraphInstanceEmpty() {
     return Object.keys(this.curGraphInstance).length === 0;
@@ -83,8 +94,11 @@ class Store {
   get isCurAlarmDistriGraphInstanceEmpty() {
     return Object.keys(this.curAlarmDistriGraphInstance).length === 0;
   }
-  get isCurGraphDataEmpty() {    
-    return Object.keys(this.curGraphData).length === 0;
+  get isCurPartitionGraphDataEmpty() {    
+    return Object.keys(this.curPartitionGraphData).length === 0;
+  }
+  get isCurHyperNodeDataEmpty() {
+    return Object.keys(this.curHyperNodeData).length === 0;
   }
   get allDatasetNames(): Array<{name: string, id: string}> {
     return datasetRangeList.map((v: string) => {

@@ -32,8 +32,6 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     public groupPolygonMap: any = {};
     constructor(props: StyleCfg) {
       super(props);
-      // 参数初始化
-      this.setCfgs(props);
       this._data = this.cfgs.data;
       this._width = this.cfgs.width;
       this._height = this.cfgs.height;
@@ -235,17 +233,17 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       this.container.selectAll(`path.pod[data-id=${relatedMask}]`)
         // 存在某些pod高亮改顺序之后，遮盖az的边界的问题
         // .raise()
-        .attr('opacity', highlightAttr?.maskStyle?.opacity ?? this.cfgs.maskStyle.selected.opacity)
-        .attr('fill', highlightAttr?.maskStyle?.color ?? this.cfgs.maskStyle.selected.color)
+        .attr('opacity', highlightAttr?.maskStyle?.opacity ?? this.cfgs.maskStyle?.selected.opacity)
+        .attr('fill', highlightAttr?.maskStyle?.color ?? this.cfgs.maskStyle?.selected.color)
         // .attr('stroke-width', highlightAttr?.maskStyle?.strokeWidth ?? this.cfgs.maskStyle.selected.strokeWidth)
         // .attr('stroke', highlightAttr?.maskStyle?.strokeColor ?? this.cfgs.maskStyle.selected.strokeColor);
     }
     private resetMask(hierarchy: string) {
       selectAll(`path.${hierarchy}`)
-        .attr('fill', this.cfgs.maskStyle.normal.color)
-        .attr('opacity', this.cfgs.maskStyle.normal.opacity as number)
-        .attr('stroke-width', this.cfgs.maskStyle.normal.strokeWidth as number)
-        .attr('stroke', this.cfgs.maskStyle.normal.strokeColor);
+        .attr('fill', this.cfgs.maskStyle?.normal.color)
+        .attr('opacity', this.cfgs.maskStyle?.normal.opacity as number)
+        .attr('stroke-width', this.cfgs.maskStyle?.normal.strokeWidth as number)
+        .attr('stroke', this.cfgs.maskStyle?.normal.strokeColor);
     }
     // 点击节点，高亮/取消高亮节点、连边及其关联节点
     private onClickNode(allNodesData: any, event: Event | any, highLightedNodeDatum: any) {
@@ -393,7 +391,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       /* ------------------消除随机性的分割----------------- */     
       /* ------------------cnt中心化----------------- */      
       for (let i = 0; i < weightedHierarchicalData.children.length; i++) {
-        centralizing(weightedHierarchicalData.children[i], 'name', this.cfgs.emphasisName)        
+        centralizing(weightedHierarchicalData.children[i], 'name', this.cfgs.emphasisName as string)        
       }
        /* ------------------cnt中心化----------------- */
     }
@@ -648,7 +646,7 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
       .force('y', forceY().y((d: any) => d.siteY).strength(positionStrength))
       /* ---------------------问题：多边形区域限制--------------------- */
       // 将radius调成很大的数值，可以得到四散的平铺效果（没有清晰的边界和聚类的感觉）
-      .force('collide', forceCollide().radius(this.cfgs.blankFillDegree).strength(this.cfgs.blankFillStrength))
+      .force('collide', forceCollide().radius(this.cfgs.blankFillDegree as number).strength(this.cfgs.blankFillStrength as number))
       .alphaDecay(0.15);
     simulation.on('tick', onTick);
     simulation.on('end', onTickEnd);
@@ -678,8 +676,8 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
     // 2.高亮分区，如果用户传入了新的样式，就用新的样式高亮分区；如果没传入，就用初始传入的selected样式高亮分区
     this.container.selectAll(`path.pod[data-id=${searchedPartitionId}]`)
       // .raise()
-      .attr('opacity', highlightAttr?.maskStyle?.opacity ?? this.cfgs.maskStyle.selected.opacity) // this.cfgs.maskStyle.selected.opacity和dii中的d.attr.selected.opacity是一样的逻辑，全局样式参数
-      .attr('fill', highlightAttr?.maskStyle?.color ?? this.cfgs.maskStyle.selected.color)
+      .attr('opacity', highlightAttr?.maskStyle?.opacity ?? this.cfgs.maskStyle?.selected.opacity) // this.cfgs.maskStyle.selected.opacity和dii中的d.attr.selected.opacity是一样的逻辑，全局样式参数
+      .attr('fill', highlightAttr?.maskStyle?.color ?? this.cfgs.maskStyle?.selected.color)
       // .attr('stroke-width', highlightAttr?.maskStyle?.strokeWidth ?? this.cfgs.maskStyle.selected.strokeWidth)
       // .attr('stroke', highlightAttr?.maskStyle?.strokeColor ?? this.cfgs.maskStyle.selected.strokeColor);
     // 内部节点的groupIndex（dii中已经将其处理成id string了，所以应该改成string[]）
@@ -777,10 +775,11 @@ export default class MultiLevelPartitionGraph extends BaseGraph{
   private removeNodesEdgesEventListener() {
     // 如果销毁的时候，nodes和edges还没有render完毕，那么就不予处理
     if (this.nodesDOM) {
-      this.nodesDOM.on('click', null);      
+      this.nodesDOM.on('click', null);
+      this.nodesDOM.on('dblclick', null);   
     }
     if (this.edgesDOM) {
-      this.edgesDOM.on('click', null);      
+      this.edgesDOM.on('click', null);
     }
   }
 }
