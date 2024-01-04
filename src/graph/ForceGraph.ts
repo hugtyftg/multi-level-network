@@ -1,8 +1,17 @@
-import { StyleCfg } from "@/interface/style";
-import BaseGraph from ".";
-import { drag, forceCenter, forceCollide, forceLink, forceManyBody, forceSimulation, select, zoom, zoomIdentity } from "d3";
-import { deviceNode, group, originLink } from "@/interface/partition";
-
+import { StyleCfg } from '@/interface/style';
+import BaseGraph from '.';
+import {
+  drag,
+  forceCenter,
+  forceCollide,
+  forceLink,
+  forceManyBody,
+  forceSimulation,
+  select,
+  zoom,
+  zoomIdentity,
+} from 'd3';
+import { deviceNode, group, originLink } from '@/interface/partition';
 export default class ForceGraph extends BaseGraph {
   // svg画布宽高
   protected _width: number = 0;
@@ -31,39 +40,49 @@ export default class ForceGraph extends BaseGraph {
     // 画布容器div
     this.divBox = select(this.cfgs.divBoxSelector);
     // svg画布
-    this.svg = this.divBox.append('svg')
+    this.svg = this.divBox
+      .append('svg')
       .attr('id', 'graph-svg')
       .style('border', '1px solid black')
       .attr('width', this._width)
       .attr('height', this._height);
     // 画布分割的graph g元素
-    this.container = this.svg.append('g')
-      .attr('id', 'graph-container');
-    this.bottomCells = this.container.append('g')
-    .attr('id',"bottom-cells")
+    this.container = this.svg.append('g').attr('id', 'graph-container');
+    this.bottomCells = this.container.append('g').attr('id', 'bottom-cells');
     // 底层的nodes和edges容器cell
-    this.bottomEdgeCell = this.bottomCells.append('g').attr('id', 'bottom-edge-cell');
-    this.bottomNodeCell = this.bottomCells.append('g').attr('id', 'bottom-node-cell');
+    this.bottomEdgeCell = this.bottomCells
+      .append('g')
+      .attr('id', 'bottom-edge-cell');
+    this.bottomNodeCell = this.bottomCells
+      .append('g')
+      .attr('id', 'bottom-node-cell');
   }
   // 渲染点边之前绑定的事件
   protected beforeRenderBindEvent() {
     // zoom 解决pinning的抖动问题：zoom事件绑定在svg，transfrom绑定在svg下面的container
     const zoomObj = zoom()
-      .translateExtent([[-this._width*4, -this._height*4], [this._width * 5, this._height * 5]])
+      .translateExtent([
+        [-this._width * 4, -this._height * 4],
+        [this._width * 5, this._height * 5],
+      ])
       .scaleExtent([0.3, 5])
       .on('zoom', (event: any) => {
-        this.container.attr("transform", event.transform);
-      })
+        this.container.attr('transform', event.transform);
+      });
     this.svg
       .call(zoomObj)
       // 指定初始缩放状态，注意，scale是按照面积放缩的，需要开根号
-      .call(zoomObj.transform, 
+      .call(
+        zoomObj.transform,
         zoomIdentity
-        .scale(0.99)
-        .translate(this._width * (1-Math.sqrt(0.99)), this._height * (1-Math.sqrt(0.99)))
+          .scale(0.99)
+          .translate(
+            this._width * (1 - Math.sqrt(0.99)),
+            this._height * (1 - Math.sqrt(0.99))
+          )
       )
       // 禁止双击自动放缩
-      .on('dblclick.zoom', null)
+      .on('dblclick.zoom', null);
   }
   // 计算布局并绘制力导引图
   protected calculateAndDraw() {
@@ -71,13 +90,13 @@ export default class ForceGraph extends BaseGraph {
     const isIpInGroup = (ip: string, nodeInGroup: deviceNode[]): boolean => {
       let index = nodeInGroup.findIndex((node: deviceNode) => {
         return node.mgmt_ip === ip;
-      })
+      });
       if (index === -1) {
         return false;
       } else {
         return true;
       }
-    }
+    };
     const links = [];
     for (let i = 0; i < this._originIpLinks!.length; i++) {
       const originIpLink = this._originIpLinks![i];
@@ -89,8 +108,8 @@ export default class ForceGraph extends BaseGraph {
       if (isSourceInGroup && isTargetInGroup) {
         links.push({
           source: originIpLink.src_ip,
-          target: originIpLink.dst_ip
-        })
+          target: originIpLink.dst_ip,
+        });
       }
     }
     this.nodesDOM = this.bottomNodeCell
@@ -98,8 +117,8 @@ export default class ForceGraph extends BaseGraph {
       .attr('class', 'nodesDOM')
       .selectAll('g.node')
       .data(nodes)
-        .join('g')
-        .attr('class', 'node');
+      .join('g')
+      .attr('class', 'node');
     this.nodesDOM
       .append('circle')
       .attr('r', 15)
@@ -112,40 +131,46 @@ export default class ForceGraph extends BaseGraph {
       .attr('class', 'edgesDOM')
       .selectAll('g.link')
       .data(links)
-        .join('g')
-        .attr('class', 'link')
-          .append('line')
-          .attr('stroke', 'black');
+      .join('g')
+      .attr('class', 'link')
+      .append('line')
+      .attr('stroke', 'black');
     const ticked = () => {
       this.edgesDOM
-      .attr("x1", (d: any) => d.source.x)
-      .attr("y1", (d: any) => d.source.y)
-      .attr("x2", (d: any) => d.target.x)
-      .attr("y2", (d: any) => d.target.y);
-      this.nodesDOM
-        .attr('transform', (d: any) => `translate(${d.x}, ${d.y})`)
-    }
+        .attr('x1', (d: any) => d.source.x)
+        .attr('y1', (d: any) => d.source.y)
+        .attr('x2', (d: any) => d.target.x)
+        .attr('y2', (d: any) => d.target.y);
+      this.nodesDOM.attr('transform', (d: any) => `translate(${d.x}, ${d.y})`);
+    };
     const simulation = forceSimulation(nodes)
-    .force('link', forceLink(links).id((node: any) => node.mgmt_ip).distance(50))
-    .force('charge', forceManyBody().strength(-5))
-    .force('center', forceCenter(this._width / 2, this._height / 2))
-    .force('collide', forceCollide(15))
-    .on('tick', ticked);
-    this.nodesDOM.call(drag()
-      .on('start', (event) => {
-        if (!event.active) simulation.alphaTarget(0.01).restart();
-        event.subject.fx = event.subject.x;
-        event.subject.fy = event.subject.y;
-      }).on('drag', (event) => {
-        event.subject.fx = event.x;
-        event.subject.fy = event.y;
-      }).on('end', (event) => {
-        if (!event.active) simulation.alphaTarget(0);
-        event.subject.fx = null;
-        event.subject.fy = null;
-      })
-    )
-    
+      .force(
+        'link',
+        forceLink(links)
+          .id((node: any) => node.mgmt_ip)
+          .distance(50)
+      )
+      .force('charge', forceManyBody().strength(-5))
+      .force('center', forceCenter(this._width / 2, this._height / 2))
+      .force('collide', forceCollide(15))
+      .on('tick', ticked);
+    this.nodesDOM.call(
+      drag()
+        .on('start', (event) => {
+          if (!event.active) simulation.alphaTarget(0.01).restart();
+          event.subject.fx = event.subject.x;
+          event.subject.fy = event.subject.y;
+        })
+        .on('drag', (event) => {
+          event.subject.fx = event.x;
+          event.subject.fy = event.y;
+        })
+        .on('end', (event) => {
+          if (!event.active) simulation.alphaTarget(0);
+          event.subject.fx = null;
+          event.subject.fy = null;
+        })
+    );
   }
   // 销毁，清除指定svg的所有内容 #graph-svg，解除事件绑定
   public destory() {
@@ -157,14 +182,13 @@ export default class ForceGraph extends BaseGraph {
   }
   // 撤销绘制点边或清除画布时，去除对应的事件监听器
   private removeGraphEventListener() {
-    this.svg.on('zoom', null)
-    .on('dblclick.zoom', null);
+    this.svg.on('zoom', null).on('dblclick.zoom', null);
   }
   private removeNodesEdgesEventListener() {
     // 如果销毁的时候，nodes和edges还没有render完毕，那么就不予处理
     if (this.nodesDOM) {
       this.nodesDOM.on('click', null);
-      this.nodesDOM.on('dblclick', null);   
+      this.nodesDOM.on('dblclick', null);
     }
     if (this.edgesDOM) {
       this.edgesDOM.on('click', null);

@@ -1,7 +1,11 @@
-import { select } from "d3";
-import { StyleCfg } from "../interface/style";
-import { getAssetsImgUrl } from "../utils/fileAccessor";
-const renderIcons = (container: any, cfgs: StyleCfg, iconTypeList: string[]) => {
+import { select } from 'd3';
+import { StyleCfg } from '../interface/style';
+import { getAssetsImgUrl } from '../utils/fileAccessor';
+const renderIcons = (
+  container: any,
+  cfgs: StyleCfg,
+  iconTypeList: string[]
+) => {
   // 设置节点的icon defs元素，方便节点直接使用
   let iconDefs: any; // 节点icon声明元素
   if (document.querySelector(`svg#graph-painter defs#icon-defs`)) {
@@ -9,26 +13,25 @@ const renderIcons = (container: any, cfgs: StyleCfg, iconTypeList: string[]) => 
     iconDefs = select('defs#icon-defs');
   } else {
     // 否则新建
-    iconDefs = container.append('defs')
-      .attr('id', 'icon-defs');
+    iconDefs = container.append('defs').attr('id', 'icon-defs');
   }
   // 遍历待绘制的 icon 元素列表
   iconTypeList.forEach((iconType: string) => {
-    const iconPattern = iconDefs.append('pattern')
+    const iconPattern = iconDefs
+      .append('pattern')
       .datum(iconType)
       .attr('id', `node-icon-${iconType}`)
       .attr('width', 1)
       .attr('height', 1);
-    iconPattern.append('image')
+    iconPattern
+      .append('image')
       // .attr('href', `../../assets/icon/${iconType}.svg`) // 图标svg
       .attr('href', getAssetsImgUrl(iconType))
       .attr('preserveAspectRatio', 'none') // 放缩比，填充整个circle
-      .attr('width', cfgs.nodeStyle.normal.radius as number * 1.4)
-      .attr('height', cfgs.nodeStyle.normal.radius as number * 1.4)
-      .attr('x', cfgs.nodeStyle.normal.radius as number * 0.3)
-      .attr('y', cfgs.nodeStyle.normal.radius as number * 0.3)
-      })
-}
-export {
-  renderIcons
-}
+      .attr('width', (cfgs.nodeStyle.normal.radius as number) * 1.4)
+      .attr('height', (cfgs.nodeStyle.normal.radius as number) * 1.4)
+      .attr('x', (cfgs.nodeStyle.normal.radius as number) * 0.3)
+      .attr('y', (cfgs.nodeStyle.normal.radius as number) * 0.3);
+  });
+};
+export { renderIcons };

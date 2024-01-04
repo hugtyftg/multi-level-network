@@ -1,5 +1,5 @@
-import { observer } from 'mobx-react-lite'
-import React, { useEffect } from 'react'
+import { observer } from 'mobx-react-lite';
+import React, { useEffect } from 'react';
 import { useStore } from '@/store/graphStore';
 import { reaction } from 'mobx';
 import RoleDistributionGraph from '@/graph/RoleDistributionGraph';
@@ -20,15 +20,15 @@ const graphCfg: StyleCfg = {
       opacity: 1,
       strokeWidth: 1,
       stroke: 'none',
-      fill: 'none'
+      fill: 'none',
     },
     selected: {
-      radius:8,
+      radius: 8,
       opacity: 1,
       strokeWidth: 5,
-      stroke: '#2B41FF',  
+      stroke: '#2B41FF',
       fill: 'none',
-    }
+    },
   },
   nodeLabelStyle: {
     stroke: 'black',
@@ -49,7 +49,7 @@ const graphCfg: StyleCfg = {
       strokeWidth: 2,
       strokeColor: '#3980FE',
       strokeDash: 'solid',
-    }
+    },
   },
   maskStyle: {
     normal: {
@@ -63,16 +63,16 @@ const graphCfg: StyleCfg = {
             return '#DCDCDC';
           }
         } else {
-          throw new Error("当前层级不是level2或者level3");
+          throw new Error('当前层级不是level2或者level3');
         }
       },
       strokeColor: (d: any) => {
         if (d.data.hierarchy === 'az') {
           return 'white';
         } else if (d.data.hierarchy === 'pod') {
-          return 'white'
+          return 'white';
         } else {
-          throw new Error("当前层级不是level2或者level3");
+          throw new Error('当前层级不是level2或者level3');
         }
       },
       strokeWidth: (d: any) => {
@@ -81,15 +81,15 @@ const graphCfg: StyleCfg = {
         } else if (d.data.hierarchy === 'pod') {
           return 3;
         } else {
-          throw new Error("当前层级不是level2或者level3");
+          throw new Error('当前层级不是level2或者level3');
         }
       },
-      opacity: 1
+      opacity: 1,
     },
     selected: {
       color: '#CEDEFF',
       strokeColor: 'white',
-    }
+    },
   },
   maskLabelStyle: {
     fill: (d: any) => {
@@ -98,29 +98,33 @@ const graphCfg: StyleCfg = {
       } else {
         return '#555';
       }
-    }
-  }
-}
-const RoleDistribution:React.FC = () => {
+    },
+  },
+};
+const RoleDistribution: React.FC = () => {
   const store = useStore();
-  const dispose = reaction(() => store.partitionGraphData,
-  (partitionGraphData) => {
-    if (!store.isCurPartitionGraphDataEmpty) {
-      // 如果当前已经加载过图实例，需要先清空再重新绘制
-      if (!store.isCurRoleDistriGraphInstanceEmpty) {
-        (store.curRoleDistriGraphInstance as RoleDistributionGraph).destory();
-        store.resetRoleDistriGraphInstance();
+  const dispose = reaction(
+    () => store.partitionGraphData,
+    (partitionGraphData) => {
+      if (!store.isCurPartitionGraphDataEmpty) {
+        // 如果当前已经加载过图实例，需要先清空再重新绘制
+        if (!store.isCurRoleDistriGraphInstanceEmpty) {
+          (store.curRoleDistriGraphInstance as RoleDistributionGraph).destory();
+          store.resetRoleDistriGraphInstance();
+        }
+        store.updateRoleDistriGraphInstance(
+          new RoleDistributionGraph({
+            ...graphCfg,
+            data: partitionGraphData,
+            dataName: store.datasetName,
+            width: 300,
+            height: 250,
+            divBoxSelector: '.role-distribution',
+          })
+        );
       }
-      store.updateRoleDistriGraphInstance(new RoleDistributionGraph({
-        ...graphCfg,
-        data: partitionGraphData,
-        dataName: store.datasetName,
-        width: 300,
-        height: 250,
-        divBoxSelector: '.role-distribution',
-      }))
     }
-  })
+  );
   // autorun和reaction返回一个取消响应式函数的dispose，需要在组件卸载的时候执行，以便释放该函数
   // 在组件生命周期走到尽头、即将被销毁的时候，需要先销毁svg元素，然后重制graph当前显示的graph实例
   useEffect(() => {
@@ -130,28 +134,35 @@ const RoleDistribution:React.FC = () => {
         (store.curRoleDistriGraphInstance as BaseGraph).destory();
         store.resetRoleDistriGraphInstance();
       }
-    }
-  })
+    };
+  });
   return (
-    <div className='role-distribution' style={{
-      width: '100%',
-      height: '300px',
-      marginTop: '25px'
-    }}>
-      <p style={{
-        textAlign: 'center',
-        fontSize: '18px',
-        fontWeight: 'bold',
-        color: '#000',
-        margin: '5px 0',
-        lineHeight: '30px',
-        height: '30px',
+    <div
+      className="role-distribution"
+      style={{
         width: '100%',
-        backgroundColor: '#fff',
-        borderRadius: '5px',
-        boxShadow: '0px 0px 5px gray'
-      }}>Device Role Distribution</p>
+        height: '300px',
+        marginTop: '25px',
+      }}
+    >
+      <p
+        style={{
+          textAlign: 'center',
+          fontSize: '18px',
+          fontWeight: 'bold',
+          color: '#000',
+          margin: '5px 0',
+          lineHeight: '30px',
+          height: '30px',
+          width: '100%',
+          backgroundColor: '#fff',
+          borderRadius: '5px',
+          boxShadow: '0px 0px 5px gray',
+        }}
+      >
+        Device Role Distribution
+      </p>
     </div>
-  )
-}
+  );
+};
 export default observer(RoleDistribution);

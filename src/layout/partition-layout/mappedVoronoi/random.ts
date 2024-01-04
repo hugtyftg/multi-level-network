@@ -1,17 +1,20 @@
-import {
-  polygonContains as d3PolygonContains
-} from 'd3-polygon';
-
-export default function random () {
-
+import { polygonContains as d3PolygonContains } from 'd3-polygon';
+export default function random() {
   let clippingPolygon: number[] | any,
     clippingExtent: number[] | any,
-    minXCoordinate: number | any, maxXCoordinate: number | any,
-    minYCoordinate: number | any, maxYCoordinate: number | any,
-    deltaX: number | any, deltaY: number | any;
+    minXCoordinate: number | any,
+    maxXCoordinate: number | any,
+    minYCoordinate: number | any,
+    maxYCoordinate: number | any,
+    deltaX: number | any,
+    deltaY: number | any;
 
-
-  function randomGenerator(d: any, i: number, arr: any, voronoiMapSimulation: any) {
+  function randomGenerator(
+    d: any,
+    i: number,
+    arr: any,
+    voronoiMapSimulation: any
+  ) {
     let needUpdateInternals: boolean = false;
     let xCoordinate: any, yCoordinate: any;
     if (clippingPolygon !== voronoiMapSimulation.clip()) {

@@ -5,6 +5,6 @@ export default class MappedVoronoiError implements Error {
   constructor(message: any) {
     this.message = message;
     this.stack = new Error().stack;
-    this.name = 'MappedVoronoiError'
+    this.name = 'MappedVoronoiError';
   }
 }

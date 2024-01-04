@@ -1,9 +1,5 @@
-import {
-  polygonCentroid as d3PolygonCentroid
-} from 'd3-polygon';
-
-
-export default function pie () {
+import { polygonCentroid as d3PolygonCentroid } from 'd3-polygon';
+export default function pie() {
   let startAngle: number | any = 0;
   let clippingPolygon: number[] | any,
     dataList: number[] | any,
@@ -11,7 +7,12 @@ export default function pie () {
     clippingPolygonCentroidPos: any,
     curHalfIncircleRadius: number | any,
     angleBetweenData: number | any;
-  function pieGenerator(d: any, i: number, arr: any, voronoiMapSimulation: any) {
+  function pieGenerator(
+    d: any,
+    i: number,
+    arr: any,
+    voronoiMapSimulation: any
+  ) {
     let needUpdateInternals = false;
 
     if (clippingPolygon !== voronoiMapSimulation.clip()) {
@@ -28,8 +29,12 @@ export default function pie () {
     }
     // 随机加上很小的浮动避免出现共线性或共圆性的点,再整体减去0.5保持平均数不变
     return [
-      clippingPolygonCentroidPos[0] + Math.cos(startAngle + i * angleBetweenData) * curHalfIncircleRadius + (voronoiMapSimulation.prng()() - 0.5) * 1E-3,
-      clippingPolygonCentroidPos[1] + Math.sin(startAngle + i * angleBetweenData) * curHalfIncircleRadius + (voronoiMapSimulation.prng()() - 0.5) * 1E-3
+      clippingPolygonCentroidPos[0] +
+        Math.cos(startAngle + i * angleBetweenData) * curHalfIncircleRadius +
+        (voronoiMapSimulation.prng()() - 0.5) * 1e-3,
+      clippingPolygonCentroidPos[1] +
+        Math.sin(startAngle + i * angleBetweenData) * curHalfIncircleRadius +
+        (voronoiMapSimulation.prng()() - 0.5) * 1e-3,
     ];
   }
 
@@ -43,9 +48,10 @@ export default function pie () {
 
   function updateInternals() {
     clippingPolygonCentroidPos = d3PolygonCentroid(clippingPolygon);
-    curHalfIncircleRadius = computeMinDistFromEdges(clippingPolygonCentroidPos, clippingPolygon) / 2;
+    curHalfIncircleRadius =
+      computeMinDistFromEdges(clippingPolygonCentroidPos, clippingPolygon) / 2;
     dataListLength = dataList.length;
-    angleBetweenData = 2 * Math.PI / dataListLength;
+    angleBetweenData = (2 * Math.PI) / dataListLength;
   }
 
   function computeMinDistFromEdges(vertex: any, clippingPolygon: any) {
@@ -68,7 +74,11 @@ export default function pie () {
     return minDistanceFromEdges;
   }
   // 点到线段的最短距离
-  function vDistance(vertex: number[] | any, edgeVertex0: number[] | any, edgeVertex1: number[] | any) {
+  function vDistance(
+    vertex: number[] | any,
+    edgeVertex0: number[] | any,
+    edgeVertex1: number[] | any
+  ) {
     let vertexXCoordinate = vertex[0],
       vertexYCoordinate = vertex[1],
       edgeVertex0CoordinateX1 = edgeVertex0[0],
@@ -88,10 +98,12 @@ export default function pie () {
     }
     let xx: any, yy: any;
 
-    if (parameter < 0) { // 此时被划分的多边形区域是凸多边形
+    if (parameter < 0) {
+      // 此时被划分的多边形区域是凸多边形
       xx = edgeVertex0CoordinateX1;
       yy = edgeVertex0CoordinateY1;
-    } else if (parameter > 1) { // 此时被划分的多边形区域不是凸多边形
+    } else if (parameter > 1) {
+      // 此时被划分的多边形区域不是凸多边形
       xx = edgeVertex0CoordinateX2;
       yy = edgeVertex0CoordinateY2;
     } else {

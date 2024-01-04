@@ -15,8 +15,10 @@ export class Vector {
     this.z = this.z * -1;
   }
   // 向量标准化
-  normalize(){
-    let modulus = Math.sqrt((this.x * this.x) + (this.y * this.y) + (this.z * this.z));
+  normalize() {
+    let modulus = Math.sqrt(
+      this.x * this.x + this.y * this.y + this.z * this.z
+    );
     if (modulus > 0) {
       this.x /= modulus;
       this.y /= modulus;
@@ -24,5 +26,3 @@ export class Vector {
     }
   }
 }
-
-

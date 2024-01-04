@@ -1,6 +1,6 @@
 export const epsilon = 1e-10;
 export function epsilonesque(n: number | any) {
-  let absCompare: boolean = n <= epsilon && n >= -epsilon
+  let absCompare: boolean = n <= epsilon && n >= -epsilon;
   return absCompare;
 }
 // 向量点积（由于基准坐标是(0,0,0)，因此实际上是点的点积）
@@ -18,7 +18,13 @@ export function linearDependent(vertex0: any, vertex1: any) {
 
 // 判断多边形是否为无孔洞、不相交的凸多边形，若是则返回true
 export function polygonDirection(polygon: any) {
-  let sign: any, crossproduct: number | any, point0: any, point1: any, point2: any, vertex0: any, vertex1: any;
+  let sign: any,
+    crossproduct: number | any,
+    point0: any,
+    point1: any,
+    point2: any,
+    vertex0: any,
+    vertex1: any;
 
   point0 = polygon[polygon.length - 2];
   point1 = polygon[polygon.length - 1];
