@@ -11,7 +11,6 @@ import randomInitialPosition from './random';
 import halfAverageAreaInitialWeight from './halfAverageArea';
 import MappedVoronoiError from './MappedVoronoiError';
 import { seed } from '../nestedVoronoi/seed';
-
 export function mappedVoronoiSimulation(data: any) {
   let CONVERGE_RATIO_DEFAULT: number = 0.01;
   let MAX_ITER_NUM_DEFAULT: number = 50;
@@ -29,7 +28,6 @@ export function mappedVoronoiSimulation(data: any) {
   let initialPosition = INIT_POS_DEFAULT; // 初始位置访问器
   let initialWeight = INIT_WEIGHT_DEFAULT; // 初始权重访问器
 
-
   let weightedVoronoi = d3WeightedVoronoi(),
     flickeringMitigation = new FlickeringMitigation(),
     needInit: boolean = true,
@@ -41,17 +39,18 @@ export function mappedVoronoiSimulation(data: any) {
     errorOfArea: any, // 当前area error
     converged: boolean | any, // 当errorOfArea < errorOfAreaTreshold为true
     simulationFinished: boolean | any; // 如果终止迭代计算 或 达到convergenceRatio 或 达到最大迭代次数时 结束
-  
+
   let simulation: any,
     simulationStepper: any = d3Timer(step),
     simulationEvent: any = d3Dispatch('tick', 'end');
-  const HANDLE_OVERWEIGHTED_letIANT: number | any = 1; 
+  const HANDLE_OVERWEIGHTED_letIANT: number | any = 1;
   const HANDLE_OVERWEIGHTED_CASES = [0, 1];
   const HANLDE_OVERWEIGHTED_MAX_ITERATION_COUNT: number | any = 1000; // 优化权重过大的站点的最大迭代次数
   let handleOverweighted: boolean | any; // 是否解决了站点权重过大的问题
   // 两点距离的平方
   function squaredDistance(s0: number[] | any, s1: number[] | any) {
-    let squaredDistance = (s1.x - s0.x) * (s1.x - s0.x) + (s1.y - s0.y) * (s1.y - s0.y);
+    let squaredDistance =
+      (s1.x - s0.x) * (s1.x - s0.x) + (s1.y - s0.y) * (s1.y - s0.y);
     return squaredDistance;
   }
 
@@ -170,7 +169,7 @@ export function mappedVoronoiSimulation(data: any) {
       if (needInit) {
         initializeSimulation();
       }
-      let resultConvergenRatio = errorOfArea / allArea
+      let resultConvergenRatio = errorOfArea / allArea;
       return {
         ended: simulationFinished,
         iterationCount: curIterNum,
@@ -189,7 +188,6 @@ export function mappedVoronoiSimulation(data: any) {
     },
   };
 
-
   // 迭代计算的主循环
   function step() {
     tick();
@@ -199,7 +197,6 @@ export function mappedVoronoiSimulation(data: any) {
       simulationEvent.call('end', simulation);
     }
   }
-  
 
   // 每次迭代计算调用
   function tick() {
@@ -216,11 +213,9 @@ export function mappedVoronoiSimulation(data: any) {
     }
   }
 
-
   function initializeSimulation() {
     // 解决权重不合理的情况
     setHandleOverweighted();
-    
 
     siteCount = data.length;
     allArea = Math.abs(d3PolygonArea(weightedVoronoi.clip()));
@@ -236,21 +231,20 @@ export function mappedVoronoiSimulation(data: any) {
 
   function initialize(data: any, simulation: any) {
     let maxWeight = data.reduce((max: any, d: any) => {
-        return Math.max(max, weight(d));
-      }, -Infinity);
+      return Math.max(max, weight(d));
+    }, -Infinity);
     let minAllowedWeight = maxWeight * minWeightRatio;
     let weights, mapPointsList: any;
 
     // 提取权重
     weights = data.map((originalData: any, index: number, arr: any) => ({
-        index,
-        weight: Math.max(weight(originalData), minAllowedWeight),
-        initialPosition: initialPosition(originalData, index, arr, simulation),
-        initialWeight: initialWeight(originalData, index, arr, simulation),
-        originalData,
-      })
-    );
-  
+      index,
+      weight: Math.max(weight(originalData), minAllowedWeight),
+      initialPosition: initialPosition(originalData, index, arr, simulation),
+      initialWeight: initialWeight(originalData, index, arr, simulation),
+      originalData,
+    }));
+
     // 用目标面积（期望面积）、初始位置和初始权重创建map points
     mapPointsList = createMapPoints(weights, simulation);
     handleOverweighted(mapPointsList);
@@ -258,7 +252,10 @@ export function mappedVoronoiSimulation(data: any) {
   }
 
   function createMapPoints(basePoints: any, simulation: any) {
-    let totalWeight = basePoints.reduce((acc: any, bp: any) => (acc += bp.weight), 0);
+    let totalWeight = basePoints.reduce(
+      (acc: any, bp: any) => (acc += bp.weight),
+      0
+    );
     let initPos: any;
 
     return basePoints.map((basePoint: any, i: number | any, bps: any) => {
@@ -279,18 +276,25 @@ export function mappedVoronoiSimulation(data: any) {
     });
   }
   // 优化站点的权重和位置
-  function adapt(resultPolgon: number[] | any, flickeringMitigationRatio: number | any) {
+  function adapt(
+    resultPolgon: number[] | any,
+    flickeringMitigationRatio: number | any
+  ) {
     let adaptedMapPoints: any;
 
     adaptPositions(resultPolgon, flickeringMitigationRatio);
-    adaptedMapPoints = resultPolgon.map((polygon: any) => polygon.site.originalObject);
+    adaptedMapPoints = resultPolgon.map(
+      (polygon: any) => polygon.site.originalObject
+    );
     resultPolgon = weightedVoronoi(adaptedMapPoints);
     if (resultPolgon.length < siteCount) {
       throw new MappedVoronoiError('至少有一个站点还没分得区域!');
     }
 
     adaptWeights(resultPolgon, flickeringMitigationRatio);
-    adaptedMapPoints = resultPolgon.map((polygon: any) => polygon.site.originalObject);
+    adaptedMapPoints = resultPolgon.map(
+      (polygon: any) => polygon.site.originalObject
+    );
     resultPolgon = weightedVoronoi(adaptedMapPoints);
     if (resultPolgon.length < siteCount) {
       throw new MappedVoronoiError('至少有一个站点还没分得区域!');
@@ -299,10 +303,19 @@ export function mappedVoronoiSimulation(data: any) {
     return resultPolgon;
   }
   // 优化站点位置
-  function adaptPositions(resultPolgon: number [] | any, flickeringMitigationRatio: number | any) {
+  function adaptPositions(
+    resultPolgon: number[] | any,
+    flickeringMitigationRatio: number | any
+  ) {
     let newMapPoints: any[] = [];
     let flickeringInfluence: number = 0.5;
-    let flickeringMitigation: number, d: number, polygon: any, mapPoint: any, centroidPos: number[], deltaX: number, deltaY: number;
+    let flickeringMitigation: number,
+      d: number,
+      polygon: any,
+      mapPoint: any,
+      centroidPos: number[],
+      deltaX: number,
+      deltaY: number;
 
     flickeringMitigation = flickeringInfluence * flickeringMitigationRatio;
     d = 1 - flickeringMitigation; // in [0.5, 1]
@@ -322,10 +335,18 @@ export function mappedVoronoiSimulation(data: any) {
     handleOverweighted(newMapPoints);
   }
   // 优化站点权重
-  function adaptWeights(resultPolgon: number[] | any, flickeringMitigationRatio: number | any) {
+  function adaptWeights(
+    resultPolgon: number[] | any,
+    flickeringMitigationRatio: number | any
+  ) {
     let newMapPoints: any = [];
     let flickeringInfluence = 0.1;
-    let flickeringMitigation: number, polygon: any, curMappedPoint: any, curArea: number, adaptedRatio: number, adaptedWeight: number;
+    let flickeringMitigation: number,
+      polygon: any,
+      curMappedPoint: any,
+      curArea: number,
+      adaptedRatio: number,
+      adaptedWeight: number;
 
     flickeringMitigation = flickeringInfluence * flickeringMitigationRatio;
     for (let i = 0; i < siteCount; i++) {
@@ -333,8 +354,14 @@ export function mappedVoronoiSimulation(data: any) {
       curMappedPoint = polygon.site.originalObject;
       curArea = d3PolygonArea(polygon);
       adaptedRatio = curMappedPoint.targetedArea / curArea;
-      adaptedRatio = Math.max(adaptedRatio, 1 - flickeringInfluence + flickeringMitigation);
-      adaptedRatio = Math.min(adaptedRatio, 1 + flickeringInfluence - flickeringMitigation);
+      adaptedRatio = Math.max(
+        adaptedRatio,
+        1 - flickeringInfluence + flickeringMitigation
+      );
+      adaptedRatio = Math.min(
+        adaptedRatio,
+        1 + flickeringInfluence - flickeringMitigation
+      );
       adaptedWeight = curMappedPoint.weight * adaptedRatio;
       adaptedWeight = Math.max(adaptedWeight, CONS_EPSILON);
       curMappedPoint.weight = adaptedWeight;
@@ -382,13 +409,18 @@ export function mappedVoronoiSimulation(data: any) {
         }
       }
     } while (isFixed === true);
-
   }
 
   // 启发式地逐渐增大权重
   function handleOverweighted1(mapPoints: any) {
     let fixedNum = 0;
-    let isFixed: boolean, tempPoint1: any, tempPoint2: any, weightest: any, lightest: any, squareDiameter: number, overweight: number;
+    let isFixed: boolean,
+      tempPoint1: any,
+      tempPoint2: any,
+      weightest: any,
+      lightest: any,
+      squareDiameter: number,
+      overweight: number;
     do {
       if (fixedNum > HANLDE_OVERWEIGHTED_MAX_ITERATION_COUNT) {
         throw new MappedVoronoiError('handleOverweighted1 迭代太多次了!');
@@ -430,7 +462,7 @@ export function mappedVoronoiSimulation(data: any) {
         handleOverweighted = handleOverweighted1;
         break;
       default:
-        console.error("未知的权重不符合几何性质的情况");
+        console.error('未知的权重不符合几何性质的情况');
         handleOverweighted = handleOverweighted0;
     }
   }

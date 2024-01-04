@@ -10,7 +10,7 @@ export class ConvexHull {
   generated: any[];
   horizonal: any[];
   evident: any[];
-  cur: number | any
+  cur: number | any;
   constructor() {
     this.vertexList = [];
     this.facetsList = [];
@@ -23,7 +23,14 @@ export class ConvexHull {
   init(boundSitesCoordinates: any, sitesCoordinates: any) {
     this.vertexList = [];
     for (let i = 0; i < sitesCoordinates.length; i++) {
-      this.vertexList[i] = new Vertex(sitesCoordinates[i].x, sitesCoordinates[i].y, sitesCoordinates[i].z, null, sitesCoordinates[i], false);
+      this.vertexList[i] = new Vertex(
+        sitesCoordinates[i].x,
+        sitesCoordinates[i].y,
+        sitesCoordinates[i].z,
+        null,
+        sitesCoordinates[i],
+        false
+      );
     }
     this.vertexList = this.vertexList.concat(boundSitesCoordinates);
   }
@@ -47,16 +54,24 @@ export class ConvexHull {
     for (let i = 0; i < this.vertexList.length; i++) {
       this.vertexList[i].index = i;
     }
-  
+
     let vertex0: any, vertex1: any, vertex2: any, vertex3: any;
-    let face1: Face | any, face2: Face | any, face3: Face | any, face0: Face | any;
+    let face1: Face | any,
+      face2: Face | any,
+      face3: Face | any,
+      face0: Face | any;
     vertex0 = this.vertexList[0];
     vertex1 = this.vertexList[1];
     vertex2 = vertex3 = null;
-  
+
     // 搜索不与前两个共线的第三个点
     for (let i = 2; i < this.vertexList.length; i++) {
-      if (!(linearDependent(vertex0, this.vertexList[i]) && linearDependent(vertex1, this.vertexList[i]))) {
+      if (
+        !(
+          linearDependent(vertex0, this.vertexList[i]) &&
+          linearDependent(vertex1, this.vertexList[i])
+        )
+      ) {
         vertex2 = this.vertexList[i];
         vertex2.index = 2;
         this.vertexList[2].index = i;
@@ -66,14 +81,21 @@ export class ConvexHull {
       }
     }
     if (vertex2 === null) {
-      throw new WeightedVoronoiError('Not enough non-planar Points (vertex2 is null)');
+      throw new WeightedVoronoiError(
+        'Not enough non-planar Points (vertex2 is null)'
+      );
     }
-  
+
     // 创建第一个jFaceace
     face0 = new Face(vertex0, vertex1, vertex2);
     // 搜索不与前三个点共面的第四个点
     for (let i = 3; i < this.vertexList.length; i++) {
-      if (!epsilonesque(dot(face0.normalVector, face0.verts[0]) - dot(face0.normalVector, this.vertexList[i]))) {
+      if (
+        !epsilonesque(
+          dot(face0.normalVector, face0.verts[0]) -
+            dot(face0.normalVector, this.vertexList[i])
+        )
+      ) {
         vertex3 = this.vertexList[i];
         vertex3.index = 3;
         this.vertexList[3].index = i;
@@ -83,9 +105,11 @@ export class ConvexHull {
       }
     }
     if (vertex3 === null) {
-      throw new WeightedVoronoiError('Not enough non-planar Points (vertex3 is null)');
+      throw new WeightedVoronoiError(
+        'Not enough non-planar Points (vertex3 is null)'
+      );
     }
-  
+
     face0.orient(vertex3);
     face1 = new Face(vertex0, vertex2, vertex3, vertex1);
     face2 = new Face(vertex0, vertex1, vertex3, vertex2);
@@ -102,7 +126,7 @@ export class ConvexHull {
     face1.link(face3, vertex2, vertex3);
     face2.link(face3, vertex3, vertex1);
     this.cur = 4;
-  
+
     let v: any;
     for (let i: number = this.cur; i < this.vertexList.length; i++) {
       v = this.vertexList[i];
@@ -126,8 +150,9 @@ export class ConvexHull {
     let line2 = old2.conflicts.getVertices();
     let nCLArr: any[] = [];
     let vertex1: any, vertex2: any;
-    let i: number| any = 0,  l: number | any = 0;
-    
+    let i: number | any = 0,
+      l: number | any = 0;
+
     while (i < line1.length || l < line2.length) {
       if (i < line1.length && l < line2.length) {
         vertex1 = line1[i];
@@ -151,7 +176,8 @@ export class ConvexHull {
     }
     for (let i: number = nCLArr.length - 1; i >= 0; i--) {
       vertex1 = nCLArr[i];
-      if (faceInstance.conflict(vertex1)) this.addConflict(faceInstance, vertex1);
+      if (faceInstance.conflict(vertex1))
+        this.addConflict(faceInstance, vertex1);
     }
   }
 
@@ -202,11 +228,16 @@ export class ConvexHull {
         }
       }
       let lastFace: null | any = null,
-        firstFace: null |  any = null;
+        firstFace: null | any = null;
       // 遍历所有的水平边，创建新的三角面
       for (let hEi = 0; hEi < this.horizonal.length; hEi++) {
         let hEdge = this.horizonal[hEi];
-        let faceInstance = new Face(nextVertext, hEdge.origin, hEdge.destine, hEdge.twin.next.destine);
+        let faceInstance = new Face(
+          nextVertext,
+          hEdge.origin,
+          hEdge.destine,
+          hEdge.twin.next.destine
+        );
         faceInstance.conflicts = new ConflictList(true);
         this.addFacet(faceInstance);
         this.generated.push(faceInstance);
@@ -214,7 +245,8 @@ export class ConvexHull {
         this.addConflicts(hEdge.iFace, hEdge.twin.iFace, faceInstance);
         // 把新的face三角面和水平边连接起来
         faceInstance.link(hEdge);
-        if (lastFace !== null) faceInstance.link(lastFace, nextVertext, hEdge.origin);
+        if (lastFace !== null)
+          faceInstance.link(lastFace, nextVertext, hEdge.origin);
         lastFace = faceInstance;
         if (firstFace === null) firstFace = faceInstance;
       }
@@ -240,6 +272,4 @@ export class ConvexHull {
     this.evident = [];
     this.cur = 0;
   }
-  
 }
-

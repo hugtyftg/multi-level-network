@@ -1,6 +1,6 @@
-import { makeAutoObservable } from 'mobx'
+import { makeAutoObservable } from 'mobx';
 import { createContext, useContext } from 'react';
-import MultiLevelPartitionGraph from '../graph/MultiLevelPartitionGraph';
+import MultiLevelPartitionGraph from '@/graph/MultiLevelPartitionGraph';
 import { datasetRangeList, ViewTypes } from '@/config/DEFAULT';
 import { group, originData } from '@/interface/partition';
 import BaseGraph from '@/graph';
@@ -8,7 +8,7 @@ class Store {
   // 在右侧展示的主图的实例
   graphInstance: MultiLevelPartitionGraph | BaseGraph | object = {};
   // 右侧展示的主图的类型
-  viewName: ViewTypes  = 'PARTITION';
+  viewName: ViewTypes = 'PARTITION';
   // roleDistribution图实例
   roleDistriGraphInstance: object = {};
   // alarming distribution图实例
@@ -23,7 +23,7 @@ class Store {
   originGraphData: originData | object = {};
   constructor() {
     // 通过 action.bound 绑定 this 的指向
-    makeAutoObservable(this, {}, {autoBind: true});
+    makeAutoObservable(this, {}, { autoBind: true });
   }
   updateGraphInstance(newGraphInstance: any) {
     this.graphInstance = newGraphInstance;
@@ -91,7 +91,7 @@ class Store {
   get curViewName() {
     return this.viewName;
   }
-  get curHyperNodeData (){
+  get curHyperNodeData() {
     return this.hyperNodeData;
   }
   get curOriginGraphData() {
@@ -106,7 +106,7 @@ class Store {
   get isCurAlarmDistriGraphInstanceEmpty() {
     return Object.keys(this.curAlarmDistriGraphInstance).length === 0;
   }
-  get isCurPartitionGraphDataEmpty() {    
+  get isCurPartitionGraphDataEmpty() {
     return Object.keys(this.curPartitionGraphData).length === 0;
   }
   get isCurHyperNodeDataEmpty() {
@@ -118,12 +118,12 @@ class Store {
     // console.log(Reflect.ownKeys(this.curOriginGraphData));
     return Object.keys(this.curOriginGraphData).length === 0;
   }
-  get allDatasetNames(): Array<{name: string, id: string}> {
+  get allDatasetNames(): Array<{ name: string; id: string }> {
     return datasetRangeList.map((v: string) => {
       return {
         name: `${v}_processed.json`,
-        id: `${v}_processed.json`
-      }
+        id: `${v}_processed.json`,
+      };
     });
   }
 }
@@ -131,4 +131,4 @@ const store = new Store();
 const Context = createContext(store);
 export const useStore = () => {
   return useContext(Context);
-}
+};

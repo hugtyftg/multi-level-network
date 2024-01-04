@@ -1,8 +1,16 @@
-import { mappedVoronoiSimulation as d3VoronoiMapSimulation} from '../mappedVoronoi';
+import { mappedVoronoiSimulation as d3VoronoiMapSimulation } from '../mappedVoronoi';
 import { seed } from './seed';
 export function nestedVoronoi(seedNum: number) {
-  let curClipPolygon: number[][] = [[0, 0], [0, 1], [1, 1], [1, 0]]; // 划分多边形
-  let extent: number[][] = [[0, 0], [1, 1]]; // 划分多边形的范围
+  let curClipPolygon: number[][] = [
+    [0, 0],
+    [0, 1],
+    [1, 1],
+    [1, 0],
+  ]; // 划分多边形
+  let extent: number[][] = [
+    [0, 0],
+    [1, 1],
+  ]; // 划分多边形的范围
   let size: number[] = [1, 1]; // 划分多边形的宽高
   let CONVERGE_RATIO_DEFAULT: number = 0.01;
   let MAX_ITER_NUM_DEFAULT: number = 50;
@@ -15,8 +23,10 @@ export function nestedVoronoi(seedNum: number) {
   let maxIterNum: number = MAX_ITER_NUM_DEFAULT; // 最大循环次数，若达到该次数，即使还没满足convergence的error ratio条件，迭代计算也停止
   let minWeightRatio: number = MINST_WEIGHT_DEFAULT; // 计算某个情况下保持幂加权图几何性质正确的的最小权重，默认为最大权重的1，避免某个小区域的权重太接近1
   let pseudorandomNumberGenerator = PNG_DEFAULT; // 伪随机数生成器
-  let unrelevantButNeedeData = Array.from({length: 2}, () => {})
-  let _convenientReusableVoronoiMapSimulation = d3VoronoiMapSimulation(unrelevantButNeedeData).stop();
+  let unrelevantButNeedeData = Array.from({ length: 2 }, () => {});
+  let _convenientReusableVoronoiMapSimulation = d3VoronoiMapSimulation(
+    unrelevantButNeedeData
+  ).stop();
 
   function nestedVoronoiGenerator(rootNode: any) {
     recurse(curClipPolygon, rootNode);
@@ -59,7 +69,10 @@ export function nestedVoronoi(seedNum: number) {
 
       // 迭代计算子层级
       simulateStatus.polygons.forEach((clipPolygonObj: any) => {
-        recurse(clipPolygonObj, clipPolygonObj.site.originalObject.data.originalData);
+        recurse(
+          clipPolygonObj,
+          clipPolygonObj.site.originalObject.data.originalData
+        );
       });
     }
   }

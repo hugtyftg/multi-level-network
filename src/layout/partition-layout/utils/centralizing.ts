@@ -1,19 +1,27 @@
 /**
  * 将fatherObj中的特定childObj的polygon
  * 与距离父质心欧氏距离最近、节点数最相近的childObj的polygon相互替换
- * @param fatherObj 父层级的obj（az），有children字段，包含若干子层级的obj（pod） 
+ * @param fatherObj 父层级的obj（az），有children字段，包含若干子层级的obj（pod）
  * @param attr 按照子层级的attr字段（name）将某个子层级obj对象的位置中心化
  * @param attrValue 被中心化的子层级对象的attr字段的值（cnt）
  * @param centroidDistanceWeight childobj的polygon质心与fatherobj的polygon的质心的欧式距离在目标函数中的权重
  * @param nodesNumWeight childobj的节点个数与目标替换的childobj的节点个数的差值在目标函数中的权重
  */
-function centralizing(fatherObj: any, attr: string, attrValue: string, nodesNumWeight: number = 0.6, centroidDistanceWeight: number = 0.4) {
+function centralizing(
+  fatherObj: any,
+  attr: string,
+  attrValue: string,
+  nodesNumWeight: number = 0.6,
+  centroidDistanceWeight: number = 0.4
+) {
   // 如果没有children字段，说明没有子层级
   if (!fatherObj.children) {
     return;
   }
   // 目标替换子层级在children中的索引
-  let targetChildObjIndex = fatherObj.children.findIndex((child: any) => child.data[attr] === attrValue);
+  let targetChildObjIndex = fatherObj.children.findIndex(
+    (child: any) => child.data[attr] === attrValue
+  );
   // 如果当前father obj没有需要中心化的子层级，则返回
   if (targetChildObjIndex === -1) {
     return;
@@ -21,14 +29,21 @@ function centralizing(fatherObj: any, attr: string, attrValue: string, nodesNumW
   // 目标替换子层级
   let targetChildObj = fatherObj.children[targetChildObjIndex];
   // 储存所有子层级的NND、CD、NND Ratio、CD Ratio和score
-  let info = Array.from({length: fatherObj.children.length}, 
-    () => ({NND: Infinity, CD: Infinity, NNDNormalization: Infinity, CDNormalization: Infinity, score: Infinity}));
+  let info = Array.from({ length: fatherObj.children.length }, () => ({
+    NND: Infinity,
+    CD: Infinity,
+    NNDNormalization: Infinity,
+    CDNormalization: Infinity,
+    score: Infinity,
+  }));
   // 子层级的最大NND和最小NND、最大CD和最小CD
-  let maxNND: number = 0, minNND: number = Infinity;
-  let maxCD: number = 0, minCD: number = Infinity;
+  let maxNND: number = 0,
+    minNND: number = Infinity;
+  let maxCD: number = 0,
+    minCD: number = Infinity;
   // 计算所有子层级的NND、CD
   for (let i = 0; i < fatherObj.children.length; i++) {
-    const curChildObj = fatherObj.children[i]
+    const curChildObj = fatherObj.children[i];
     // 计算NND
     let curNND = nodesNumDifferential(curChildObj, targetChildObj);
     // 计算CD
@@ -51,12 +66,15 @@ function centralizing(fatherObj: any, attr: string, attrValue: string, nodesNumW
     info[i].CD = curCD;
   }
   // 最小score及其child索引，也就是需要和targetObj替换的child obj
-  let minScore = Infinity, minScoreChildIndex = -1;
+  let minScore = Infinity,
+    minScoreChildIndex = -1;
   // 计算所有子层级的NND Ratio、CD Ratio和score
   for (let i = 0; i < info.length; i++) {
     info[i].NNDNormalization = info[i].NND / (maxNND - minNND);
     info[i].CDNormalization = info[i].CD / (maxCD - minCD);
-    info[i].score = info[i].NNDNormalization * nodesNumWeight + info[i].CDNormalization * centroidDistanceWeight;
+    info[i].score =
+      info[i].NNDNormalization * nodesNumWeight +
+      info[i].CDNormalization * centroidDistanceWeight;
     if (info[i].score < minScore) {
       minScore = info[i].score;
       minScoreChildIndex = i;
@@ -66,16 +84,25 @@ function centralizing(fatherObj: any, attr: string, attrValue: string, nodesNumW
   if (minScoreChildIndex !== -1) {
     // 将targeChildtObj和minScoreChild互换
     let minScoreChildObj = fatherObj.children[minScoreChildIndex];
-    [targetChildObj.area, minScoreChildObj.area] = [minScoreChildObj.area, targetChildObj.area];
-    [targetChildObj.polygon, minScoreChildObj.polygon] = [minScoreChildObj.polygon, targetChildObj.polygon];
-    [targetChildObj.maxIncircle, minScoreChildObj.maxIncircle] = [minScoreChildObj.maxIncircle, targetChildObj.maxIncircle];
+    [targetChildObj.area, minScoreChildObj.area] = [
+      minScoreChildObj.area,
+      targetChildObj.area,
+    ];
+    [targetChildObj.polygon, minScoreChildObj.polygon] = [
+      minScoreChildObj.polygon,
+      targetChildObj.polygon,
+    ];
+    [targetChildObj.maxIncircle, minScoreChildObj.maxIncircle] = [
+      minScoreChildObj.maxIncircle,
+      targetChildObj.maxIncircle,
+    ];
   }
 }
 /**
  * 两个区域的节点数之差
- * @param area1 
- * @param area2 
- * @returns 
+ * @param area1
+ * @param area2
+ * @returns
  */
 function nodesNumDifferential(area1: any, area2: any): number {
   return Math.abs(area1.value - area2.value);
@@ -99,6 +126,4 @@ function centroidDistance(area1: any, area2: any): number {
   let deltaY: number = centroid1[1] - centroid2[1];
   return Math.sqrt(deltaX ** 2 + deltaY ** 2);
 }
-export {
-  centralizing
-}
+export { centralizing };

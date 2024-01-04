@@ -14,7 +14,7 @@ export class ConflictListNode {
     this.nextVertex = null;
     this.previousVertext = null;
   }
-} 
+}
 export class ConflictList {
   public forFace: any;
   public header: any;
@@ -26,12 +26,12 @@ export class ConflictList {
     if (this.header === null) {
       this.header = cln;
     } else {
-      if (this.forFace) {  
+      if (this.forFace) {
         // 如果是三角面faces列表
         this.header.previousVertext = cln;
         cln.nextVertex = this.header;
         this.header = cln;
-      } else {  
+      } else {
         // 如果是节点vertex列表
         this.header.previousFace = cln;
         cln.nextFace = this.header;
@@ -40,7 +40,7 @@ export class ConflictList {
     }
   }
   isEmpty() {
-    let isEmptyStatus = this.header === null
+    let isEmptyStatus = this.header === null;
     return isEmptyStatus;
   }
   // 可见的三角面faces的数组
@@ -57,7 +57,7 @@ export class ConflictList {
   }
   // 移除三角面face的所有节点
   removeAll() {
-    if (this.forFace) {  
+    if (this.forFace) {
       let curPointer = this.header;
       do {
         // 当前节点是header
@@ -68,7 +68,7 @@ export class ConflictList {
             curPointer.nextFace.previousFace = null;
             curPointer.vert.conflicts.header = curPointer.nextFace;
           }
-        } else {  
+        } else {
           // 当前节点不是header
           if (curPointer.nextFace !== null) {
             curPointer.nextFace.previousFace = curPointer.previousFace;
@@ -80,7 +80,8 @@ export class ConflictList {
           curPointer.previousVertext = null;
         }
       } while (curPointer !== null);
-    } else {  // 把vertex的所有JFaces移除
+    } else {
+      // 把vertex的所有JFaces移除
       let curPointer = this.header;
       do {
         // 此节点为header
@@ -91,7 +92,7 @@ export class ConflictList {
             curPointer.nextVertex.previousVertext = null;
             curPointer.face.conflicts.header = curPointer.nextVertex;
           }
-        } else { 
+        } else {
           // 此节点不是header
           if (curPointer.nextVertex !== null) {
             curPointer.nextVertex.previousVertext = curPointer.previousVertext;
@@ -99,15 +100,14 @@ export class ConflictList {
           curPointer.previousVertext.nextVertex = curPointer.nextVertex;
         }
         curPointer = curPointer.nextFace;
-        if (curPointer !== null)
-          curPointer.previousFace = null;
+        if (curPointer !== null) curPointer.previousFace = null;
       } while (curPointer !== null);
     }
   }
   // 得到当前节点的所有vertices
   getVertices() {
     let verticesList: any[] = [],
-        curPointer = this.header;
+      curPointer = this.header;
     while (curPointer !== null) {
       verticesList.push(curPointer.vert);
       curPointer = curPointer.nextVertex;

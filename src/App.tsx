@@ -3,9 +3,8 @@ import View from '@/views/view';
 const App: React.FC = () => {
   return (
     <div className="app">
-      <View/>
+      <View />
     </div>
   );
 };
-
 export default App;

@@ -1,6 +1,5 @@
-import {epsilon} from './formula';
-import {ConflictList} from './ConflictList';
-
+import { epsilon } from './formula';
+import { ConflictList } from './ConflictList';
 // 三维点
 export class Vertex {
   weight: number | any;
@@ -15,7 +14,14 @@ export class Vertex {
   originalObject: any;
   dummyStatus: boolean | any;
 
-  constructor(xCoordinate: any, yCoordinate: any, zCoordinate: any, weight?: any, origin?: any, dummyStatus?:any) {
+  constructor(
+    xCoordinate: any,
+    yCoordinate: any,
+    zCoordinate: any,
+    weight?: any,
+    origin?: any,
+    dummyStatus?: any
+  ) {
     this.x = xCoordinate;
     this.y = yCoordinate;
     this.weight = weight ?? epsilon;
@@ -30,7 +36,7 @@ export class Vertex {
   }
   // 投影
   projectZ(xCoordinate: number, yCoordinate: number, weight: number) {
-    let calZ = (xCoordinate * xCoordinate) + (yCoordinate * yCoordinate) - weight
+    let calZ = xCoordinate * xCoordinate + yCoordinate * yCoordinate - weight;
     return calZ;
   }
   // 设置权重
@@ -44,13 +50,13 @@ export class Vertex {
   }
   // 叉乘
   crossproduct(vertex: any) {
-    let newVertexX = (this.y * vertex.z) - (this.z * vertex.y);
-    let newVertexY = (this.z * vertex.x) - (this.x * vertex.z);
-    let newVertexZ = (this.x * vertex.y) - (this.y * vertex.x)
+    let newVertexX = this.y * vertex.z - this.z * vertex.y;
+    let newVertexY = this.z * vertex.x - this.x * vertex.z;
+    let newVertexZ = this.x * vertex.y - this.y * vertex.x;
     return new Vertex(newVertexX, newVertexY, newVertexZ);
   }
   // 三维点是否相等
   equals(vertex: any) {
-    return (this.x === vertex.x && this.y === vertex.y && this.z === vertex.z);
+    return this.x === vertex.x && this.y === vertex.y && this.z === vertex.z;
   }
 }

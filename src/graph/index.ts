@@ -1,16 +1,15 @@
-import { DEFAULT_STYLE_CFG } from "@/config/DEFAULT";
-import { StyleCfg } from "@/interface/style";
+import { DEFAULT_STYLE_CFG } from '@/config/DEFAULT';
+import { StyleCfg } from '@/interface/style';
 class BaseGraph {
   // 图的相关样式参数配置
   protected cfgs: StyleCfg = DEFAULT_STYLE_CFG;
   /* -----------------------------外层画布--------------------------- */
   // 画布形状
-  public shape = 'rectangle'; 
-
+  public shape = 'rectangle';
   /* -----------------------------外层画布--------------------------- */
   /* -----------------------------渲染相关cell--------------------------- */
   // 最外层的div box
-  protected divBox: any; 
+  protected divBox: any;
   // 整个图的svg画布
   protected svg: any;
   // 整个g容器

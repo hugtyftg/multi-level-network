@@ -4,7 +4,6 @@ import { ConflictList } from './ConflictList';
 import { Vector } from './Vector';
 import { HEdge } from './HEdge';
 import WeightedVoronoiError from './WeightedVoronoiError';
-
 // a, b, c三个点确定的三角面Face
 export class Face {
   conflicts: ConflictList | any;
@@ -19,7 +18,7 @@ export class Face {
     this.verts = [a, b, c];
     this.singed = false;
     let target = a.subtract(b).crossproduct(b.subtract(c));
-  
+
     this.normalVector = new Vector(-target.x, -target.y, -target.z);
     this.normalVector.normalize();
     this.createEdges();
@@ -55,7 +54,9 @@ export class Face {
   }
   // vertex的方向
   orient(orient: any) {
-    if (!(dot(this.normalVector, orient) < dot(this.normalVector, this.verts[0]))) {
+    if (
+      !(dot(this.normalVector, orient) < dot(this.normalVector, this.verts[0]))
+    ) {
       let tempVertex = this.verts[1];
       this.verts[1] = this.verts[2];
       this.verts[2] = tempVertex;
@@ -64,7 +65,7 @@ export class Face {
     }
   }
   // 点vertex0和vertex1的连边
-  getEdge (vertex0: any, vertex1: any) {
+  getEdge(vertex0: any, vertex1: any) {
     for (let i = 0; i < 3; i++) {
       if (this.edgesList[i].isEqual(vertex0, vertex1)) {
         return this.edgesList[i];
@@ -73,7 +74,7 @@ export class Face {
     return null;
   }
   // 将点vertex0和vertex1与面face相连
-  link (face?: any, vertex0?: any, vertex1?: any) {
+  link(face?: any, vertex0?: any, vertex1?: any) {
     if (face instanceof Face) {
       let twin = face.getEdge(vertex0, vertex1);
       if (twin === null) {
@@ -93,16 +94,19 @@ export class Face {
     }
   }
   // 通过点积计算交点
-  conflict (v: any) {
-    return dot(this.normalVector, v) > dot(this.normalVector, this.verts[0]) + epsilon;
+  conflict(v: any) {
+    return (
+      dot(this.normalVector, v) >
+      dot(this.normalVector, this.verts[0]) + epsilon
+    );
   }
   // 计算平行边
-  getHorizon  () {
+  getHorizon() {
     let twinExist: boolean, twinHorizon: boolean;
     for (let i: number = 0; i < 3; i++) {
       twinExist = this.edgesList[i].twin !== null;
       twinHorizon = this.edgesList[i].twin.isHorizon();
-      if ( twinExist && twinHorizon ) {
+      if (twinExist && twinHorizon) {
         return this.edgesList[i];
       } else {
         continue;
@@ -111,11 +115,8 @@ export class Face {
     return null;
   }
   // 清除交点
-  removeConflict () {
+  removeConflict() {
     this.isEmpty = true;
     this.conflicts.removeAll();
   }
 }
-
-
-

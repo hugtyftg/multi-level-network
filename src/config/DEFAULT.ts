@@ -1,4 +1,4 @@
-import { StyleCfg } from "../interface/style"
+import { StyleCfg } from '../interface/style';
 // 图实例的默认配置参数
 const DEFAULT_STYLE_CFG: StyleCfg = {
   width: 1800,
@@ -16,13 +16,13 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
       opacity: 0.7,
       strokeWidth: 1,
       stroke: '#fff',
-      fill: (d: any) => {              
+      fill: (d: any) => {
         if (d.children[0].is_alarming) {
           return '#FA5151';
         } else {
           return '#6FD798';
         }
-      }
+      },
     },
     selected: {
       radius: 9,
@@ -35,8 +35,8 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
         } else {
           return '#6FD798';
         }
-      }
-    }
+      },
+    },
   },
   nodeLabelStyle: {
     stroke: 'black',
@@ -57,45 +57,45 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
       strokeWidth: 2,
       strokeColor: '#3980FE',
       strokeDash: 'solid',
-    }
+    },
   },
   maskStyle: {
     normal: {
       color: (d: any) => {
-        if (d.data.hierarchy === "az") {
-          return "#F7F7F7";
-        } else if (d.data.hierarchy === "pod") {
-          if (d.data.name === "cnt") {
-            return "#B3F0FA";
+        if (d.data.hierarchy === 'az') {
+          return '#F7F7F7';
+        } else if (d.data.hierarchy === 'pod') {
+          if (d.data.name === 'cnt') {
+            return '#B3F0FA';
           } else {
-            return "#F7F7F7";
+            return '#F7F7F7';
           }
         } else {
-          throw new Error("当前层级不是level2或者level3");
+          throw new Error('当前层级不是level2或者level3');
         }
       },
       strokeColor: (d: any) => {
-        if (d.data.hierarchy === "az") {
-          return "gray";
-        } else if (d.data.hierarchy === "pod") {
-          return "gray";
+        if (d.data.hierarchy === 'az') {
+          return 'gray';
+        } else if (d.data.hierarchy === 'pod') {
+          return 'gray';
         } else {
-          throw new Error("当前层级不是level2或者level3");
+          throw new Error('当前层级不是level2或者level3');
         }
       },
       strokeWidth: (d: any) => {
-        if (d.data.hierarchy === "az") {
+        if (d.data.hierarchy === 'az') {
           return 10;
-        } else if (d.data.hierarchy === "pod") {
+        } else if (d.data.hierarchy === 'pod') {
           return 3;
         } else {
-          throw new Error("当前层级不是level2或者level3");
+          throw new Error('当前层级不是level2或者level3');
         }
       },
       opacity: 1,
     },
     selected: {
-      color: "#CEDEFF",
+      color: '#CEDEFF',
       // strokeColor: "#fff",
       // strokeWidth: 5,
       opacity: 1,
@@ -110,18 +110,14 @@ const DEFAULT_STYLE_CFG: StyleCfg = {
       }
     },
     opacity: 0.8,
-    fontWeight: 800
-  }
-}
+    fontWeight: 800,
+  },
+};
 // 系统的默认标题名称
 const DefaultHeaderTitle = 'Multilevel Network Intelligent Partition Layout';
 // 数据列表
 const datasetRangeList = ['6000', '10000', '20000', '2500', '1500', '500'];
 // 视图类型
 type ViewTypes = 'PARTITION' | 'HYPERNODE';
-export {
-  DEFAULT_STYLE_CFG,
-  DefaultHeaderTitle,
-  datasetRangeList,
-}
+export { DEFAULT_STYLE_CFG, DefaultHeaderTitle, datasetRangeList };
 export type { ViewTypes };

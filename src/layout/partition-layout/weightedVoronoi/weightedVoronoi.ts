@@ -3,7 +3,6 @@ import { polygonHull as d3PolygonHull } from 'd3-polygon';
 import { epsilon, polygonDirection } from './formula';
 import { Vertex } from './Vertex';
 import { computePowerDiagramIntegrated } from './powerDiagram';
-
 export function weightedVoronoi() {
   // 带参数时为设置器，空参数时为访问器
   let x = (d?: any) => {
@@ -15,15 +14,29 @@ export function weightedVoronoi() {
   let weight = (d?: any) => {
     return d.weight;
   }; // 权重访问器
-  let clip: number[][] = [[0, 0], [0, 1], [1, 1], [1, 0]]; // clipping polygon
-  let extent: number[][] = [[0, 0], [1, 1]]; // clipping polygon的范围
+  let clip: number[][] = [
+    [0, 0],
+    [0, 1],
+    [1, 1],
+    [1, 0],
+  ]; // clipping polygon
+  let extent: number[][] = [
+    [0, 0],
+    [1, 1],
+  ]; // clipping polygon的范围
   let size: number[] | any = [1, 1]; // clipping polygon的宽高
 
   // 将带有权重的站点映射成幂加权Voronoi图
   function weightedVoronoiGenerator(data: any) {
     let formatedMappedSites: any;
-    formatedMappedSites = data.map((d: any) => new Vertex(x(d), y(d), null, weight(d), d, false));
-    let calPowerDiagram = computePowerDiagramIntegrated(formatedMappedSites, boundingSites(), clip)
+    formatedMappedSites = data.map(
+      (d: any) => new Vertex(x(d), y(d), null, weight(d), d, false)
+    );
+    let calPowerDiagram = computePowerDiagramIntegrated(
+      formatedMappedSites,
+      boundingSites(),
+      clip
+    );
     return calPowerDiagram;
   }
 
@@ -73,7 +86,10 @@ export function weightedVoronoi() {
     } else {
       clip = arg;
     }
-    extent = [[xExtent[0], yExtent[0]], [xExtent[1], yExtent[1]]];
+    extent = [
+      [xExtent[0], yExtent[0]],
+      [xExtent[1], yExtent[1]],
+    ];
     let xRange = xExtent[1] - xExtent[0];
     let yRange = yExtent[1] - yExtent[0];
     size = [xRange, yRange];
@@ -143,7 +159,14 @@ export function weightedVoronoi() {
           boundSitesData[i][1],
           null,
           epsilon,
-          new Vertex(boundSitesData[i][0], boundSitesData[i][1], null, epsilon, null, true),
+          new Vertex(
+            boundSitesData[i][0],
+            boundSitesData[i][1],
+            null,
+            epsilon,
+            null,
+            true
+          ),
           true
         )
       );

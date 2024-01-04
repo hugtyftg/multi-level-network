@@ -2,9 +2,11 @@
 export function polygonClip(clippingPolygon: any, subjectPolygon: any) {
   let inputList: any;
   let isClosed: boolean = polygonClosed(subjectPolygon);
-  let i: number = -1, j: number;
+  let i: number = -1,
+    j: number;
   // 用于分割的多边形的实际顶点数 去掉空洞顶点
-  let n: number = clippingPolygon.length - Number(polygonClosed(clippingPolygon));
+  let n: number =
+    clippingPolygon.length - Number(polygonClosed(clippingPolygon));
   // 被分割的目标多边形的实际顶点数 去掉空洞顶点
   let m: number;
   // 用于分割的多边形的四个顶点
@@ -13,7 +15,6 @@ export function polygonClip(clippingPolygon: any, subjectPolygon: any) {
     z: any,
     w: any;
   let intersectionLine: any; // 交线
-
   while (++i < n) {
     inputList = subjectPolygon.slice();
     subjectPolygon.length = 0;
@@ -45,8 +46,12 @@ export function polygonClip(clippingPolygon: any, subjectPolygon: any) {
   return subjectPolygon;
 }
 
-function polygonInside(p: number[] | any, a: number[] | any, b: number[] | any) {
-  let isInside = (b[0] - a[0]) * (p[1] - a[1]) < (b[1] - a[1]) * (p[0] - a[0])
+function polygonInside(
+  p: number[] | any,
+  a: number[] | any,
+  b: number[] | any
+) {
+  let isInside = (b[0] - a[0]) * (p[1] - a[1]) < (b[1] - a[1]) * (p[0] - a[0]);
   return isInside;
 }
 
@@ -60,8 +65,9 @@ function polygonIntersect(c: any, d: any, a: any, b: any) {
   let y3 = a[1];
   let y2_1 = d[1] - y1;
   let y4_3 = b[1] - y3;
-  let ratio = (x4_3 * (y1 - y3) - y4_3 * (x1 - x3)) / (y4_3 * x2_1 - x4_3 * y2_1);
-  let intersectPoint = [x1 + ratio * x2_1, y1 + ratio * y2_1]
+  let ratio =
+    (x4_3 * (y1 - y3) - y4_3 * (x1 - x3)) / (y4_3 * x2_1 - x4_3 * y2_1);
+  let intersectPoint = [x1 + ratio * x2_1, y1 + ratio * y2_1];
   return intersectPoint;
 }
 

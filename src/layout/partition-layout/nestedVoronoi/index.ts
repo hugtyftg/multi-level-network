@@ -1,1 +1,1 @@
-export { nestedVoronoi } from "./nestedVoronoi";
+export { nestedVoronoi } from './nestedVoronoi';
