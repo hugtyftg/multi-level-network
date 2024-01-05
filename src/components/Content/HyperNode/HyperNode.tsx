@@ -13,7 +13,7 @@ const HyperNode: React.FC = () => {
       originGraphData: store.originGraphData,
       viewName: store.viewName,
     }),
-    (observableObj) => {
+    ({ hyperNodeData, originGraphData }) => {
       console.log('hypernode reaction');
       if (
         !store.isCurHyperNodeDataEmpty &&
@@ -26,11 +26,11 @@ const HyperNode: React.FC = () => {
           (store.curGraphInstance as BaseGraph).destory();
           store.resetGraphInstance();
         }
-        let originIpLinks = (observableObj.originGraphData as originData).links;
+        let originIpLinks = (originGraphData as originData).links;
         store.updateGraphInstance(
           new ForceGraph({
             dataName: 'hyper',
-            data: observableObj.hyperNodeData,
+            data: hyperNodeData,
             width: 1876,
             height: 1081,
             originIpLinks,
