@@ -117,9 +117,6 @@ const Partition: React.FC = () => {
       viewName: store.viewName,
     }),
     ({ partitionGraphData }) => {
-      console.log('partition reaction');
-      console.log(store.isCurPartitionGraphDataEmpty ? 'empty' : 'not empty');
-
       // 如果当前加载完毕了分割相关的数据并且需要展示的视图是分割视图
       if (
         !store.isCurPartitionGraphDataEmpty &&
